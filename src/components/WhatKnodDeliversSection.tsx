@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 export function WhatKnodDeliversSection() {
   return (
-    <section className="bg-[#f5f5f7] pt-12 pb-16 sm:pt-16 sm:pb-20 lg:pt-20 lg:pb-24 xl:pt-24 xl:pb-28 px-4 sm:px-6 lg:px-8 relative overflow-hidden font-sans flex flex-col justify-center">
+    <section className="bg-[#f5f5f7] py-16 lg:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden font-sans flex flex-col justify-center">
       <div className="max-w-7xl mx-auto flex flex-col items-center w-full">
         <h2 className="text-[2.75rem] sm:text-[3.5rem] lg:text-[3.5rem] xl:text-[4rem] leading-[1.05] font-sans font-medium tracking-tight mb-10 sm:mb-12 lg:mb-14 text-center text-brand-black max-w-4xl">
           What <span className="italic font-light text-brand-blue">Knod</span>{" "}
@@ -15,8 +15,8 @@ export function WhatKnodDeliversSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="relative rounded-[2rem] h-[520px] sm:h-[560px] lg:h-[560px] xl:h-[620px] overflow-hidden flex flex-col justify-end p-8 sm:p-10 lg:p-10 xl:p-12 bg-[#FF4D00] shadow-xl group"
+            transition={{ duration: 0.5 }}
+            className="relative rounded-[2rem] h-[520px] sm:h-[560px] lg:h-[560px] xl:h-[620px] overflow-hidden flex flex-col justify-end p-8 sm:p-10 lg:p-10 xl:p-12 bg-[#FF4D00] shadow-xl group isolate [transform:translate3d(0,0,0)] [backface-visibility:hidden] will-change-transform"
           >
             {/* Fluid Background Layer */}
             <div className="absolute top-[-20%] left-[-20%] w-[150%] h-[150%] pointer-events-none rounded-full bg-[#FF3366] mix-blend-overlay blur-[90px] opacity-70 group-hover:scale-110 transition-transform duration-700 ease-in-out" />
@@ -64,8 +64,8 @@ export function WhatKnodDeliversSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="relative rounded-[2rem] h-[520px] sm:h-[560px] lg:h-[560px] xl:h-[620px] overflow-hidden flex flex-col justify-end p-8 sm:p-10 lg:p-10 xl:p-12 bg-[#0033FF] shadow-xl group"
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="relative rounded-[2rem] h-[520px] sm:h-[560px] lg:h-[560px] xl:h-[620px] overflow-hidden flex flex-col justify-end p-8 sm:p-10 lg:p-10 xl:p-12 bg-[#0033FF] shadow-xl group isolate [transform:translate3d(0,0,0)] [backface-visibility:hidden] will-change-transform"
           >
             {/* Fluid Background Layer */}
             <div className="absolute top-[-10%] right-[-20%] w-[120%] h-[120%] pointer-events-none rounded-full bg-[#00FFCC] mix-blend-soft-light blur-[80px] group-hover:scale-110 transition-transform duration-700 ease-in-out" />
@@ -189,8 +189,8 @@ export function WhatKnodDeliversSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative rounded-[2rem] h-[520px] sm:h-[560px] lg:h-[560px] xl:h-[620px] overflow-hidden flex flex-col justify-end p-8 sm:p-10 lg:p-10 xl:p-12 bg-[#FD3482] shadow-xl group"
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="relative rounded-[2rem] h-[520px] sm:h-[560px] lg:h-[560px] xl:h-[620px] overflow-hidden flex flex-col justify-end p-8 sm:p-10 lg:p-10 xl:p-12 bg-[#FD3482] shadow-xl group isolate [transform:translate3d(0,0,0)] [backface-visibility:hidden] will-change-transform"
           >
             {/* Fluid Background Layer */}
             <div className="absolute top-[-20%] left-[-10%] w-[140%] h-[140%] pointer-events-none rounded-full bg-[#FF0066] mix-blend-overlay blur-[90px] opacity-80 group-hover:scale-110 transition-transform duration-700 ease-in-out" />

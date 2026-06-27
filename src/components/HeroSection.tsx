@@ -129,7 +129,7 @@ export function HeroSection() {
                 delay: 0.2,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-5 p-5 sm:p-6 rounded-3xl border-2 border-brand-blue/20 bg-white shadow-[0_15px_40px_rgba(0,113,227,0.08)] max-w-xl md:max-w-2xl flex flex-col gap-4 relative overflow-hidden group"
+              className="mt-5 p-5 sm:p-6 rounded-3xl border-2 border-brand-blue/20 bg-white shadow-[0_15px_40px_rgba(0,113,227,0.08)] max-w-full lg:max-w-[95%] xl:max-w-2xl flex flex-col gap-4 relative overflow-hidden group"
               id="hero-frictionless-experience"
             >
               {/* Subtle top brand glow accent */}

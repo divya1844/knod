@@ -200,7 +200,7 @@ export function HorizontalScrollSection() {
 
   return (
     <section className="relative h-auto bg-transparent border-t border-brand-black/5 font-sans z-10">
-      <div className="relative flex flex-col justify-center py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-12 overflow-hidden">
+      <div className="relative flex flex-col justify-center py-16 lg:py-20 px-4 sm:px-6 lg:px-12 overflow-hidden">
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-blue/5 rounded-full blur-[120px] pointer-events-none -z-10 xl:translate-x-1/2 -translate-y-1/2" />
 
         <div className="max-w-[1600px] w-full mx-auto flex flex-col xl:flex-row gap-16 xl:gap-20 items-start xl:items-center">

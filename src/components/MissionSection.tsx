@@ -45,7 +45,7 @@ function HighlightParagraph() {
 
 export function MissionSection() {
   return (
-    <section className="bg-white pt-16 sm:pt-20 lg:pt-24 pb-12 sm:pb-16 px-6 lg:px-12 relative font-sans border-t border-brand-black/5">
+    <section className="bg-white py-16 lg:py-20 px-6 lg:px-12 relative font-sans border-t border-brand-black/5">
       {/* Subtle Background Glow Fill */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-blue/5 rounded-full blur-[100px] pointer-events-none -z-10 translate-x-1/3 -translate-y-1/3" />
 
@@ -59,8 +59,8 @@ export function MissionSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] lg:text-[4.5rem] xl:text-[5rem] leading-[1.1] font-sans font-medium tracking-tight text-brand-black"
+            transition={{ duration: 0.5 }}
+            className="text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[4rem] leading-[1.1] font-sans font-medium tracking-tight text-brand-black"
           >
             Human connection is{" "}
             <span className="italic text-brand-blue">infrastructure</span>. We

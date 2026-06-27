@@ -76,7 +76,7 @@ export function SubscriptionSection() {
 
   return (
     <>
-      <section className="bg-[#eaeaea] py-24 sm:py-32 px-4 sm:px-6 lg:px-12 relative overflow-hidden font-sans border-t border-brand-black/5" id="pricing">
+      <section className="bg-[#eaeaea] py-16 lg:py-24 px-4 sm:px-6 lg:px-12 relative overflow-hidden font-sans border-t border-brand-black/5" id="pricing">
         <div className="max-w-[1300px] mx-auto relative z-10">
           
         {/* Cards Grid */}

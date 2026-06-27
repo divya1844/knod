@@ -18,7 +18,7 @@ const imagesRow2 = [
 
 export function KnodInActionSection() {
   return (
-    <section className="bg-white py-20 sm:py-32 relative overflow-hidden font-sans flex flex-col items-center">
+    <section className="bg-white py-16 lg:py-24 relative overflow-hidden font-sans flex flex-col items-center">
       <div className="max-w-[1400px] w-full mx-auto flex flex-col items-center justify-center text-center pb-16 sm:pb-24 px-4 sm:px-6">
         <motion.h2
           initial={{ opacity: 0, y: 10 }}

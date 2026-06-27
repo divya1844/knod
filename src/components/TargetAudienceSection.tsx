@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 export function TargetAudienceSection() {
   return (
-    <section className="bg-white py-24 sm:py-32 overflow-hidden relative font-sans">
+    <section className="bg-white py-16 lg:py-24 overflow-hidden relative font-sans">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6">
         <div className="mb-16 flex items-center gap-4 text-brand-blue font-semibold tracking-[0.2em] text-xs">
           <span>04</span>

@@ -58,7 +58,7 @@ function BentoTestimonial({
 
 export function TestimonialsAndResearchSection() {
   return (
-    <section className="bg-white py-24 sm:py-32 px-4 sm:px-6 relative z-10 w-full overflow-hidden">
+    <section className="bg-white py-16 lg:py-24 px-4 sm:px-6 relative z-10 w-full overflow-hidden">
       <div className="w-full max-w-[1400px] mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Column 1: Testimonials list */}
