@@ -2,9 +2,9 @@ import { motion } from "motion/react";
 
 export function WhatKnodDeliversSection() {
   return (
-    <section className="bg-[#f5f5f7] pt-12 pb-16 sm:pt-16 sm:pb-20 lg:py-0 lg:h-screen lg:min-h-[700px] xl:min-h-[780px] px-4 sm:px-6 lg:px-8 relative overflow-hidden font-sans flex flex-col justify-center">
+    <section className="bg-[#f5f5f7] pt-12 pb-16 sm:pt-16 sm:pb-20 lg:pt-20 lg:pb-24 xl:pt-24 xl:pb-28 px-4 sm:px-6 lg:px-8 relative overflow-hidden font-sans flex flex-col justify-center">
       <div className="max-w-7xl mx-auto flex flex-col items-center w-full">
-        <h2 className="text-[2.75rem] sm:text-[3.5rem] lg:text-[3.5rem] xl:text-[4rem] leading-[1.05] font-sans font-medium tracking-tight mb-8 sm:mb-10 lg:mb-8 text-center text-brand-black max-w-4xl">
+        <h2 className="text-[2.75rem] sm:text-[3.5rem] lg:text-[3.5rem] xl:text-[4rem] leading-[1.05] font-sans font-medium tracking-tight mb-10 sm:mb-12 lg:mb-14 text-center text-brand-black max-w-4xl">
           What <span className="italic font-light text-brand-blue">Knod</span>{" "}
           Delivers
         </h2>
@@ -16,7 +16,7 @@ export function WhatKnodDeliversSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative rounded-[2rem] h-[460px] sm:h-[500px] lg:h-[clamp(450px,48vh,500px)] xl:h-[clamp(500px,54vh,560px)] overflow-hidden flex flex-col justify-end p-6 sm:p-8 lg:p-8 xl:p-10 bg-[#FF4D00] shadow-xl group"
+            className="relative rounded-[2rem] h-[520px] sm:h-[560px] lg:h-[560px] xl:h-[620px] overflow-hidden flex flex-col justify-end p-8 sm:p-10 lg:p-10 xl:p-12 bg-[#FF4D00] shadow-xl group"
           >
             {/* Fluid Background Layer */}
             <div className="absolute top-[-20%] left-[-20%] w-[150%] h-[150%] pointer-events-none rounded-full bg-[#FF3366] mix-blend-overlay blur-[90px] opacity-70 group-hover:scale-110 transition-transform duration-700 ease-in-out" />
@@ -50,10 +50,10 @@ export function WhatKnodDeliversSection() {
             </div>
 
             <div className="relative z-10 mt-auto">
-              <h3 className="text-[2rem] sm:text-[2.25rem] lg:text-[1.85rem] xl:text-[2.25rem] font-sans font-medium tracking-tight text-white mb-2 leading-[1.1]">
+              <h3 className="text-[2rem] sm:text-[2.5rem] lg:text-[2.15rem] xl:text-[2.5rem] font-sans font-medium tracking-tight text-white mb-3 leading-[1.1]">
                 Hosts & Spaces
               </h3>
-              <p className="text-sm sm:text-base lg:text-sm xl:text-base text-white/90 font-normal leading-relaxed pr-2">
+              <p className="text-base sm:text-lg lg:text-base xl:text-lg text-white/90 font-normal leading-relaxed pr-2">
                 Increase engagement, strengthen attendee experiences, and measure meaningful connections.
               </p>
             </div>
@@ -65,7 +65,7 @@ export function WhatKnodDeliversSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="relative rounded-[2rem] h-[460px] sm:h-[500px] lg:h-[clamp(450px,48vh,500px)] xl:h-[clamp(500px,54vh,560px)] overflow-hidden flex flex-col justify-end p-6 sm:p-8 lg:p-8 xl:p-10 bg-[#0033FF] shadow-xl group"
+            className="relative rounded-[2rem] h-[520px] sm:h-[560px] lg:h-[560px] xl:h-[620px] overflow-hidden flex flex-col justify-end p-8 sm:p-10 lg:p-10 xl:p-12 bg-[#0033FF] shadow-xl group"
           >
             {/* Fluid Background Layer */}
             <div className="absolute top-[-10%] right-[-20%] w-[120%] h-[120%] pointer-events-none rounded-full bg-[#00FFCC] mix-blend-soft-light blur-[80px] group-hover:scale-110 transition-transform duration-700 ease-in-out" />
@@ -175,10 +175,10 @@ export function WhatKnodDeliversSection() {
             </div>
 
             <div className="relative z-10 mt-auto">
-              <h3 className="text-[2rem] sm:text-[2.25rem] lg:text-[1.85rem] xl:text-[2.25rem] font-sans font-medium tracking-tight text-white mb-2 leading-[1.1]">
+              <h3 className="text-[2rem] sm:text-[2.5rem] lg:text-[2.15rem] xl:text-[2.5rem] font-sans font-medium tracking-tight text-white mb-3 leading-[1.1]">
                 Attendees
               </h3>
-              <p className="text-sm sm:text-base lg:text-sm xl:text-base text-white/80 font-normal leading-relaxed pr-2">
+              <p className="text-base sm:text-lg lg:text-base xl:text-lg text-white/80 font-normal leading-relaxed pr-2">
                 Meet the right people faster and make every interaction more valuable.
               </p>
             </div>
@@ -190,7 +190,7 @@ export function WhatKnodDeliversSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative rounded-[2rem] h-[460px] sm:h-[500px] lg:h-[clamp(450px,48vh,500px)] xl:h-[clamp(500px,54vh,560px)] overflow-hidden flex flex-col justify-end p-6 sm:p-8 lg:p-8 xl:p-10 bg-[#FD3482] shadow-xl group"
+            className="relative rounded-[2rem] h-[520px] sm:h-[560px] lg:h-[560px] xl:h-[620px] overflow-hidden flex flex-col justify-end p-8 sm:p-10 lg:p-10 xl:p-12 bg-[#FD3482] shadow-xl group"
           >
             {/* Fluid Background Layer */}
             <div className="absolute top-[-20%] left-[-10%] w-[140%] h-[140%] pointer-events-none rounded-full bg-[#FF0066] mix-blend-overlay blur-[90px] opacity-80 group-hover:scale-110 transition-transform duration-700 ease-in-out" />
@@ -224,10 +224,10 @@ export function WhatKnodDeliversSection() {
             </div>
 
             <div className="relative z-10 mt-auto">
-              <h3 className="text-[2rem] sm:text-[2.25rem] lg:text-[1.85rem] xl:text-[2.25rem] font-sans font-medium tracking-tight text-white mb-2 leading-[1.1]">
+              <h3 className="text-[2rem] sm:text-[2.5rem] lg:text-[2.15rem] xl:text-[2.5rem] font-sans font-medium tracking-tight text-white mb-3 leading-[1.1]">
                 Communities
               </h3>
-              <p className="text-sm sm:text-base lg:text-sm xl:text-base text-white/90 font-normal leading-relaxed pr-2">
+              <p className="text-base sm:text-lg lg:text-base xl:text-lg text-white/90 font-normal leading-relaxed pr-2">
                 Turn introductions into relationships and shared spaces into thriving communities
               </p>
             </div>
