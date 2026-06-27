@@ -8,10 +8,9 @@ function HighlightParagraph() {
     offset: ["start 90%", "end 60%"],
   });
 
-  const op1 = useTransform(scrollYProgress, [0, 0.25], [0.2, 1]);
-  const op2 = useTransform(scrollYProgress, [0.25, 0.5], [0.2, 1]);
-  const op3 = useTransform(scrollYProgress, [0.5, 0.75], [0.2, 1]);
-  const op4 = useTransform(scrollYProgress, [0.75, 1], [0.2, 1]);
+  const op1 = useTransform(scrollYProgress, [0, 0.33], [0.2, 1]);
+  const op2 = useTransform(scrollYProgress, [0.33, 0.66], [0.2, 1]);
+  const op3 = useTransform(scrollYProgress, [0.66, 1], [0.2, 1]);
 
   return (
     <div
@@ -20,28 +19,24 @@ function HighlightParagraph() {
     >
       <p className="mb-6 sm:mb-8">
         <motion.span style={{ opacity: op1 }}>
-          When people gather at events, conferences, and communities—the most
-          valuable thing that can happen is a{" "}
+          Yet when people gather in the same room, we still rely on{" "}
           <span className="italic font-sans font-medium">
-            meaningful connection
-          </span>
-          .{" "}
+            luck
+          </span>{" "}
+          to determine who meets whom.{" "}
         </motion.span>
         <motion.span style={{ opacity: op2 }}>
-          Yet we leave it to chance. To awkward small talk. To random
-          encounters.
+          Knod helps people discover the conversations, relationships, and
+          opportunities they might otherwise miss.
         </motion.span>
       </p>
       <p>
-        <motion.span style={{ opacity: op3 }}>
-          That's not good enough. We're building connection infrastructure for
-          physical spaces.{" "}
-        </motion.span>
         <motion.span
-          style={{ opacity: op4 }}
+          style={{ opacity: op3 }}
           className="text-brand-blue font-sans italic text-[1.4em] tracking-tight block mt-4"
         >
-          Because meaningful connections shouldn't be left to chance.
+          Because the most important connection in the room shouldn't be
+          accidental.
         </motion.span>
       </p>
     </div>
@@ -50,7 +45,7 @@ function HighlightParagraph() {
 
 export function MissionSection() {
   return (
-    <section className="bg-white pt-24 sm:pt-32 pb-16 px-6 lg:px-12 relative font-sans border-t border-brand-black/5">
+    <section className="bg-white pt-16 sm:pt-20 lg:pt-24 pb-12 sm:pb-16 px-6 lg:px-12 relative font-sans border-t border-brand-black/5">
       {/* Subtle Background Glow Fill */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-blue/5 rounded-full blur-[100px] pointer-events-none -z-10 translate-x-1/3 -translate-y-1/3" />
 
@@ -68,12 +63,9 @@ export function MissionSection() {
             className="text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] lg:text-[4.5rem] xl:text-[5rem] leading-[1.1] font-sans font-medium tracking-tight text-brand-black"
           >
             Human connection is{" "}
-            <span className="italic text-brand-blue">infrastructure</span>.
-            Just like you wouldn't ask people to{" "}
-            <span className="italic text-brand-blue">
-              "figure out WiFi themselves,"
-            </span>{" "}
-            you shouldn't ask people to "figure out networking themselves."
+            <span className="italic text-brand-blue">infrastructure</span>. We
+            design communities, cities, and digital networks to help people
+            move, communicate, and collaborate.
           </motion.h3>
 
           <HighlightParagraph />

@@ -44,7 +44,7 @@ export function HeroSection() {
 
   return (
     <>
-      <main className="max-w-[1400px] mx-auto px-6 pb-12 pt-28 sm:pt-36 lg:pt-36 min-h-[85vh] lg:min-h-[800px] flex items-center relative">
+      <main className="max-w-[1400px] mx-auto px-6 pb-8 pt-24 sm:pt-28 lg:pt-28 min-h-[60vh] lg:min-h-[600px] flex items-center relative">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 sm:gap-16 lg:gap-8 w-full items-center">
           {/* Left Column: Typography */}
           <div className="lg:col-span-7 flex flex-col gap-5 sm:gap-6 z-10 w-full mt-8 sm:mt-0">
