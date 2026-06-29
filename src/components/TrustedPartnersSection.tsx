@@ -1,6 +1,16 @@
 import { motion } from "motion/react";
 
-const PARTNERS = ["OASIS SPACE", "CULTURE HUB", "VERTEX EXPO", "LUMEN CAMPUS", "KNOD EVENT"];
+const PARTNERS = [
+  "Chicago Innovation",
+  "UIC Business",
+  "Stuart School of Business",
+  "Forever 22",
+  "2389 Research, Inc.",
+  "JAMA",
+  "Elevate",
+  "WAGU",
+  "KNUST Law Faculty"
+];
 
 export function TrustedPartnersSection() {
   return (
