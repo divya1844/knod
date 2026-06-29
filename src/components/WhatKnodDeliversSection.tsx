@@ -16,8 +16,9 @@ export function WhatKnodDeliversSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="relative rounded-[2rem] h-[520px] sm:h-[560px] lg:h-[560px] xl:h-[620px] overflow-hidden flex flex-col justify-end p-8 sm:p-10 lg:p-10 xl:p-12 bg-[#FF4D00] shadow-xl group isolate [transform:translate3d(0,0,0)] [backface-visibility:hidden] will-change-transform"
+            className="relative h-[520px] sm:h-[560px] lg:h-[560px] xl:h-[620px]"
           >
+            <div className="w-full h-full rounded-[2rem] overflow-hidden flex flex-col justify-end p-8 sm:p-10 lg:p-10 xl:p-12 bg-[#FF4D00] shadow-xl group isolate relative [transform:translate3d(0,0,0)] [backface-visibility:hidden] will-change-transform [mask-image:radial-gradient(white,black)] [-webkit-mask-image:-webkit-radial-gradient(white,black)]">
             {/* Fluid Background Layer */}
             <div className="absolute top-[-20%] left-[-20%] w-[150%] h-[150%] pointer-events-none rounded-full bg-[#FF3366] mix-blend-overlay blur-[90px] opacity-70 group-hover:scale-110 transition-transform duration-700 ease-in-out" />
             <div className="absolute bottom-[-10%] right-[-10%] w-[100%] h-[100%] pointer-events-none rounded-full bg-[#FF9900] mix-blend-overlay blur-[60px]" />
@@ -57,6 +58,7 @@ export function WhatKnodDeliversSection() {
                 Increase engagement, strengthen attendee experiences, and measure meaningful connections.
               </p>
             </div>
+            </div>
           </motion.div>
 
           {/* Card 2: For Attendees */}
@@ -65,8 +67,9 @@ export function WhatKnodDeliversSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="relative rounded-[2rem] h-[520px] sm:h-[560px] lg:h-[560px] xl:h-[620px] overflow-hidden flex flex-col justify-end p-8 sm:p-10 lg:p-10 xl:p-12 bg-[#0033FF] shadow-xl group isolate [transform:translate3d(0,0,0)] [backface-visibility:hidden] will-change-transform"
+            className="relative h-[520px] sm:h-[560px] lg:h-[560px] xl:h-[620px]"
           >
+            <div className="w-full h-full rounded-[2rem] overflow-hidden flex flex-col justify-end p-8 sm:p-10 lg:p-10 xl:p-12 bg-[#0033FF] shadow-xl group isolate relative [transform:translate3d(0,0,0)] [backface-visibility:hidden] will-change-transform [mask-image:radial-gradient(white,black)] [-webkit-mask-image:-webkit-radial-gradient(white,black)]">
             {/* Fluid Background Layer */}
             <div className="absolute top-[-10%] right-[-20%] w-[120%] h-[120%] pointer-events-none rounded-full bg-[#00FFCC] mix-blend-soft-light blur-[80px] group-hover:scale-110 transition-transform duration-700 ease-in-out" />
             <div className="absolute bottom-[-10%] left-[-20%] w-[100%] h-[100%] pointer-events-none rounded-full bg-[#CC00FF] mix-blend-overlay blur-[70px]" />
@@ -182,6 +185,7 @@ export function WhatKnodDeliversSection() {
                 Meet the right people faster and make every interaction more valuable.
               </p>
             </div>
+            </div>
           </motion.div>
 
           {/* Card 3: For Communities */}
@@ -190,8 +194,9 @@ export function WhatKnodDeliversSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative rounded-[2rem] h-[520px] sm:h-[560px] lg:h-[560px] xl:h-[620px] overflow-hidden flex flex-col justify-end p-8 sm:p-10 lg:p-10 xl:p-12 bg-[#FD3482] shadow-xl group isolate [transform:translate3d(0,0,0)] [backface-visibility:hidden] will-change-transform"
+            className="relative h-[520px] sm:h-[560px] lg:h-[560px] xl:h-[620px]"
           >
+            <div className="w-full h-full rounded-[2rem] overflow-hidden flex flex-col justify-end p-8 sm:p-10 lg:p-10 xl:p-12 bg-[#FD3482] shadow-xl group isolate relative [transform:translate3d(0,0,0)] [backface-visibility:hidden] will-change-transform [mask-image:radial-gradient(white,black)] [-webkit-mask-image:-webkit-radial-gradient(white,black)]">
             {/* Fluid Background Layer */}
             <div className="absolute top-[-20%] left-[-10%] w-[140%] h-[140%] pointer-events-none rounded-full bg-[#FF0066] mix-blend-overlay blur-[90px] opacity-80 group-hover:scale-110 transition-transform duration-700 ease-in-out" />
             <div className="absolute bottom-[-20%] right-[-10%] w-[120%] h-[120%] pointer-events-none rounded-full bg-[#0022FF] mix-blend-screen blur-[100px] opacity-60" />
@@ -230,6 +235,7 @@ export function WhatKnodDeliversSection() {
               <p className="text-base sm:text-lg lg:text-base xl:text-lg text-white/90 font-normal leading-relaxed pr-2">
                 Turn introductions into relationships and shared spaces into thriving communities
               </p>
+            </div>
             </div>
           </motion.div>
         </div>
