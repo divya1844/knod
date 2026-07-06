@@ -1,20 +1,19 @@
 import { motion } from "motion/react";
 
+import chicagoInnovation1 from "../assets/images/carousel_chicago_innovation_1.jpg";
+import qrScanning from "../assets/images/carousel_qr_scanning.jpg";
+import chicagoInnovation2 from "../assets/images/carousel_chicago_innovation_2.jpg";
+import techConference from "../assets/images/carousel_tech_conference.jpg";
+import mobileApp from "../assets/images/carousel_mobile_app.jpg";
+
 const imagesRow1 = [
-  { src: "https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=800", aspect: "aspect-[4/5]" },
-  { src: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=800", aspect: "aspect-[3/4]" },
-  { src: "https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=800", aspect: "aspect-square" },
-  { src: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800", aspect: "aspect-[4/3]" },
-  { src: "https://images.pexels.com/photos/2833037/pexels-photo-2833037.jpeg?auto=compress&cs=tinysrgb&w=800", aspect: "aspect-[16/9]" },
+  { src: chicagoInnovation1, aspect: "aspect-[3/4]" },
+  { src: qrScanning, aspect: "aspect-[3/4]" },
+  { src: chicagoInnovation2, aspect: "aspect-[3/4]" },
+  { src: techConference, aspect: "aspect-[3/4]" },
+  { src: mobileApp, aspect: "aspect-[3/4]" },
 ];
 
-const imagesRow2 = [
-  { src: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800", aspect: "aspect-[4/5]" },
-  { src: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800", aspect: "aspect-[4/3]" },
-  { src: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=800", aspect: "aspect-square" },
-  { src: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800", aspect: "aspect-[3/4]" },
-  { src: "https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=800", aspect: "aspect-[16/9]" },
-];
 
 export function KnodInActionSection() {
   return (
@@ -71,27 +70,6 @@ export function KnodInActionSection() {
           </motion.div>
         </div>
 
-        {/* Row 2 - Left to Right */}
-        <div className="flex w-max">
-          <motion.div
-            className="flex gap-4 sm:gap-6 md:gap-8 w-max pr-4 sm:pr-6 md:pr-8 items-center"
-            animate={{ x: ["-50%", "0%"] }}
-            transition={{ ease: "linear", duration: 55, repeat: Infinity }}
-          >
-            {[...imagesRow2, ...imagesRow2].map((img, i) => (
-              <div
-                key={i}
-                className={`flex-shrink-0 h-[240px] sm:h-[300px] md:h-[400px] lg:h-[450px] ${img.aspect} rounded-[2rem] overflow-hidden bg-gray-100 relative group`}
-              >
-                <img
-                  src={img.src}
-                  alt="Event"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-            ))}
-          </motion.div>
-        </div>
       </div>
     </section>
   );
