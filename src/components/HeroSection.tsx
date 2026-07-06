@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { ArrowRight, QrCode, Users, Star, Zap, DollarSign, Check, X, Calendar, Sparkles } from "lucide-react";
+import { ArrowRight, QrCode, Users, Star, Zap, DollarSign, Check, X, Calendar, Sparkles, MessageSquare } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const NETWORK_NODES = [
@@ -279,24 +279,24 @@ export function HeroSection() {
                       <span className="text-[8.5px] sm:text-[9.5px] text-brand-black/60 font-medium tracking-tight -mt-0.5">Early users on Knod</span>
                     </div>
 
-                    {/* Stat 3: 4.3/5 Match quality rating */}
+                    {/* Stat 3: 94% Match acceptance rate */}
                     <div className="flex flex-col gap-0.5 p-2 rounded-xl bg-white/25 backdrop-blur-xs border border-white/30 shadow-[inset_0_1px_0_rgba(255,255,255,0.3)] hover:scale-[1.01] transition-transform duration-300">
                       <div className="flex items-center gap-1 text-brand-black/70">
                         <Star className="w-3 h-3 text-brand-black/60 fill-brand-black/30" />
                         <span className="text-[9px] sm:text-[10px] font-bold tracking-tight uppercase">Quality</span>
                       </div>
-                      <span className="text-lg sm:text-xl font-bold text-brand-black leading-tight">4.3/5</span>
-                      <span className="text-[8.5px] sm:text-[9.5px] text-brand-black/60 font-medium tracking-tight -mt-0.5">Match quality rating</span>
+                      <span className="text-lg sm:text-xl font-bold text-brand-black leading-tight">94%</span>
+                      <span className="text-[8.5px] sm:text-[9.5px] text-brand-black/60 font-medium tracking-tight -mt-0.5">Match acceptance rate</span>
                     </div>
 
-                    {/* Stat 4: $0 Marketing spend */}
+                    {/* Stat 4: 4.6/5 Event experience rating */}
                     <div className="flex flex-col gap-0.5 p-2 rounded-xl bg-white/25 backdrop-blur-xs border border-white/30 shadow-[inset_0_1px_0_rgba(255,255,255,0.3)] hover:scale-[1.01] transition-transform duration-300">
                       <div className="flex items-center gap-1 text-brand-black/70">
-                        <DollarSign className="w-3 h-3 text-brand-black/60" />
-                        <span className="text-[9px] sm:text-[10px] font-bold tracking-tight uppercase">Growth</span>
+                        <MessageSquare className="w-3 h-3 text-brand-black/60 fill-brand-black/30" />
+                        <span className="text-[9px] sm:text-[10px] font-bold tracking-tight uppercase">Rating</span>
                       </div>
-                      <span className="text-lg sm:text-xl font-bold text-brand-black leading-tight">$0</span>
-                      <span className="text-[8.5px] sm:text-[9.5px] text-brand-black/60 font-medium tracking-tight -mt-0.5">Marketing spend</span>
+                      <span className="text-lg sm:text-xl font-bold text-brand-black leading-tight">4.6/5</span>
+                      <span className="text-[8.5px] sm:text-[9.5px] text-brand-black/60 font-medium tracking-tight -mt-0.5">Event experience rating</span>
                     </div>
                   </div>
                 </div>
