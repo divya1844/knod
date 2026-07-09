@@ -55,9 +55,6 @@ export function Navbar() {
         <Link to="/case-studies" className="hover:text-brand-black transition-colors">
           Case Studies
         </Link>
-        <Link to="/blog" className="hover:text-brand-black transition-colors">
-          Blog
-        </Link>
       </div>
       <div className="flex items-center gap-4">
         <Link to="/launch-partner" className="text-[15px] font-medium text-brand-blue hover:text-blue-600 transition-colors hidden md:block cursor-pointer">
@@ -113,9 +110,6 @@ export function Navbar() {
               </Link>
               <Link to="/case-studies" className="hover:text-brand-blue transition-colors py-3 px-2 flex items-center min-h-[44px]" onClick={() => setIsMobileMenuOpen(false)}>
                 Case Studies
-              </Link>
-              <Link to="/blog" className="hover:text-brand-blue transition-colors py-3 px-2 flex items-center min-h-[44px]" onClick={() => setIsMobileMenuOpen(false)}>
-                Blog
               </Link>
               <hr className="border-brand-black/5 my-2" />
               <Link to="/launch-partner" className="text-left font-semibold text-brand-blue transition-colors py-3 px-2 flex items-center min-h-[44px]" onClick={() => setIsMobileMenuOpen(false)}>
