@@ -45,13 +45,13 @@ export function BlogDetailPage() {
               <div className="w-px h-6 bg-brand-black/10 hidden sm:block" />
               <div className="flexItems-center gap-2 hidden sm:flex">
                 <span className="text-xs font-semibold uppercase tracking-wider text-brand-black/50 mr-2">Share:</span>
-                <button className="w-8 h-8 rounded-full bg-brand-black/5 flex items-center justify-center text-brand-black/60 hover:bg-[#0a66c2] hover:text-white transition-colors">
+                <button aria-label="Share on LinkedIn" className="w-11 h-11 rounded-full bg-brand-black/5 flex items-center justify-center text-brand-black/60 hover:bg-[#0a66c2] hover:text-white transition-colors">
                   <Linkedin className="w-3.5 h-3.5" />
                 </button>
-                <button className="w-8 h-8 rounded-full bg-brand-black/5 flex items-center justify-center text-brand-black/60 hover:bg-brand-black hover:text-white transition-colors">
+                <button aria-label="Share on Twitter" className="w-11 h-11 rounded-full bg-brand-black/5 flex items-center justify-center text-brand-black/60 hover:bg-brand-black hover:text-white transition-colors">
                   <Twitter className="w-3.5 h-3.5" />
                 </button>
-                <button className="w-8 h-8 rounded-full bg-brand-black/5 flex items-center justify-center text-brand-black/60 hover:border-brand-black hover:text-brand-black transition-colors">
+                <button aria-label="Copy link" className="w-11 h-11 rounded-full bg-brand-black/5 flex items-center justify-center text-brand-black/60 hover:border-brand-black hover:text-brand-black transition-colors">
                   <LinkIcon className="w-3.5 h-3.5" />
                 </button>
               </div>
@@ -175,7 +175,8 @@ export function BlogDetailPage() {
            </div>
            
            <div className="w-full md:w-auto flex flex-col sm:flex-row gap-3">
-             <input type="email" placeholder="Email address..." className="px-6 py-4 outline-none rounded-full bg-white/10 border border-white/10 text-white placeholder:text-white/40 focus:border-brand-blue transition-colors min-w-[280px]" />
+             <label htmlFor="newsletter-email-blog" className="sr-only">Email address</label>
+             <input id="newsletter-email-blog" type="email" autoComplete="email" placeholder="Email address..." className="px-6 py-4 outline-none rounded-full bg-white/10 border border-white/10 text-white placeholder:text-white/40 focus:border-brand-blue focus-visible:ring-2 focus-visible:ring-brand-blue transition-colors min-w-[280px]" />
              <button className="bg-brand-blue text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-blue/90 transition-colors flex items-center justify-center gap-2 whitespace-nowrap">
                Subscribe <ArrowRight className="w-4 h-4" />
              </button>

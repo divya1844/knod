@@ -27,7 +27,7 @@ export function TargetAudienceSection() {
             </p>
             {/* Hover Image */}
             <div className="hidden md:block absolute right-[5%] md:right-[15%] top-1/2 -translate-y-1/2 w-[240px] h-[320px] rounded-2xl overflow-hidden pointer-events-none opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-20 shadow-2xl origin-center">
-              <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Coworking space" className="w-full h-full object-cover" />
+              <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Coworking space" loading="lazy" className="w-full h-full object-cover" />
             </div>
           </motion.div>
 
@@ -46,7 +46,7 @@ export function TargetAudienceSection() {
             </p>
             {/* Hover Image */}
             <div className="hidden md:block absolute right-[5%] md:right-[15%] top-1/2 -translate-y-1/2 w-[240px] h-[320px] rounded-2xl overflow-hidden pointer-events-none opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-20 shadow-2xl origin-center">
-              <img src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Campus Life" className="w-full h-full object-cover" />
+              <img src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Campus Life" loading="lazy" className="w-full h-full object-cover" />
             </div>
           </motion.div>
 
@@ -65,7 +65,7 @@ export function TargetAudienceSection() {
             </p>
             {/* Hover Image */}
             <div className="hidden md:block absolute right-[5%] md:right-[15%] top-1/2 -translate-y-1/2 w-[240px] h-[320px] rounded-2xl overflow-hidden pointer-events-none opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-20 shadow-2xl origin-center">
-              <img src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Conference" className="w-full h-full object-cover" />
+              <img src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Conference" loading="lazy" className="w-full h-full object-cover" />
             </div>
           </motion.div>
 
@@ -84,7 +84,7 @@ export function TargetAudienceSection() {
             </p>
             {/* Hover Image */}
             <div className="hidden md:block absolute right-[5%] md:right-[15%] top-1/2 -translate-y-1/2 w-[240px] h-[320px] rounded-2xl overflow-hidden pointer-events-none opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-20 shadow-2xl origin-center">
-              <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Corporate" className="w-full h-full object-cover" />
+              <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Corporate" loading="lazy" className="w-full h-full object-cover" />
             </div>
           </motion.div>
         </div>

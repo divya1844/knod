@@ -28,8 +28,8 @@ export function AboutPage() {
                  Subscribe <ArrowRight className="w-4 h-4" />
                </button>
                <div className="flex items-center -space-x-2 pl-4">
-                  <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" className="w-10 h-10 rounded-full border-2 border-[#f5f5f7] object-cover" />
-                  <img src="https://images.pexels.com/photos/1036622/pexels-photo-1036622.jpeg?auto=compress&cs=tinysrgb&w=100" className="w-10 h-10 rounded-full border-2 border-[#f5f5f7] object-cover" />
+                  <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" width={40} height={40} alt="Knod community member" className="w-10 h-10 rounded-full border-2 border-[#f5f5f7] object-cover" />
+                  <img src="https://images.pexels.com/photos/1036622/pexels-photo-1036622.jpeg?auto=compress&cs=tinysrgb&w=100" width={40} height={40} alt="Knod community member" className="w-10 h-10 rounded-full border-2 border-[#f5f5f7] object-cover" />
                   <div className="w-10 h-10 rounded-full bg-brand-blue/10 border-2 border-[#f5f5f7] flex items-center justify-center text-brand-blue text-xs font-bold shrink-0">
                     +1.5k
                   </div>
@@ -39,11 +39,11 @@ export function AboutPage() {
 
           {/* Right Block */}
           <div className="bg-white rounded-[2rem] relative h-[400px] lg:h-full overflow-hidden">
-             <img src={aboutHeroImg} className="w-full h-full object-cover" alt="Hero" />
+             <img src={aboutHeroImg} className="w-full h-full object-cover" alt="Knod connection infrastructure in a physical space" />
              
              {/* Floating elements matching reference */}
              <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-md rounded-xl p-2 flex items-center gap-3 shadow-lg max-w-[200px]">
-                <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=100" className="w-10 h-10 rounded-lg object-cover" />
+                <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=100" width={40} height={40} alt="People connecting at an event" className="w-10 h-10 rounded-lg object-cover" />
                 <p className="text-[10px] font-semibold leading-tight pr-2">Connecting physical spaces</p>
              </div>
              
@@ -74,7 +74,7 @@ export function AboutPage() {
                <span className="text-3xl md:text-4xl font-medium px-8 text-brand-black">Measure</span>
             </div>
             <div className="w-full md:w-[200px] h-24 md:h-full rounded-[2rem] md:rounded-full overflow-hidden relative shrink-0">
-               <img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=400" className="w-full h-full object-cover" />
+               <img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=400" loading="lazy" alt="Investing in connection infrastructure" className="w-full h-full object-cover" />
                <div className="absolute inset-0 flex items-center justify-center bg-brand-blue/20">
                  <span className="text-white text-3xl md:text-4xl font-medium tracking-tight">Invest</span>
                </div>
@@ -83,7 +83,7 @@ export function AboutPage() {
                <ArrowRight strokeWidth={1.5} className="w-12 h-12 text-white" />
             </div>
             <div className="w-full md:w-[250px] h-24 md:h-full rounded-[2rem] md:rounded-full overflow-hidden relative shrink-0">
-               <img src={aboutProblemImg} className="w-full h-full object-cover" />
+               <img src={aboutProblemImg} loading="lazy" alt="Building solutions for physical connection" className="w-full h-full object-cover" />
                <div className="absolute inset-0 flex items-center justify-center bg-black/40">
                  <span className="text-white text-3xl md:text-4xl font-medium tracking-tight">Build</span>
                </div>
@@ -129,7 +129,7 @@ export function AboutPage() {
              </div>
              {/* Hover Floating Image (Optional flair) */}
              <div className="absolute right-[15%] top-1/2 -translate-y-1/2 w-[160px] h-[100px] rounded-xl overflow-hidden opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300 shadow-xl z-20 scale-95 group-hover:scale-100 hidden lg:block">
-                <img src={aboutProblemImg} className="w-full h-full object-cover" />
+                <img src={aboutProblemImg} loading="lazy" alt="" role="presentation" className="w-full h-full object-cover" />
              </div>
           </div>
 
@@ -164,7 +164,7 @@ export function AboutPage() {
              </div>
              {/* Hover Floating Image (Optional flair) */}
              <div className="absolute right-[15%] top-1/2 -translate-y-1/2 w-[160px] h-[100px] rounded-xl overflow-hidden opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300 shadow-xl z-20 scale-95 group-hover:scale-100 hidden lg:block">
-                <img src={aboutHeroImg} className="w-full h-full object-cover" />
+                <img src={aboutHeroImg} loading="lazy" alt="" role="presentation" className="w-full h-full object-cover" />
              </div>
           </div>
 
@@ -176,7 +176,7 @@ export function AboutPage() {
         <div className="flex flex-col md:flex-row gap-4 h-auto md:h-[500px] lg:h-[600px]">
           {/* Card 1 */}
           <div className="flex-1 rounded-[2rem] overflow-hidden relative group cursor-pointer h-[400px] md:h-full">
-             <img src={aboutJoinImg} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+             <img src={aboutJoinImg} loading="lazy" alt="Universities and venues piloting Knod" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
              
              <div className="absolute top-6 left-6 flex items-center gap-2">
@@ -198,7 +198,7 @@ export function AboutPage() {
 
           {/* Card 2 */}
           <div className="flex-1 rounded-[2rem] overflow-hidden relative group cursor-pointer h-[400px] md:h-full">
-             <img src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+             <img src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800" loading="lazy" alt="Forward-thinking investors collaborating" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
              
              <div className="absolute top-6 left-6 flex items-center gap-2">
@@ -220,7 +220,7 @@ export function AboutPage() {
 
           {/* Card 3 */}
           <div className="flex-1 rounded-[2rem] overflow-hidden relative group cursor-pointer h-[400px] md:h-full">
-             <img src="https://images.pexels.com/photos/3760072/pexels-photo-3760072.jpeg?auto=compress&cs=tinysrgb&w=800" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+             <img src="https://images.pexels.com/photos/3760072/pexels-photo-3760072.jpeg?auto=compress&cs=tinysrgb&w=800" loading="lazy" alt="Researchers studying human connection" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
              
              <div className="absolute top-6 left-6 flex items-center gap-2">
@@ -256,7 +256,8 @@ export function AboutPage() {
            </div>
            
            <div className="w-full md:w-auto flex flex-col sm:flex-row gap-3">
-             <input type="email" placeholder="Email address..." className="px-6 py-4 outline-none rounded-full bg-white border border-brand-black/5 focus:border-brand-blue min-w-[280px]" />
+             <label htmlFor="newsletter-email-about" className="sr-only">Email address</label>
+             <input id="newsletter-email-about" type="email" autoComplete="email" placeholder="Email address..." className="px-6 py-4 outline-none rounded-full bg-white border border-brand-black/5 focus:border-brand-blue focus-visible:ring-2 focus-visible:ring-brand-blue min-w-[280px]" />
              <button className="bg-brand-black text-white px-8 py-4 rounded-full font-semibold hover:bg-[#111] transition-colors flex items-center justify-center gap-2 whitespace-nowrap">
                Subscribe <ArrowRight className="w-4 h-4" />
              </button>

@@ -26,6 +26,9 @@ import { ConferencesPage } from "./pages/ConferencesPage";
 import { EnterprisePage } from "./pages/EnterprisePage";
 
 import { StyleGuidePage } from "./pages/StyleGuidePage";
+import { PrivacyPage } from "./pages/PrivacyPage";
+import { TermsPage } from "./pages/TermsPage";
+import { NotFoundPage } from "./pages/NotFoundPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -81,6 +84,9 @@ export default function App() {
           <Route path="/enterprise" element={<EnterprisePage />} />
           <Route path="/launch-partner" element={<LaunchPartnerPage />} />
           <Route path="/style-guide" element={<StyleGuidePage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/terms" element={<TermsPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <Footer />
       </div>

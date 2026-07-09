@@ -156,7 +156,8 @@ export function BlogPage() {
            </div>
            
            <div className="w-full md:w-auto flex flex-col sm:flex-row gap-3">
-             <input type="email" placeholder="Email address..." className="px-6 py-4 outline-none rounded-full bg-white/10 border border-white/10 text-white placeholder:text-white/40 focus:border-brand-blue transition-colors min-w-[280px]" />
+             <label htmlFor="newsletter-email-blog-list" className="sr-only">Email address</label>
+             <input id="newsletter-email-blog-list" type="email" autoComplete="email" placeholder="Email address..." className="px-6 py-4 outline-none rounded-full bg-white/10 border border-white/10 text-white placeholder:text-white/40 focus:border-brand-blue focus-visible:ring-2 focus-visible:ring-brand-blue transition-colors min-w-[280px]" />
              <button className="bg-brand-blue text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-blue/90 transition-colors flex items-center justify-center gap-2 whitespace-nowrap">
                Subscribe <ArrowRight className="w-4 h-4" />
              </button>

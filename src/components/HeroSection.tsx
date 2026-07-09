@@ -337,7 +337,7 @@ export function HeroSection() {
               {/* Close Button */}
               <button
                 onClick={closeModal}
-                className="absolute top-6 right-6 p-2 rounded-full bg-white/40 border border-black/5 text-brand-black/60 hover:text-brand-black hover:bg-white/80 active:scale-95 transition-all outline-none cursor-pointer"
+                className="absolute top-6 right-6 p-3 rounded-full bg-white/40 border border-black/5 text-brand-black/60 hover:text-brand-black hover:bg-white/80 active:scale-95 transition-all outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/40 cursor-pointer"
                 aria-label="Close"
               >
                 <X className="w-5 h-5" />
@@ -371,6 +371,7 @@ export function HeroSection() {
                         <input
                           type="text"
                           required
+                          autoComplete="name"
                           value={formData.name}
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                           placeholder="Your name"
@@ -383,6 +384,7 @@ export function HeroSection() {
                         <input
                           type="email"
                           required
+                          autoComplete="email"
                           value={formData.email}
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                           placeholder="you@example.com"
@@ -394,6 +396,7 @@ export function HeroSection() {
                         <label className="block text-xs font-semibold text-brand-black/60 tracking-wider uppercase mb-1.5 pl-1">Organization</label>
                         <input
                           type="text"
+                          autoComplete="organization"
                           value={formData.organization}
                           onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
                           placeholder="Your organization"
@@ -405,6 +408,7 @@ export function HeroSection() {
                         <label className="block text-xs font-semibold text-brand-black/60 tracking-wider uppercase mb-1.5 pl-1">Website</label>
                         <input
                           type="text"
+                          autoComplete="url"
                           value={formData.website}
                           onChange={(e) => setFormData({ ...formData, website: e.target.value })}
                           placeholder="Your website URL"

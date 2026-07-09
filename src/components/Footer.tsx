@@ -13,11 +13,11 @@ export function Footer() {
           <p className="text-[1.35rem] sm:text-2xl font-light leading-snug max-w-md">
             Connection infrastructure for physical spaces. Making meaningful connections happen by design, not by chance.
           </p>
-          <div className="flex items-center gap-4 text-white/50 mt-2">
-             <a href="#" className="hover:text-white transition-colors" aria-label="Twitter"><Twitter className="w-5 h-5" /></a>
-             <a href="#" className="hover:text-white transition-colors" aria-label="LinkedIn"><Linkedin className="w-5 h-5" /></a>
-             <a href="#" className="hover:text-white transition-colors" aria-label="Instagram"><Instagram className="w-5 h-5" /></a>
-             <a href="#" className="hover:text-white transition-colors" aria-label="Facebook"><Facebook className="w-5 h-5" /></a>
+          <div className="flex items-center text-white/50 -ml-3 mt-2">
+             <a href="#" className="p-3 hover:text-white transition-colors" aria-label="Twitter"><Twitter className="w-5 h-5" /></a>
+             <a href="#" className="p-3 hover:text-white transition-colors" aria-label="LinkedIn"><Linkedin className="w-5 h-5" /></a>
+             <a href="#" className="p-3 hover:text-white transition-colors" aria-label="Instagram"><Instagram className="w-5 h-5" /></a>
+             <a href="#" className="p-3 hover:text-white transition-colors" aria-label="Facebook"><Facebook className="w-5 h-5" /></a>
           </div>
           <p className="text-white/40 text-sm mt-4">
             © {new Date().getFullYear()} Knod. All rights reserved.
@@ -27,10 +27,10 @@ export function Footer() {
         <div className="lg:col-span-8 lg:pl-16 grid grid-cols-2 md:grid-cols-4 gap-12 lg:gap-4 text-[15px] mt-4 lg:mt-0 font-light">
           <div className="flex flex-col gap-4">
             <h4 className="text-white/40 font-semibold tracking-widest text-[10px] uppercase mb-2">Solutions</h4>
-            <Link to="/" className="hover:text-brand-blue transition-colors text-white/90">Community Organizers</Link>
-            <Link to="/" className="hover:text-brand-blue transition-colors text-white/90">Universities & Campuses</Link>
-            <Link to="/" className="hover:text-brand-blue transition-colors text-white/90">Conference Organizers</Link>
-            <Link to="/" className="hover:text-brand-blue transition-colors text-white/90">Enterprise & Custom</Link>
+            <Link to="/communities" className="hover:text-brand-blue transition-colors text-white/90">Community Organizers</Link>
+            <Link to="/universities" className="hover:text-brand-blue transition-colors text-white/90">Universities & Campuses</Link>
+            <Link to="/conferences" className="hover:text-brand-blue transition-colors text-white/90">Conference Organizers</Link>
+            <Link to="/enterprise" className="hover:text-brand-blue transition-colors text-white/90">Enterprise & Custom</Link>
           </div>
 
           <div className="flex flex-col gap-4">
@@ -50,8 +50,8 @@ export function Footer() {
 
           <div className="flex flex-col gap-4">
             <h4 className="text-white/40 font-semibold tracking-widest text-[10px] uppercase mb-2">Legal</h4>
-            <Link to="/" className="hover:text-brand-blue transition-colors text-white/90">Privacy Policy</Link>
-            <Link to="/" className="hover:text-brand-blue transition-colors text-white/90">Terms of Service</Link>
+            <Link to="/privacy" className="hover:text-brand-blue transition-colors text-white/90">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-brand-blue transition-colors text-white/90">Terms of Service</Link>
           </div>
         </div>
       </div>

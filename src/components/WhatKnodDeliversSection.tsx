@@ -213,6 +213,7 @@ export function WhatKnodDeliversSection() {
                     <img
                       src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200"
                       alt="Profile"
+                      loading="lazy"
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute bottom-2 right-2 w-5 h-5 sm:w-6 sm:h-6 bg-brand-blue rounded-full border-[2px] sm:border-[2.5px] border-white flex items-center justify-center shadow-lg">

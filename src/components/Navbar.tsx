@@ -14,7 +14,7 @@ export function Navbar() {
       </Link>
       <div className="hidden md:flex items-center gap-8 text-[15px] font-medium text-[#414a56]">
         <div className="relative group/solutions">
-          <button className="flex items-center gap-1.5 hover:text-brand-black transition-colors outline-none cursor-pointer">
+          <button className="flex items-center gap-1.5 hover:text-brand-black transition-colors outline-none focus-visible:ring-2 focus-visible:ring-brand-blue rounded-full px-1 cursor-pointer">
             Solutions <ChevronDown className="w-3.5 h-3.5 opacity-70" />
           </button>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 pt-4 opacity-0 pointer-events-none group-hover/solutions:opacity-100 group-hover/solutions:top-full group-hover/solutions:pointer-events-auto transition-all duration-300 z-50">
@@ -67,7 +67,7 @@ export function Navbar() {
           Book a Demo
         </button>
         <button
-          className="md:hidden p-2 -mr-2 text-brand-black"
+          className="md:hidden p-3 -mr-3 text-brand-black outline-none focus-visible:ring-2 focus-visible:ring-brand-blue rounded-full"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle Navigation Menu"
         >
