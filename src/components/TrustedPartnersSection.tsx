@@ -12,8 +12,8 @@ const PARTNERS = [
 
 export function TrustedPartnersSection() {
   return (
-    <section className="pb-6 relative overflow-hidden flex flex-col w-full">
-      <h3 className="text-center text-sm font-semibold tracking-widest text-brand-black/40 mb-8">
+    <section className="py-2 relative overflow-hidden flex flex-col w-full">
+      <h3 className="text-center text-sm font-semibold tracking-widest text-brand-black/40 mb-5">
         Trusted Partners
       </h3>
       
