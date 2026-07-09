@@ -28,6 +28,7 @@ import { EnterprisePage } from "./pages/EnterprisePage";
 import { StyleGuidePage } from "./pages/StyleGuidePage";
 import { PrivacyPage } from "./pages/PrivacyPage";
 import { TermsPage } from "./pages/TermsPage";
+import { PledgePage } from "./pages/PledgePage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 
 function ScrollToTop() {
@@ -84,6 +85,7 @@ export default function App() {
           <Route path="/enterprise" element={<EnterprisePage />} />
           <Route path="/launch-partner" element={<LaunchPartnerPage />} />
           <Route path="/style-guide" element={<StyleGuidePage />} />
+          <Route path="/pledge" element={<PledgePage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
           <Route path="*" element={<NotFoundPage />} />
