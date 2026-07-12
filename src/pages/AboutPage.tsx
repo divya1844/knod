@@ -3,8 +3,14 @@ import { ArrowUpRight, ArrowRight } from "lucide-react";
 import aboutHeroImg from '../assets/images/about_hero_infra_1780939620369.png';
 import aboutProblemImg from '../assets/images/about_problem_1780939632807.png';
 import aboutJoinImg from '../assets/images/about_join_1780939652490.png';
+import { useSEO } from "../hooks/useSEO";
 
 export function AboutPage() {
+  useSEO({
+    title: "About Us | Knod",
+    description: "Knod believes human connection is infrastructure. Learn about our mission to build the connection layer for physical spaces — events, campuses, and communities.",
+  });
+
   return (
     <main className="flex-1 w-full pt-32 pb-12 relative bg-white">
       {/* 1. Hero Dual Section */}

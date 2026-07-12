@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowRight, Quote } from "lucide-react";
+import { useSEO } from "../hooks/useSEO";
 
 const CASE_STUDIES = [
   {
@@ -61,6 +62,11 @@ const CASE_STUDIES = [
 ];
 
 export function CaseStudiesPage() {
+  useSEO({
+    title: "Case Studies & Results | Knod",
+    description: "See how Chicago Innovation, UIC, and Illinois Tech used Knod to drive 12x more connections per attendee and higher-quality networking outcomes.",
+  });
+
   return (
     <main className="flex-1 w-full pt-32 pb-12 relative bg-[#f5f5f7]">
       {/* Hero Section */}

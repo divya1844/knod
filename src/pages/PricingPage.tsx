@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Check, ArrowRight, Lock, Target, Handshake, Megaphone } from "lucide-react";
+import { useSEO } from "../hooks/useSEO";
 
 const LAUNCH_PLANS = [
   {
@@ -109,6 +110,11 @@ const STANDARD_PLANS = [
 ];
 
 export function PricingPage() {
+  useSEO({
+    title: "Pricing | Knod",
+    description: "Explore Knod's launch partner pricing tiers — Starter, Growth, and Strategic Founding plans for events, communities, and organizations.",
+  });
+
   return (
     <main className="flex-1 w-full pt-32 pb-12 relative bg-[#f5f5f7]">
       {/* Hero */}

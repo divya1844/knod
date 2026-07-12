@@ -1,7 +1,13 @@
 import { motion } from "motion/react";
 import { ArrowRight, Mic, Users, Ticket, Star } from "lucide-react";
+import { useSEO } from "../hooks/useSEO";
 
 export function ConferencesPage() {
+  useSEO({
+    title: "Connection Infrastructure for Conferences & Events | Knod",
+    description: "Summits, trade shows, corporate events, and festivals. Turn your event into a networking powerhouse where meaningful connections happen by design.",
+  });
+
   return (
     <main className="flex-1 w-full pt-32 pb-12 relative bg-white">
       {/* Hero Dual Section */}

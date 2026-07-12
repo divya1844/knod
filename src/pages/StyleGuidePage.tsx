@@ -1,7 +1,14 @@
 import { ArrowLeft, Download, Palette, Type, Layout, Grid, Image as ImageIcon } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useSEO } from "../hooks/useSEO";
 
 export function StyleGuidePage() {
+  useSEO({
+    title: "Style Guide | Knod",
+    description: "Developer handoff documentation for Knod's brand identity, typography, colors, and layout principles.",
+    noindex: true,
+  });
+
   const handlePrint = () => {
     window.print();
   };

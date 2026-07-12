@@ -1,8 +1,15 @@
 import { motion } from "motion/react";
 import { ArrowLeft, ExternalLink, Linkedin, Twitter, Link as LinkIcon, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useSEO } from "../hooks/useSEO";
 
 export function BlogDetailPage() {
+  useSEO({
+    title: "Why the Future of Networking Is B2B2C, Not Another App | Knod",
+    description: "We're paying to put people in rooms while they feel more disconnected inside them. Here's why the fix is an infrastructure layer, not another networking app.",
+    type: "article",
+  });
+
   return (
     <main className="flex-1 w-full pt-32 pb-12 relative bg-[#f5f5f7]">
       {/* Article Header */}

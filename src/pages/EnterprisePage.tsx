@@ -1,7 +1,13 @@
 import { motion } from "motion/react";
 import { ArrowRight, Briefcase, Building2, Lightbulb, Rocket, Network } from "lucide-react";
+import { useSEO } from "../hooks/useSEO";
 
 export function EnterprisePage() {
+  useSEO({
+    title: "Connection Infrastructure for Enterprise | Knod",
+    description: "Custom connection infrastructure for corporations, accelerators, and member networks — solutions that scale from pilot to global rollout.",
+  });
+
   return (
     <main className="flex-1 w-full pt-32 pb-12 relative bg-white">
       {/* Hero Dual Section */}

@@ -1,7 +1,14 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
+import { useSEO } from "../hooks/useSEO";
 
 export function NotFoundPage() {
+  useSEO({
+    title: "Page Not Found | Knod",
+    description: "The page you're looking for doesn't exist or has moved.",
+    noindex: true,
+  });
+
   return (
     <main className="flex-1 w-full pt-32 pb-24 relative bg-[#f5f5f7]">
       <section className="px-6 max-w-[900px] mx-auto text-center cursor-default">

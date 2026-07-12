@@ -30,6 +30,7 @@ import { PrivacyPage } from "./pages/PrivacyPage";
 import { TermsPage } from "./pages/TermsPage";
 import { PledgePage } from "./pages/PledgePage";
 import { NotFoundPage } from "./pages/NotFoundPage";
+import { useSEO } from "./hooks/useSEO";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -42,6 +43,11 @@ function ScrollToTop() {
 }
 
 function HomePage() {
+  useSEO({
+    title: "Knod | Connection Infrastructure for Physical Spaces",
+    description: "Knod turns rooms into connections. Event and community networking infrastructure for conferences, universities, and enterprises.",
+  });
+
   return (
     <>
       <HeroSection />

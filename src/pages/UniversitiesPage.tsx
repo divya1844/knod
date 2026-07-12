@@ -1,7 +1,13 @@
 import { motion } from "motion/react";
 import { ArrowRight, GraduationCap, Users, Calendar, Award } from "lucide-react";
+import { useSEO } from "../hooks/useSEO";
 
 export function UniversitiesPage() {
+  useSEO({
+    title: "Connection Infrastructure for Universities | Knod",
+    description: "Orientation, international students, career fairs, alumni events. Help students find their people and build connections that matter.",
+  });
+
   return (
     <main className="flex-1 w-full pt-32 pb-12 relative bg-white">
       {/* Hero Dual Section */}
