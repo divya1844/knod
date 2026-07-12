@@ -1,7 +1,13 @@
 import { motion } from "motion/react";
 import { ArrowRight, Building, Wine } from "lucide-react";
+import { useSEO } from "../hooks/useSEO";
 
 export function CommunitiesPage() {
+  useSEO({
+    title: "Connection Infrastructure for Communities | Knod",
+    description: "From residential buildings to bars and coworking spaces, Knod helps people discover meaningful connections wherever they gather.",
+  });
+
   return (
     <main className="flex-1 w-full pt-32 pb-12 relative bg-white">
       {/* Hero Dual Section (Following About Us Format) */}

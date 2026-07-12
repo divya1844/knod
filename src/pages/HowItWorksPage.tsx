@@ -1,7 +1,13 @@
 import { motion } from "motion/react";
 import { QrCode, BrainCircuit, Handshake, BarChart3, Target, Map, Puzzle, CheckCircle2, Sparkles, MessageCircle, Eye } from "lucide-react";
+import { useSEO } from "../hooks/useSEO";
 
 export function HowItWorksPage() {
+  useSEO({
+    title: "How Knod Works | Knod",
+    description: "See the four simple steps Knod uses to transform your event from random networking into intelligent, AI-powered connection.",
+  });
+
   return (
     <main className="flex-1 w-full pt-32 pb-24 relative">
       {/* Background Orbs for Liquid Glass Effect */}

@@ -1,6 +1,12 @@
 import { motion } from "motion/react";
+import { useSEO } from "../hooks/useSEO";
 
 export function TermsPage() {
+  useSEO({
+    title: "Terms of Service | Knod",
+    description: "Knod's terms of service are being finalized. Reach out to hello@knod.ai with any questions.",
+  });
+
   return (
     <main className="flex-1 w-full pt-32 pb-24 relative bg-[#f5f5f7]">
       <section className="px-6 max-w-[900px] mx-auto text-center cursor-default">

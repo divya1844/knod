@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useSEO } from "../hooks/useSEO";
 
 const CATEGORIES = ["All", "Featured", "Industry Insights"];
 
@@ -29,6 +30,11 @@ const BLOG_POSTS = [
 ];
 
 export function BlogPage() {
+  useSEO({
+    title: "Blog | Knod",
+    description: "Thoughts on networking, community building, and the future of meaningful professional connections from the Knod team.",
+  });
+
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredPosts = activeCategory === "All" 

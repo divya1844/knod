@@ -1,6 +1,12 @@
 import { motion } from "motion/react";
+import { useSEO } from "../hooks/useSEO";
 
 export function PledgePage() {
+  useSEO({
+    title: "Community Partners | Knod",
+    description: "Interested in partnering with Knod? We're redesigning this page — reach out to hello@knod.ai to connect with our team.",
+  });
+
   return (
     <main className="flex-1 w-full pt-32 pb-24 relative bg-[#f5f5f7]">
       <section className="px-6 max-w-[900px] mx-auto text-center cursor-default">

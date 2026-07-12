@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
+import { useSEO } from "../hooks/useSEO";
 
 const VALUES = [
   {
@@ -56,6 +57,11 @@ const TOOLS = [
 ];
 
 export function CareersPage() {
+  useSEO({
+    title: "Careers | Knod",
+    description: "Join a small AI-first team building connection infrastructure in Chicago. Explore open internships in product design, engineering, and sales.",
+  });
+
   return (
     <main className="flex-1 w-full pt-32 pb-12 relative bg-[#f5f5f7]">
       {/* Hero Section */}

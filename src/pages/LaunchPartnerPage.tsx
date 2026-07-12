@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { Check, ArrowRight, Lock, HelpCircle } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useSEO } from "../hooks/useSEO";
 
 const LAUNCH_PLANS = [
   {
@@ -81,6 +82,11 @@ const FAQS = [
 ];
 
 export function LaunchPartnerPage() {
+  useSEO({
+    title: "Become a Launch Partner | Knod",
+    description: "Lock in founding pricing and become a Knod launch partner. Starter, Growth, and Strategic Founding tiers available for early adopters.",
+  });
+
   const scrollToTiers = () => {
     const el = document.getElementById("tiers");
     el?.scrollIntoView({ behavior: "smooth" });

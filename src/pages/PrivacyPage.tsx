@@ -1,6 +1,12 @@
 import { motion } from "motion/react";
+import { useSEO } from "../hooks/useSEO";
 
 export function PrivacyPage() {
+  useSEO({
+    title: "Privacy Policy | Knod",
+    description: "Knod's privacy policy is being finalized. Reach out to hello@knod.ai with any questions about how we handle your data.",
+  });
+
   return (
     <main className="flex-1 w-full pt-32 pb-24 relative bg-[#f5f5f7]">
       <section className="px-6 max-w-[900px] mx-auto text-center cursor-default">
