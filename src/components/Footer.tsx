@@ -43,7 +43,7 @@ export function Footer() {
             <h4 className="text-white/40 font-semibold tracking-widest text-[10px] uppercase mb-2">Resources</h4>
             <Link to="/how-it-works" className="hover:text-brand-blue transition-colors text-white/90">How It Works</Link>
             <Link to="/case-studies" className="hover:text-brand-blue transition-colors text-white/90">Case Studies</Link>
-            <Link to="/pledge" className="hover:text-brand-blue transition-colors text-white/90">Community Partners</Link>
+            <Link to="/community-partners" className="hover:text-brand-blue transition-colors text-white/90">Community Partners</Link>
           </div>
 
           <div className="flex flex-col gap-4">
