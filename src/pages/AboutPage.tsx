@@ -20,13 +20,13 @@ export function AboutPage() {
           <div className="bg-[#f5f5f7] rounded-[2rem] p-10 lg:p-16 flex flex-col justify-center h-full relative overflow-hidden">
             <span className="text-sm font-semibold tracking-wide text-brand-black/60 mb-6 flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-brand-blue" />
-              Knod Infrastructure
+              Knod AI
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] tracking-tight font-medium text-brand-black leading-[1.1] mb-6">
-              Building Connection <br className="hidden lg:block"/> Infrastructure for <br className="hidden lg:block"/> <span className="underline decoration-brand-blue/30 underline-offset-4">Physical Spaces.</span>
+              Connecting people in <span className="underline decoration-brand-blue/30 underline-offset-4">shared spaces.</span>
             </h1>
-            <p className="text-lg text-brand-black/70 max-w-md mb-10">
-              We believe human connection is infrastructure. Just like WiFi. Just like electricity.
+            <p className="text-lg text-brand-black/70 max-w-xl mb-10">
+              Every meaningful opportunity begins with a conversation. Knod helps people discover the right conversations so they can spend less time searching and more time connecting. Built for community leaders, event hosts and conference directors to curate meaningful experiences.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3">
@@ -63,7 +63,7 @@ export function AboutPage() {
       {/* 2. Mission & Pill Shapes */}
       <section className="px-4 lg:px-8 max-w-[1200px] mx-auto text-center mb-24 md:mb-32">
          <h2 className="text-3xl md:text-5xl font-medium tracking-tight mb-4">
-           Let's Make Our World <br className="hidden sm:block"/> Better Connected!
+           Every Great Connection <br className="hidden sm:block"/> Starts Somewhere.
          </h2>
          <p className="text-brand-black/60 max-w-xl mx-auto text-sm md:text-base mb-8">
            Turn every physical space into a connection-enabled environment. Starting with events and communities where connections matter most. Expanding to every space where people gather with intention.
