@@ -105,9 +105,9 @@ export function CommunityPartnersPage() {
             className="bg-[#f5f5f7] rounded-[2rem] relative h-[400px] lg:h-full overflow-hidden"
           >
             <img
-              src="https://images.pexels.com/photos/5638732/pexels-photo-5638732.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              src="https://images.pexels.com/photos/1267697/pexels-photo-1267697.jpeg?auto=compress&cs=tinysrgb&w=1200"
               className="w-full h-full object-cover"
-              alt="A community gathered together at an event"
+              alt="A group of friends talking and laughing in a casual social setting"
             />
             <div className="absolute bottom-6 left-6 right-6 sm:right-auto bg-white/90 backdrop-blur-md rounded-2xl p-4 flex items-center gap-3 shadow-lg max-w-[300px]">
               <div className="w-10 h-10 rounded-xl bg-[#ebfaef] flex items-center justify-center shrink-0">

@@ -37,7 +37,7 @@ export function AboutPage() {
           </div>
 
           {/* Right Block */}
-          <div className="bg-brand-blue rounded-[2rem] relative h-[400px] lg:h-full overflow-hidden flex items-center justify-center">
+          <div className="bg-brand-accent-blue rounded-[2rem] relative h-[400px] lg:h-full overflow-hidden flex items-center justify-center">
             <img src={knodLogo} className="w-[45%] max-w-[280px] h-auto object-contain" alt="Knod" />
           </div>
         </div>
