@@ -34,3 +34,24 @@ export async function submitQuoteRequest(payload: QuoteRequest): Promise<string 
   }
   return null;
 }
+
+export interface DemoRequest {
+  name: string;
+  email: string;
+  organization?: string;
+  role?: string;
+  message?: string;
+  source?: string;
+}
+
+// Inserts a demo request. Returns an error message string on failure, or null on success.
+export async function submitDemoRequest(payload: DemoRequest): Promise<string | null> {
+  if (!supabase) {
+    return "Our demo form is temporarily unavailable. Please email sales@knod.ai.";
+  }
+  const { error } = await supabase.from("demo_requests").insert(payload);
+  if (error) {
+    return "Something went wrong submitting your request. Please try again or email sales@knod.ai.";
+  }
+  return null;
+}

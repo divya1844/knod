@@ -2,9 +2,11 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import { DemoModal } from "./DemoModal";
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [demoOpen, setDemoOpen] = useState(false);
   return (
     <div className="absolute w-full top-0 left-0 print:hidden z-50">
       <nav className="w-full py-4 px-6 lg:px-12 flex justify-between items-center z-50">
@@ -60,7 +62,7 @@ export function Navbar() {
         <Link to="/community-partners" className="text-[15px] font-medium text-brand-blue hover:text-blue-600 transition-colors hidden md:block cursor-pointer">
           Community Partners
         </Link>
-        <button className="bg-brand-blue text-white px-5 py-2.5 rounded-full text-[15px] font-medium hover:bg-blue-600 transition-colors duration-300 hidden sm:block cursor-pointer">
+        <button onClick={() => setDemoOpen(true)} className="bg-brand-blue text-white px-5 py-2.5 rounded-full text-[15px] font-medium hover:bg-blue-600 transition-colors duration-300 hidden sm:block cursor-pointer">
           Book a Demo
         </button>
         <button
@@ -115,7 +117,7 @@ export function Navbar() {
               <Link to="/community-partners" className="text-left font-semibold text-brand-blue transition-colors py-3 px-2 flex items-center min-h-[44px]" onClick={() => setIsMobileMenuOpen(false)}>
                 Community Partners
               </Link>
-              <button className="bg-brand-blue text-white px-6 py-3.5 rounded-xl text-center font-semibold hover:bg-blue-600 transition-colors w-full shadow-lg shadow-black/5">
+              <button onClick={() => { setDemoOpen(true); setIsMobileMenuOpen(false); }} className="bg-brand-blue text-white px-6 py-3.5 rounded-xl text-center font-semibold hover:bg-blue-600 transition-colors w-full shadow-lg shadow-black/5">
                 Book a Demo
               </button>
             </div>
@@ -123,6 +125,7 @@ export function Navbar() {
         )}
       </AnimatePresence>
       </nav>
+      <DemoModal open={demoOpen} onClose={() => setDemoOpen(false)} />
     </div>
   );
 }

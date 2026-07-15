@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { ArrowRight, QrCode, Users, Star, Zap, DollarSign, MessageSquare } from "lucide-react";
 import { Link } from "react-router-dom";
-import { BookDemoModal } from "./BookDemoModal";
+import { DemoModal } from "./DemoModal";
 
 const NETWORK_NODES = [
   { id: 1, top: '15%', left: '20%', img: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150', delay: 1.5 },
@@ -126,7 +126,7 @@ export function HeroSection() {
               </div>
               
               <p className="text-sm sm:text-base md:text-lg text-brand-black/90 leading-relaxed font-semibold font-sans">
-                <span className="text-brand-blue">Knod</span> will create a link & QR code for your event. Helps share what your guests are looking for. <span className="text-brand-blue">Knod</span> instantly recommends the most relevant people around each attendee.
+                Paste your event link from Luma, Eventbrite, and more, and <span className="text-brand-blue">Knod</span> adds a QR code for your guests. Share what people are looking for, and <span className="text-brand-blue">Knod</span> instantly recommends the most relevant person around each attendee.
               </p>
             </motion.div>
           </div>
@@ -286,8 +286,8 @@ export function HeroSection() {
         </div>
       </main>
 
-      {/* Book a Demo - Apple HIG Liquid Glass Modal */}
-      <BookDemoModal open={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      {/* Book a Demo Modal */}
+      <DemoModal open={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 }
