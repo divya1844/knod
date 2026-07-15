@@ -7,7 +7,7 @@ import { WhatKnodDeliversSection } from "./components/WhatKnodDeliversSection";
 import { MissionSection } from "./components/MissionSection";
 import { HorizontalScrollSection } from "./components/HorizontalScrollSection";
 import { TargetAudienceSection } from "./components/TargetAudienceSection";
-import { TestimonialsAndResearchSection } from "./components/TestimonialsAndResearchSection";
+import { TestimonialsSection, ResearchStatsSection } from "./components/TestimonialsAndResearchSection";
 import { KnodInActionSection } from "./components/KnodInActionSection";
 import { SubscriptionSection } from "./components/SubscriptionSection";
 import { Footer } from "./components/Footer";
@@ -57,8 +57,9 @@ function HomePage() {
       <WhatKnodDeliversSection />
       <MissionSection />
       <HorizontalScrollSection />
+      <ResearchStatsSection />
       <TargetAudienceSection />
-      <TestimonialsAndResearchSection />
+      <TestimonialsSection />
       {/* Launch-partner pricing hidden on home page (still available at /pricing and /launch-partner) */}
       {/* <SubscriptionSection /> */}
       <KnodInActionSection />

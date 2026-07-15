@@ -152,12 +152,18 @@ function TestimonialsMarquee() {
   );
 }
 
-export function TestimonialsAndResearchSection() {
+export function TestimonialsSection() {
   return (
     <section className="bg-white py-16 lg:py-24 relative z-10 w-full overflow-hidden">
       <TestimonialsMarquee />
+    </section>
+  );
+}
 
-      <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 relative z-10 mt-14 sm:mt-16">
+export function ResearchStatsSection() {
+  return (
+    <section className="bg-white py-16 lg:py-24 relative z-10 w-full overflow-hidden">
+      <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 w-full">
           {/* Research Header Card */}
           <div className="bg-[#ff4d00] border border-brand-black/5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-[2rem] p-8 sm:p-10 flex flex-col justify-center hover:-translate-y-2 transition-transform duration-500">
@@ -173,6 +179,10 @@ export function TestimonialsAndResearchSection() {
               Peer-reviewed · HCI International 2026
               <ExternalLink className="w-4 h-4" />
             </a>
+            <span className="mt-5 inline-flex items-center gap-2 w-fit rounded-full bg-white/15 px-3 py-1.5 text-white text-[11px] font-semibold uppercase tracking-[0.12em]">
+              <span className="w-1.5 h-1.5 rounded-full bg-white" />
+              Patent Pending
+            </span>
           </div>
 
           {/* Stat 1 */}

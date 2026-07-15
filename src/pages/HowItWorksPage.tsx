@@ -1,11 +1,23 @@
 import { motion } from "motion/react";
-import { QrCode, BrainCircuit, Handshake, BarChart3, Target, Map, Puzzle, CheckCircle2, Sparkles, MessageCircle, Eye } from "lucide-react";
+import { QrCode, Share2, Send, Users, ClipboardList, SlidersHorizontal, Target, Map, Puzzle, Sparkles } from "lucide-react";
 import { useSEO } from "../hooks/useSEO";
+
+const HOST_STEPS = [
+  { icon: ClipboardList, title: "Paste", desc: "Paste your event link from Luma, Eventbrite, Partiful, and more." },
+  { icon: SlidersHorizontal, title: "Customize", desc: "Customize your meeting spots and the questions you want to ask." },
+  { icon: Share2, title: "Share", desc: "Share the link with your attendees. That's it." },
+];
+
+const ATTENDEE_STEPS = [
+  { icon: Send, title: "Share", desc: "Share your intent before the event so Knod knows who you're hoping to meet." },
+  { icon: QrCode, title: "Scan", desc: "Scan the QR code at the venue and start Knodding. No download, no app." },
+  { icon: Users, title: "Meet", desc: "Meet the right people in person, introduced by shared goals and interests." },
+];
 
 export function HowItWorksPage() {
   useSEO({
     title: "How Knod Works | Knod",
-    description: "See the four simple steps Knod uses to transform your event from random networking into intelligent, AI-powered connection.",
+    description: "Three simple steps for hosts, three for your guests. See how Knod turns any event into intelligent, in-person connection.",
   });
 
   return (
@@ -28,122 +40,69 @@ export function HowItWorksPage() {
             How Knod Works
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium tracking-tight leading-[1.1] mb-8 flex flex-col md:block">
-            Four simple steps to transform your event <span className="inline-flex items-center justify-start md:justify-center gap-3"><Sparkles className="w-8 h-8 md:w-12 md:h-12 text-brand-blue" /> from random networking</span> to intelligent connection.
+            Three steps for hosts. <span className="inline-flex items-center justify-start md:justify-center gap-3"><Sparkles className="w-8 h-8 md:w-12 md:h-12 text-brand-blue" /> Three for your guests.</span>
           </h1>
         </motion.div>
       </section>
 
-      {/* Steps Section */}
-      <section className="px-6 lg:px-12 max-w-[1400px] mx-auto mb-32">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Step 1 */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="bg-white rounded-[2rem] p-8 shadow-sm border border-brand-black/5 flex flex-col h-full relative overflow-hidden group"
-          >
-            <div className="flex justify-between items-start mb-6">
-              <div className="w-16 h-16 rounded-full bg-brand-black/5 flex items-center justify-center text-brand-black/40 group-hover:bg-brand-blue/10 group-hover:text-brand-blue transition-colors">
-                <QrCode className="w-8 h-8" strokeWidth={1.5} />
-              </div>
-              <div className="text-6xl font-medium text-brand-black/5 group-hover:text-brand-blue/10 transition-colors">01</div>
-            </div>
-            <h3 className="text-xl font-medium mb-4">Attendees Arrive at Your Event</h3>
-            <p className="text-brand-black/70 mb-6 leading-relaxed">
-              Place QR code posters at the entrance or registration area. Attendees scan with their phone camera, no download required, no app to install.
-            </p>
-            <div className="mt-auto bg-[#f5f5f7] rounded-xl p-5 text-sm space-y-3 font-medium opacity-80 border border-brand-black/5 group-hover:border-brand-blue/20 transition-colors">
-              <p className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-blue flex-shrink-0" />Why are you here today?</p>
-              <p className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-blue flex-shrink-0" />What are you interested in?</p>
-              <p className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-blue flex-shrink-0" />What are you hoping to get from this event?</p>
-              <p className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-blue flex-shrink-0" />How do you prefer to connect?</p>
-              <p className="pt-2 text-brand-black/50 text-xs italic">Takes less than 60 seconds. Works on any smartphone.</p>
-            </div>
-          </motion.div>
+      {/* Steps Section: two role tracks, 3 steps each */}
+      <section className="px-6 lg:px-12 max-w-[1400px] mx-auto mb-32 space-y-20 lg:space-y-28">
+        {/* For Hosts */}
+        <div>
+          <div className="flex items-center gap-3 mb-8">
+            <span className="w-2 h-2 rounded-full bg-brand-blue" />
+            <span className="text-sm font-semibold tracking-widest uppercase text-brand-black/60">For Hosts</span>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            {HOST_STEPS.map((step, idx) => (
+              <motion.div
+                key={step.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 * (idx + 1) }}
+                className="bg-white rounded-[2rem] p-8 shadow-sm border border-brand-black/5 flex flex-col h-full relative overflow-hidden group"
+              >
+                <div className="flex justify-between items-start mb-6">
+                  <div className="w-16 h-16 rounded-full bg-brand-black/5 flex items-center justify-center text-brand-black/40 group-hover:bg-brand-blue/10 group-hover:text-brand-blue transition-colors">
+                    <step.icon className="w-8 h-8" strokeWidth={1.5} />
+                  </div>
+                  <div className="text-6xl font-medium text-brand-black/5 group-hover:text-brand-blue/10 transition-colors">0{idx + 1}</div>
+                </div>
+                <h3 className="text-2xl font-medium mb-3">{step.title}</h3>
+                <p className="text-brand-black/70 leading-relaxed">{step.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
 
-          {/* Step 2 */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-white rounded-[2rem] p-8 shadow-sm border border-brand-black/5 flex flex-col h-full relative overflow-hidden group"
-          >
-            <div className="flex justify-between items-start mb-6">
-              <div className="w-16 h-16 rounded-full bg-brand-black/5 flex items-center justify-center text-brand-black/40 group-hover:bg-brand-blue/10 group-hover:text-brand-blue transition-colors">
-                <BrainCircuit className="w-8 h-8" strokeWidth={1.5} />
-              </div>
-              <div className="text-6xl font-medium text-brand-black/5 group-hover:text-brand-blue/10 transition-colors">02</div>
-            </div>
-            <h3 className="text-xl font-medium mb-4">AI Finds Their Best Matches</h3>
-            <p className="text-brand-black/70 mb-6 leading-relaxed">
-              Our three-layer intelligence system analyzes profile data within seconds, filtering out the noise to deliver precision connections.
-            </p>
-            <div className="mt-auto bg-[#f5f5f7] rounded-xl p-5 text-sm space-y-3 font-medium opacity-80 border border-brand-black/5 group-hover:border-brand-blue/20 transition-colors">
-              <p className="flex items-start gap-2"><Target className="w-4 h-4 text-brand-blue mt-0.5 shrink-0" /><span><strong>Intent Layer:</strong> Why they're here</span></p>
-              <p className="flex items-start gap-2"><Map className="w-4 h-4 text-brand-blue mt-0.5 shrink-0" /><span><strong>Context Layer:</strong> What's happening at this event</span></p>
-              <p className="flex items-start gap-2"><Puzzle className="w-4 h-4 text-brand-blue mt-0.5 shrink-0" /><span><strong>Match Layer:</strong> Who they should meet based on complementary goals</span></p>
-              <p className="pt-2 text-brand-black/50 text-xs italic">Within seconds, they receive real-time notifications.</p>
-            </div>
-          </motion.div>
-
-          {/* Step 3 */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="bg-white rounded-[2rem] p-8 shadow-sm border border-brand-black/5 flex flex-col h-full relative overflow-hidden group"
-          >
-            <div className="flex justify-between items-start mb-6">
-              <div className="w-16 h-16 rounded-full bg-brand-black/5 flex items-center justify-center text-brand-black/40 group-hover:bg-brand-blue/10 group-hover:text-brand-blue transition-colors">
-                <Handshake className="w-8 h-8" strokeWidth={1.5} />
-              </div>
-              <div className="text-6xl font-medium text-brand-black/5 group-hover:text-brand-blue/10 transition-colors">03</div>
-            </div>
-            <h3 className="text-xl font-medium mb-4">They Meet in Person at the Event</h3>
-            <p className="text-brand-black/70 mb-6 leading-relaxed">
-              This is the critical part: Knod facilitates the introduction, then steps back. Chat is limited to 3 messages each, by design.
-            </p>
-            <div className="mt-auto bg-[#f5f5f7] rounded-xl p-5 text-sm space-y-3 font-medium opacity-80 border border-brand-black/5 group-hover:border-brand-blue/20 transition-colors">
-              <p className="flex items-start gap-2"><MessageCircle className="w-4 h-4 text-brand-blue mt-0.5 shrink-0" /><span>Why you were matched (shared interests, complementary goals)</span></p>
-              <p className="flex items-start gap-2"><MessageCircle className="w-4 h-4 text-brand-blue mt-0.5 shrink-0" /><span>Conversation starters to break the ice</span></p>
-              <p className="flex items-start gap-2"><MessageCircle className="w-4 h-4 text-brand-blue mt-0.5 shrink-0" /><span>Context about what they're looking for</span></p>
-              <p className="pt-2 text-brand-black/50 text-xs italic">3-text limit forces real conversations, not endless chatting. The rest is human.</p>
-            </div>
-          </motion.div>
-
-          {/* Step 4 */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="bg-brand-black text-white rounded-[2rem] p-8 shadow-lg flex flex-col h-full relative overflow-hidden group"
-          >
-            {/* Glow effect on the dark card */}
-            <div className="absolute top-0 right-0 w-48 h-48 bg-brand-blue/20 rounded-full blur-[40px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
-            
-            <div className="flex justify-between items-start mb-6 relative z-10">
-              <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center text-white/40 group-hover:bg-brand-blue/20 group-hover:text-brand-blue transition-colors">
-                <BarChart3 className="w-8 h-8" strokeWidth={1.5} />
-              </div>
-              <div className="text-6xl font-medium text-white/10 group-hover:text-brand-blue/20 transition-colors">04</div>
-            </div>
-            <h3 className="text-xl font-medium mb-4 relative z-10">Organizers See the Impact</h3>
-            <p className="text-white/70 mb-6 leading-relaxed">
-              While attendees are networking, organizers get real-time insights via dashboard to prove your event delivered value.
-            </p>
-            <div className="mt-auto bg-white/5 backdrop-blur-sm rounded-xl p-5 text-sm space-y-3 font-medium text-white/90 border border-white/10 group-hover:border-brand-blue/30 transition-colors">
-              <p className="flex items-start gap-2"><Eye className="w-4 h-4 text-brand-blue mt-0.5 shrink-0" /><span>How many matches were made</span></p>
-              <p className="flex items-start gap-2"><Eye className="w-4 h-4 text-brand-blue mt-0.5 shrink-0" /><span>Average match quality ratings (1-5)</span></p>
-              <p className="flex items-start gap-2"><Eye className="w-4 h-4 text-brand-blue mt-0.5 shrink-0" /><span>What topics people are interested in</span></p>
-              <p className="flex items-start gap-2"><Eye className="w-4 h-4 text-brand-blue mt-0.5 shrink-0" /><span>Engagement levels throughout the event</span></p>
-              <p className="flex items-start gap-2"><Eye className="w-4 h-4 text-brand-blue mt-0.5 shrink-0" /><span>Anonymous sentiment and feedback</span></p>
-            </div>
-          </motion.div>
+        {/* For Attendees */}
+        <div>
+          <div className="flex items-center gap-3 mb-8">
+            <span className="w-2 h-2 rounded-full bg-brand-blue" />
+            <span className="text-sm font-semibold tracking-widest uppercase text-brand-black/60">For Attendees</span>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            {ATTENDEE_STEPS.map((step, idx) => (
+              <motion.div
+                key={step.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 * (idx + 1) }}
+                className="bg-white rounded-[2rem] p-8 shadow-sm border border-brand-black/5 flex flex-col h-full relative overflow-hidden group"
+              >
+                <div className="flex justify-between items-start mb-6">
+                  <div className="w-16 h-16 rounded-full bg-brand-black/5 flex items-center justify-center text-brand-black/40 group-hover:bg-brand-blue/10 group-hover:text-brand-blue transition-colors">
+                    <step.icon className="w-8 h-8" strokeWidth={1.5} />
+                  </div>
+                  <div className="text-6xl font-medium text-brand-black/5 group-hover:text-brand-blue/10 transition-colors">0{idx + 1}</div>
+                </div>
+                <h3 className="text-2xl font-medium mb-3">{step.title}</h3>
+                <p className="text-brand-black/70 leading-relaxed">{step.desc}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 

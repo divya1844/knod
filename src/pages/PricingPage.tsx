@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { motion } from "motion/react";
 import { Check, ArrowRight, Lock, Target, Handshake, Megaphone } from "lucide-react";
 import { useSEO } from "../hooks/useSEO";
+import { BookDemoModal } from "../components/BookDemoModal";
+
+const SALES_EMAIL = "sales@knod.ai";
 
 const LAUNCH_PLANS = [
   {
@@ -16,7 +20,7 @@ const LAUNCH_PLANS = [
       "Email support",
       "Launch partner badge"
     ],
-    ctaText: "Get Started",
+    ctaText: "Request a Quote",
     popular: false,
     color: "bg-[#f5f5f7] text-brand-black",
     btnColor: "bg-brand-black text-white hover:bg-[#222]"
@@ -35,7 +39,7 @@ const LAUNCH_PLANS = [
       "Priority support + onboarding",
       "Co-marketing opportunities"
     ],
-    ctaText: "Pay Now, $5,000",
+    ctaText: "Request a Quote",
     popular: true,
     color: "bg-brand-blue text-white",
     btnColor: "bg-white text-brand-blue hover:bg-white/90"
@@ -54,7 +58,7 @@ const LAUNCH_PLANS = [
       "Shape the Knod roadmap",
       "White-label option"
     ],
-    ctaText: "Pay Now, $10,000",
+    ctaText: "Request a Quote",
     popular: false,
     color: "bg-[#f5f5f7] text-brand-black",
     btnColor: "bg-brand-black text-white hover:bg-[#222]"
@@ -102,7 +106,7 @@ const STANDARD_PLANS = [
       "API + integrations",
       "Dedicated CSM"
     ],
-    ctaText: "Contact Us",
+    ctaText: "Contact Sales",
     popular: false,
     color: "bg-[#111112] text-white",
     btnColor: "bg-[#1AEB7E] text-[#111] hover:bg-[#15cd6d]"
@@ -112,8 +116,10 @@ const STANDARD_PLANS = [
 export function PricingPage() {
   useSEO({
     title: "Pricing | Knod",
-    description: "Explore Knod's launch partner pricing tiers, Starter, Growth, and Strategic Founding plans for events, communities, and organizations.",
+    description: "Request a custom price quote for your event. Launch partner tiers for events, communities, and organizations, with white-label options for enterprise.",
   });
+
+  const [quoteOpen, setQuoteOpen] = useState(false);
 
   return (
     <main className="flex-1 w-full pt-32 pb-12 relative bg-[#f5f5f7]">
@@ -135,9 +141,8 @@ export function PricingPage() {
           </p>
           
           <div className="flex items-center justify-center gap-3 text-sm text-brand-black/50 font-medium">
-             {/* Simple stripe-like lock icon */}
              <Lock className="w-4 h-4" />
-             <span>Secure checkout powered by Stripe. Pay by card, bank transfer, or invoice. Instant confirmation sent to your email.</span>
+             <span>Request a custom quote for your event. No account required, no obligation.</span>
           </div>
         </motion.div>
       </section>
@@ -184,8 +189,11 @@ export function PricingPage() {
                    </ul>
                 </div>
 
-                <button className={`w-full py-4 rounded-full text-sm font-semibold flex items-center justify-center gap-2 transition-transform hover:scale-[1.02] ${plan.btnColor}`}>
-                  {plan.ctaText} {plan.name === 'Starter' && <ArrowRight className="w-4 h-4" />}
+                <button
+                  onClick={() => setQuoteOpen(true)}
+                  className={`w-full py-4 rounded-full text-sm font-semibold flex items-center justify-center gap-2 transition-transform hover:scale-[1.02] cursor-pointer ${plan.btnColor}`}
+                >
+                  {plan.ctaText} <ArrowRight className="w-4 h-4" />
                 </button>
              </motion.div>
           ))}
@@ -293,14 +301,28 @@ export function PricingPage() {
                        </ul>
                     </div>
 
-                    <button className={`w-full py-4 rounded-full text-sm font-semibold flex items-center justify-center gap-2 transition-transform hover:scale-[1.02] ${plan.btnColor}`}>
-                      {plan.ctaText}
-                    </button>
+                    {plan.name === 'Enterprise' ? (
+                      <a
+                        href={`mailto:${SALES_EMAIL}`}
+                        className={`w-full py-4 rounded-full text-sm font-semibold flex items-center justify-center gap-2 transition-transform hover:scale-[1.02] cursor-pointer ${plan.btnColor}`}
+                      >
+                        {plan.ctaText}
+                      </a>
+                    ) : (
+                      <button
+                        disabled
+                        className={`w-full py-4 rounded-full text-sm font-semibold flex items-center justify-center gap-2 opacity-70 cursor-default ${plan.btnColor}`}
+                      >
+                        {plan.ctaText}
+                      </button>
+                    )}
                  </motion.div>
               ))}
            </div>
         </div>
       </section>
+
+      <BookDemoModal open={quoteOpen} onClose={() => setQuoteOpen(false)} />
     </main>
   );
 }
