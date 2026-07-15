@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
-import { Link } from "react-router-dom";
 import {
   ArrowRight,
   Check,
@@ -13,7 +12,6 @@ import {
   Sparkles,
   Landmark,
   Store,
-  Calendar,
 } from "lucide-react";
 
 const ORG_TYPES = [
@@ -26,14 +24,13 @@ const ORG_TYPES = [
   { label: "Incubators & accelerators", icon: Sparkles },
   { label: "Local chambers of commerce", icon: Landmark },
   { label: "Small-business networking groups", icon: Store },
-  { label: "Mission-driven event organizers", icon: Calendar },
 ];
 
 const RECEIVE = [
-  "Complimentary access to the full Knod platform for your community.",
+  "Discounted or free access to the full Knod platform, decided case by case.",
   "Connections that happen before, during, and after every event.",
   "Supported onboarding so you're up and running quickly.",
-  "A partnership that grows with your community, at no cost.",
+  "A partnership that grows with your community.",
 ];
 
 const inputClass =
@@ -84,9 +81,10 @@ export function CommunityPartnersPage() {
               <span className="italic font-light text-brand-blue">find each other.</span>
             </h1>
             <p className="text-lg text-brand-black/70 max-w-md mb-10 leading-relaxed font-light">
-              Knod offers free access to nonprofits, student organizations, community groups, and
-              mission-driven initiatives that bring people together. If you're creating
-              opportunities for meaningful human connection, we'd love to support your work.
+              Knod offers discounted or free access, case by case, to nonprofits, student
+              organizations, community groups, and mission-driven initiatives that bring people
+              together. If you're creating opportunities for meaningful human connection, we'd love
+              to support your work.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -96,12 +94,6 @@ export function CommunityPartnersPage() {
               >
                 Apply to Become a Community Partner <ArrowRight className="w-4 h-4" />
               </a>
-              <Link
-                to="/how-it-works"
-                className="bg-white text-brand-black px-8 py-4 rounded-full font-semibold hover:bg-[#f5f5f7] border border-brand-black/5 transition-colors flex items-center justify-center"
-              >
-                See How Knod Works
-              </Link>
             </div>
           </motion.div>
 
@@ -113,9 +105,9 @@ export function CommunityPartnersPage() {
             className="bg-[#f5f5f7] rounded-[2rem] relative h-[400px] lg:h-full overflow-hidden"
           >
             <img
-              src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              src="https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=1200"
               className="w-full h-full object-cover"
-              alt="A community gathered together"
+              alt="A community of volunteers working together"
             />
             <div className="absolute bottom-6 left-6 right-6 sm:right-auto bg-white/90 backdrop-blur-md rounded-2xl p-4 flex items-center gap-3 shadow-lg max-w-[300px]">
               <div className="w-10 h-10 rounded-xl bg-[#ebfaef] flex items-center justify-center shrink-0">
@@ -148,8 +140,8 @@ export function CommunityPartnersPage() {
             meetups, supporting entrepreneurs, or bringing neighbors together, meaningful
             connections are often your greatest resource, and your biggest challenge. That's why we
             created the Knod Community Partner Program. If your organization exists to bring people
-            together, we'll provide Knod at no cost, so you can spend less time hoping connections
-            happen, and more time helping them happen.
+            together, we'll provide Knod at a discounted or free rate, case by case, so you can
+            spend less time hoping connections happen, and more time helping them happen.
           </p>
         </motion.div>
       </section>
@@ -206,8 +198,9 @@ export function CommunityPartnersPage() {
                 What You Receive
               </h2>
               <p className="text-lg text-brand-black/60 leading-relaxed font-light">
-                Accepted partners receive complimentary access to Knod, allowing their community to
-                discover meaningful connections before, during, and after every event.
+                Accepted partners receive discounted or free access to Knod, decided case by case,
+                allowing their community to discover meaningful connections before, during, and
+                after every event.
               </p>
             </motion.div>
 

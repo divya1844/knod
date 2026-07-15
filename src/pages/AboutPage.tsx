@@ -1,7 +1,6 @@
 import { motion, useReducedMotion } from "motion/react";
-import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import aboutHeroImg from '../assets/images/about_hero_connection.jpg';
+import knodLogo from '../assets/images/knod-logo-white.png';
 import { useSEO } from "../hooks/useSEO";
 
 export function AboutPage() {
@@ -32,23 +31,14 @@ export function AboutPage() {
             <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] tracking-tight font-medium text-brand-black leading-[1.1] mb-6">
               Connecting people in <span className="italic font-light text-brand-blue">shared spaces.</span>
             </h1>
-            <p className="text-lg text-brand-black/70 max-w-xl mb-10">
+            <p className="text-lg text-brand-black/70 max-w-xl">
               Every meaningful opportunity begins with a conversation. Knod helps people discover the right conversations so they can spend less time searching and more time connecting. Built for community leaders, event hosts and conference directors to curate meaningful experiences.
             </p>
-
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link to="/how-it-works" className="bg-brand-black text-white px-7 py-3.5 rounded-full font-medium hover:bg-black/80 transition-colors flex items-center justify-center gap-2 text-sm">
-                See How It Works <ArrowRight className="w-4 h-4" />
-              </Link>
-              <Link to="/case-studies" className="border border-brand-black/10 px-7 py-3.5 rounded-full font-medium hover:bg-brand-black/5 transition-colors flex items-center justify-center gap-2 text-sm text-brand-black">
-                Explore Case Studies
-              </Link>
-            </div>
           </div>
 
           {/* Right Block */}
-          <div className="bg-white rounded-[2rem] relative h-[400px] lg:h-full overflow-hidden">
-            <img src={aboutHeroImg} className="w-full h-full object-cover" alt="Two people in conversation at a Knod-hosted event" />
+          <div className="bg-brand-blue rounded-[2rem] relative h-[400px] lg:h-full overflow-hidden flex items-center justify-center">
+            <img src={knodLogo} className="w-[45%] max-w-[280px] h-auto object-contain" alt="Knod" />
           </div>
         </div>
       </section>
@@ -84,10 +74,7 @@ export function AboutPage() {
             Connecting people in <span className="italic font-light text-brand-blue">shared spaces.</span>
           </h2>
           <div className="flex flex-col sm:flex-row gap-3">
-            <Link to="/how-it-works" className="bg-brand-black text-white px-8 py-4 rounded-full font-semibold hover:bg-black/80 transition-colors flex items-center justify-center gap-2">
-              See How It Works <ArrowRight className="w-4 h-4" />
-            </Link>
-            <Link to="/launch-partner" className="bg-white border border-brand-black/10 px-8 py-4 rounded-full font-semibold hover:bg-brand-black/5 transition-colors flex items-center justify-center gap-2 text-brand-black">
+            <Link to="/launch-partner" className="bg-brand-black text-white px-8 py-4 rounded-full font-semibold hover:bg-black/80 transition-colors flex items-center justify-center gap-2">
               Become a Launch Partner
             </Link>
           </div>

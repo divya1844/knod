@@ -36,14 +36,13 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <h4 className="text-white/40 font-semibold tracking-widest text-[10px] uppercase mb-2">Company</h4>
             <Link to="/about" className="hover:text-brand-blue transition-colors text-white/90">About</Link>
-            <Link to="/careers" className="hover:text-brand-blue transition-colors text-white/90">Careers</Link>
+            <Link to="/community-partners" className="hover:text-brand-blue transition-colors text-white/90">Community Partners</Link>
           </div>
 
           <div className="flex flex-col gap-4">
             <h4 className="text-white/40 font-semibold tracking-widest text-[10px] uppercase mb-2">Resources</h4>
             <Link to="/how-it-works" className="hover:text-brand-blue transition-colors text-white/90">How It Works</Link>
             <Link to="/case-studies" className="hover:text-brand-blue transition-colors text-white/90">Case Studies</Link>
-            <Link to="/community-partners" className="hover:text-brand-blue transition-colors text-white/90">Community Partners</Link>
           </div>
 
           <div className="flex flex-col gap-4">

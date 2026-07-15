@@ -57,8 +57,8 @@ export function Navbar() {
         </Link>
       </div>
       <div className="flex items-center gap-4">
-        <Link to="/launch-partner" className="text-[15px] font-medium text-brand-blue hover:text-blue-600 transition-colors hidden md:block cursor-pointer">
-          Launch Partner
+        <Link to="/community-partners" className="text-[15px] font-medium text-brand-blue hover:text-blue-600 transition-colors hidden md:block cursor-pointer">
+          Community Partners
         </Link>
         <button className="bg-brand-blue text-white px-5 py-2.5 rounded-full text-[15px] font-medium hover:bg-blue-600 transition-colors duration-300 hidden sm:block cursor-pointer">
           Book a Demo
@@ -112,8 +112,8 @@ export function Navbar() {
                 Case Studies
               </Link>
               <hr className="border-brand-black/5 my-2" />
-              <Link to="/launch-partner" className="text-left font-semibold text-brand-blue transition-colors py-3 px-2 flex items-center min-h-[44px]" onClick={() => setIsMobileMenuOpen(false)}>
-                Launch Partner
+              <Link to="/community-partners" className="text-left font-semibold text-brand-blue transition-colors py-3 px-2 flex items-center min-h-[44px]" onClick={() => setIsMobileMenuOpen(false)}>
+                Community Partners
               </Link>
               <button className="bg-brand-blue text-white px-6 py-3.5 rounded-xl text-center font-semibold hover:bg-blue-600 transition-colors w-full shadow-lg shadow-black/5">
                 Book a Demo

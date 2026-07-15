@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 import { ArrowRight, Mic, Users, Ticket, Star } from "lucide-react";
 import { useSEO } from "../hooks/useSEO";
 
@@ -26,14 +27,6 @@ export function ConferencesPage() {
               Summits, trade shows, corporate events, festivals. Turn your event into a networking powerhouse where meaningful connections happen by design.
             </p>
             
-            <div className="flex flex-wrap gap-4">
-               <button className="bg-brand-black text-white px-8 py-4 rounded-full font-semibold hover:bg-black/80 transition-colors flex items-center justify-center gap-2">
-                 Get Started <ArrowRight className="w-4 h-4" />
-               </button>
-               <button className="bg-white text-brand-black px-8 py-4 rounded-full font-semibold hover:bg-[#f5f5f7] border border-brand-black/5 transition-colors">
-                 See How It Works
-               </button>
-            </div>
           </div>
 
           {/* Right Block */}
@@ -208,9 +201,9 @@ export function ConferencesPage() {
            </div>
            
            <div className="relative z-10 w-full md:w-auto">
-             <button className="bg-white text-brand-black px-10 py-5 rounded-full font-semibold hover:bg-[#1AEB7E] transition-colors flex items-center justify-center gap-2 whitespace-nowrap md:w-auto w-full shadow-xl shadow-black/20">
-               Get Started <ArrowRight className="w-4 h-4" />
-             </button>
+             <Link to="/pricing" className="bg-white text-brand-black px-10 py-5 rounded-full font-semibold hover:bg-[#1AEB7E] transition-colors flex items-center justify-center gap-2 whitespace-nowrap md:w-auto w-full shadow-xl shadow-black/20">
+               Request a Quote <ArrowRight className="w-4 h-4" />
+             </Link>
            </div>
         </div>
       </section>

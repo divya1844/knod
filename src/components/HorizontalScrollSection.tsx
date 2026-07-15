@@ -1,31 +1,49 @@
 import { useState, useCallback } from "react";
 import { motion } from "motion/react";
-import { ArrowRight, QrCode, Users, Zap, BarChart3 } from "lucide-react";
+import { ArrowRight, QrCode, Users, ClipboardList, SlidersHorizontal, Share2, Send } from "lucide-react";
 
 const STEPS = [
   {
-    title: "Attendees Arrive at Your Event",
-    desc: 'They scan a QR code. No download. No app. Answer 3-5 questions about why they\'re here, what they\'re interested in, and what they\'re hoping to get from the event.',
+    title: "Paste your event link",
+    desc: "Paste your event link from Luma, Eventbrite, Partiful, and more. Knod spins up instantly.",
+    icon: <ClipboardList className="w-6 h-6 text-brand-black" />,
+    label: "PASTE",
+    track: "FOR HOSTS",
+  },
+  {
+    title: "Customize your spots",
+    desc: "Set your meeting spots and the questions you want to ask your guests.",
+    icon: <SlidersHorizontal className="w-6 h-6 text-brand-black" />,
+    label: "CUSTOMIZE",
+    track: "FOR HOSTS",
+  },
+  {
+    title: "Share the link",
+    desc: "Share the link with your attendees. That's it. Knod handles the rest.",
+    icon: <Share2 className="w-6 h-6 text-brand-black" />,
+    label: "SHARE",
+    track: "FOR HOSTS",
+  },
+  {
+    title: "Share your intent",
+    desc: "Guests share what they're hoping to get from the event, so Knod knows who they should meet.",
+    icon: <Send className="w-6 h-6 text-brand-black" />,
+    label: "SHARE",
+    track: "FOR ATTENDEES",
+  },
+  {
+    title: "Scan at the venue",
+    desc: "Scan the QR code at the venue and start Knodding. No download, no app.",
     icon: <QrCode className="w-6 h-6 text-brand-black" />,
-    label: "CHECK IN",
+    label: "SCAN",
+    track: "FOR ATTENDEES",
   },
   {
-    title: "AI Finds Their Best Matches",
-    desc: 'Our AI analyzes interests, goals, and context to find people who should meet. Real-time notifications: "You matched with Sarah, she\'s also interested in AI and fundraising."',
-    icon: <Zap className="w-6 h-6 text-brand-black" />,
-    label: "MATCH",
-  },
-  {
-    title: "They Meet in Person",
-    desc: "Knod facilitates the introduction. Provides conversation starters. Then steps back. The rest is human.",
+    title: "Meet in person",
+    desc: "Meet the right people in person, introduced by shared goals and interests.",
     icon: <Users className="w-6 h-6 text-brand-black" />,
-    label: "CONNECT",
-  },
-  {
-    title: "Organizers See the Impact",
-    desc: "Live dashboard shows match quality, conversation topics, engagement levels. Learn what worked. Improve your next event.",
-    icon: <BarChart3 className="w-6 h-6 text-brand-black" />,
-    label: "ANALYZE",
+    label: "MEET",
+    track: "FOR ATTENDEES",
   },
 ];
 
@@ -140,8 +158,8 @@ export function HorizontalScrollSection() {
         <span className="text-brand-blue tracking-[0.25em] font-sans text-sm font-semibold">
           0{i + 1}
         </span>
-        <span className="text-brand-black/30 text-[11px] font-semibold tracking-[0.2em]">
-          STEP 0{i + 1}
+        <span className="text-brand-blue/70 text-[11px] font-semibold tracking-[0.2em]">
+          {card.track}
         </span>
       </div>
 
@@ -234,8 +252,8 @@ export function HorizontalScrollSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-brand-black/60 text-lg sm:text-xl max-w-md font-light leading-relaxed"
             >
-              From check-in to post-event analytics, Knod handles the heavy
-              lifting so you can focus on the experience.
+              Three simple steps for hosts, three for your guests. Knod handles
+              the rest so you can focus on the experience.
             </motion.p>
           </div>
 
@@ -251,7 +269,7 @@ export function HorizontalScrollSection() {
               >
                 {STEPS.map((card, i) => {
                   const depth = getDepth(i, activeIndex);
-                  const state = depth === 0 ? "active" : `depth${depth}`;
+                  const state = depth === 0 ? "active" : `depth${Math.min(depth, 3)}`;
 
                   return (
                     <motion.div
@@ -285,7 +303,7 @@ export function HorizontalScrollSection() {
               >
                 {STEPS.map((card, i) => {
                   const depth = getDepth(i, activeIndex);
-                  const state = depth === 0 ? "active" : `depth${depth}`;
+                  const state = depth === 0 ? "active" : `depth${Math.min(depth, 3)}`;
 
                   return (
                     <motion.div

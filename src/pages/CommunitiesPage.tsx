@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
-import { ArrowRight, Building, Wine } from "lucide-react";
+import { Link } from "react-router-dom";
+import { ArrowRight, Building, Wine, Coffee } from "lucide-react";
 import { useSEO } from "../hooks/useSEO";
 
 export function CommunitiesPage() {
@@ -26,32 +27,107 @@ export function CommunitiesPage() {
               From residential buildings to bars and coworking spaces, Knod helps people discover meaningful connections wherever they gather.
             </p>
             
-            <div className="flex flex-wrap gap-4">
-               <button className="bg-brand-black text-white px-8 py-4 rounded-full font-semibold hover:bg-black/80 transition-colors flex items-center justify-center gap-2">
-                 Get Started <ArrowRight className="w-4 h-4" />
-               </button>
-               <button className="bg-white text-brand-black px-8 py-4 rounded-full font-semibold hover:bg-[#f5f5f7] border border-brand-black/5 transition-colors">
-                 See How It Works
-               </button>
-            </div>
           </div>
 
           {/* Right Block */}
           <div className="bg-white rounded-[2rem] relative h-[400px] lg:h-full overflow-hidden">
-             <img src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg?auto=compress&cs=tinysrgb&w=1200" className="w-full h-full object-cover" alt="Communities" />
+             <img src="https://images.pexels.com/photos/1813466/pexels-photo-1813466.jpeg?auto=compress&cs=tinysrgb&w=1200" className="w-full h-full object-cover" alt="A coffee shop, a third space where people gather" />
              
              {/* Floating elements matching reference */}
              <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-md rounded-xl p-2 flex items-center gap-3 shadow-lg max-w-[220px]">
-                <div className="w-10 h-10 rounded-lg bg-[#ebfaef] flex items-center justify-center">
-                    <Building className="w-5 h-5 text-green-600" />
+                <div className="w-10 h-10 rounded-lg bg-[#fff6e5] flex items-center justify-center">
+                    <Coffee className="w-5 h-5 text-amber-500" />
                 </div>
-                <p className="text-[10px] font-semibold leading-tight pr-2">Residential & Real Estate</p>
+                <p className="text-[10px] font-semibold leading-tight pr-2">Cafes & Third Spaces</p>
              </div>
              
              <div className="absolute bottom-6 right-6 bg-brand-black/80 backdrop-blur-md text-white rounded-xl p-4 max-w-[220px] text-xs leading-relaxed hidden sm:block">
                Creating environments where people naturally discover shared interests and form lasting bonds.
              </div>
           </div>
+        </div>
+      </section>
+
+      {/* Third Spaces & Hospitality Section */}
+      <section className="px-4 lg:px-8 max-w-[1200px] mx-auto mb-24 md:mb-32">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+           <div className="lg:col-span-5 sticky top-32">
+             <div className="w-16 h-16 bg-[#fff6e5] rounded-2xl flex items-center justify-center mb-8">
+               <Wine className="w-8 h-8 text-amber-500" />
+             </div>
+             <h2 className="text-3xl md:text-4xl font-medium tracking-tight text-brand-black mb-4 leading-tight">
+               Third Spaces & Hospitality
+             </h2>
+             <p className="text-lg text-brand-black/60 font-light mb-8">
+               Bars, coffee shops, restaurants, coworking spaces, social clubs, gyms
+             </p>
+           </div>
+           
+           <div className="lg:col-span-7 space-y-16">
+              {/* How it used */}
+              <div>
+                 <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
+                   <span className="w-6 h-6 rounded-full bg-brand-black text-white text-xs flex items-center justify-center">1</span>
+                   How Knod is used
+                 </h3>
+                 <ul className="space-y-4">
+                    <li className="flex items-start gap-4">
+                      <div className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2.5 shrink-0" />
+                      <p className="text-brand-black/70 leading-relaxed font-light">Venue prints a QR code on table tents, menus, or posters with a simple call to action: "Find your people tonight"</p>
+                    </li>
+                    <li className="flex items-start gap-4">
+                      <div className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2.5 shrink-0" />
+                      <p className="text-brand-black/70 leading-relaxed font-light">Guests open Knod in the browser, say what they're open to, "Meet another solo traveler", "Find a co-founder", "Talk about films", "Meet a gym buddy"</p>
+                    </li>
+                    <li className="flex items-start gap-4">
+                      <div className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2.5 shrink-0" />
+                      <p className="text-brand-black/70 leading-relaxed font-light">Knod quietly matches people in the same space, they can exchange a couple of messages then decide to talk in person</p>
+                    </li>
+                 </ul>
+              </div>
+
+              {/* Benefits */}
+              <div>
+                 <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
+                   <span className="w-6 h-6 rounded-full bg-brand-black text-white text-xs flex items-center justify-center">2</span>
+                   Benefits
+                 </h3>
+                 <div className="bg-[#f5f5f7] rounded-[2rem] p-8 md:p-10">
+                   <ul className="space-y-4">
+                      <li className="flex items-start gap-4">
+                        <div className="w-2 h-2 rounded-full bg-amber-500 mt-2 shrink-0" />
+                        <p className="text-brand-black leading-relaxed font-medium">People stay longer and spend more because the space helped them meet someone interesting</p>
+                      </li>
+                      <li className="flex items-start gap-4">
+                        <div className="w-2 h-2 rounded-full bg-amber-500 mt-2 shrink-0" />
+                        <p className="text-brand-black leading-relaxed font-medium">Regular "Knod nights" become a repeatable event format without extra staff</p>
+                      </li>
+                      <li className="flex items-start gap-4">
+                        <div className="w-2 h-2 rounded-full bg-amber-500 mt-2 shrink-0" />
+                        <p className="text-brand-black leading-relaxed font-medium">Coworking spaces and clubs can run themed sessions: "Founders Monday", "Designers Thursday", "New members social"</p>
+                      </li>
+                      <li className="flex items-start gap-4">
+                        <div className="w-2 h-2 rounded-full bg-amber-500 mt-2 shrink-0" />
+                        <p className="text-brand-black leading-relaxed font-medium">Venues get simple insights, what people are coming for, which themes drive repeat visits</p>
+                      </li>
+                   </ul>
+                 </div>
+              </div>
+
+              {/* Example Story */}
+              <div>
+                 <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
+                   <span className="w-6 h-6 rounded-full bg-brand-black text-white text-xs flex items-center justify-center">3</span>
+                   Example Story
+                 </h3>
+                 <div className="border border-brand-black/10 rounded-[2rem] p-8 md:p-10 relative overflow-hidden group">
+                   <div className="absolute top-0 right-0 w-32 h-32 bg-[#fff6e5] rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500" />
+                   <p className="text-brand-black/80 leading-relaxed font-light text-lg">
+                     A neighborhood bar introduces "Offscreen Thursdays". Guests scan a QR, add what they're into today, "First week in the city", "Startup person", "Here after work, open to chat". Instead of everyone staring at phones, small groups form at the bar. The bar gets a reputation as the place where you can walk in alone and still leave with a couple of new contacts.
+                   </p>
+                 </div>
+              </div>
+           </div>
         </div>
       </section>
 
@@ -142,89 +218,6 @@ export function CommunitiesPage() {
         </div>
       </section>
 
-      {/* Third Spaces & Hospitality Section */}
-      <section className="px-4 lg:px-8 max-w-[1200px] mx-auto mb-24 md:mb-32">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
-           <div className="lg:col-span-5 sticky top-32">
-             <div className="w-16 h-16 bg-[#fff6e5] rounded-2xl flex items-center justify-center mb-8">
-               <Wine className="w-8 h-8 text-amber-500" />
-             </div>
-             <h2 className="text-3xl md:text-4xl font-medium tracking-tight text-brand-black mb-4 leading-tight">
-               Third Spaces & Hospitality
-             </h2>
-             <p className="text-lg text-brand-black/60 font-light mb-8">
-               Bars, coffee shops, restaurants, coworking spaces, social clubs, gyms
-             </p>
-           </div>
-           
-           <div className="lg:col-span-7 space-y-16">
-              {/* How it used */}
-              <div>
-                 <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
-                   <span className="w-6 h-6 rounded-full bg-brand-black text-white text-xs flex items-center justify-center">1</span>
-                   How Knod is used
-                 </h3>
-                 <ul className="space-y-4">
-                    <li className="flex items-start gap-4">
-                      <div className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2.5 shrink-0" />
-                      <p className="text-brand-black/70 leading-relaxed font-light">Venue prints a QR code on table tents, menus, or posters with a simple call to action: "Find your people tonight"</p>
-                    </li>
-                    <li className="flex items-start gap-4">
-                      <div className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2.5 shrink-0" />
-                      <p className="text-brand-black/70 leading-relaxed font-light">Guests open Knod in the browser, say what they're open to, "Meet another solo traveler", "Find a co-founder", "Talk about films", "Meet a gym buddy"</p>
-                    </li>
-                    <li className="flex items-start gap-4">
-                      <div className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2.5 shrink-0" />
-                      <p className="text-brand-black/70 leading-relaxed font-light">Knod quietly matches people in the same space, they can exchange a couple of messages then decide to talk in person</p>
-                    </li>
-                 </ul>
-              </div>
-
-              {/* Benefits */}
-              <div>
-                 <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
-                   <span className="w-6 h-6 rounded-full bg-brand-black text-white text-xs flex items-center justify-center">2</span>
-                   Benefits
-                 </h3>
-                 <div className="bg-[#f5f5f7] rounded-[2rem] p-8 md:p-10">
-                   <ul className="space-y-4">
-                      <li className="flex items-start gap-4">
-                        <div className="w-2 h-2 rounded-full bg-amber-500 mt-2 shrink-0" />
-                        <p className="text-brand-black leading-relaxed font-medium">People stay longer and spend more because the space helped them meet someone interesting</p>
-                      </li>
-                      <li className="flex items-start gap-4">
-                        <div className="w-2 h-2 rounded-full bg-amber-500 mt-2 shrink-0" />
-                        <p className="text-brand-black leading-relaxed font-medium">Regular "Knod nights" become a repeatable event format without extra staff</p>
-                      </li>
-                      <li className="flex items-start gap-4">
-                        <div className="w-2 h-2 rounded-full bg-amber-500 mt-2 shrink-0" />
-                        <p className="text-brand-black leading-relaxed font-medium">Coworking spaces and clubs can run themed sessions: "Founders Monday", "Designers Thursday", "New members social"</p>
-                      </li>
-                      <li className="flex items-start gap-4">
-                        <div className="w-2 h-2 rounded-full bg-amber-500 mt-2 shrink-0" />
-                        <p className="text-brand-black leading-relaxed font-medium">Venues get simple insights, what people are coming for, which themes drive repeat visits</p>
-                      </li>
-                   </ul>
-                 </div>
-              </div>
-
-              {/* Example Story */}
-              <div>
-                 <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
-                   <span className="w-6 h-6 rounded-full bg-brand-black text-white text-xs flex items-center justify-center">3</span>
-                   Example Story
-                 </h3>
-                 <div className="border border-brand-black/10 rounded-[2rem] p-8 md:p-10 relative overflow-hidden group">
-                   <div className="absolute top-0 right-0 w-32 h-32 bg-[#fff6e5] rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500" />
-                   <p className="text-brand-black/80 leading-relaxed font-light text-lg">
-                     A neighborhood bar introduces "Offscreen Thursdays". Guests scan a QR, add what they're into today, "First week in the city", "Startup person", "Here after work, open to chat". Instead of everyone staring at phones, small groups form at the bar. The bar gets a reputation as the place where you can walk in alone and still leave with a couple of new contacts.
-                   </p>
-                 </div>
-              </div>
-           </div>
-        </div>
-      </section>
-
       {/* CTA Footer Block */}
       <section className="px-4 lg:px-8 max-w-[1400px] mx-auto mb-16">
         <div className="bg-brand-black rounded-[2rem] p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left relative overflow-hidden">
@@ -244,9 +237,9 @@ export function CommunitiesPage() {
            </div>
            
            <div className="relative z-10 w-full md:w-auto">
-             <button className="bg-white text-brand-black px-10 py-5 rounded-full font-semibold hover:bg-[#1AEB7E] transition-colors flex items-center justify-center gap-2 whitespace-nowrap md:w-auto w-full shadow-xl shadow-black/20">
-               Get Started <ArrowRight className="w-4 h-4" />
-             </button>
+             <Link to="/pricing" className="bg-white text-brand-black px-10 py-5 rounded-full font-semibold hover:bg-[#1AEB7E] transition-colors flex items-center justify-center gap-2 whitespace-nowrap md:w-auto w-full shadow-xl shadow-black/20">
+               Request a Quote <ArrowRight className="w-4 h-4" />
+             </Link>
            </div>
         </div>
       </section>

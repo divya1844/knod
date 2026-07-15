@@ -27,12 +27,9 @@ export function EnterprisePage() {
             </p>
             
             <div className="flex flex-wrap gap-4">
-               <button className="bg-brand-black text-white px-8 py-4 rounded-full font-semibold hover:bg-black/80 transition-colors flex items-center justify-center gap-2">
+               <a href="mailto:sales@knod.ai" className="bg-brand-black text-white px-8 py-4 rounded-full font-semibold hover:bg-black/80 transition-colors flex items-center justify-center gap-2">
                  Contact Sales <ArrowRight className="w-4 h-4" />
-               </button>
-               <button className="bg-white text-brand-black px-8 py-4 rounded-full font-semibold hover:bg-[#f5f5f7] border border-brand-black/5 transition-colors">
-                 See How It Works
-               </button>
+               </a>
             </div>
           </div>
 
@@ -208,9 +205,9 @@ export function EnterprisePage() {
            </div>
            
            <div className="relative z-10 w-full md:w-auto">
-             <button className="bg-white text-brand-black px-10 py-5 rounded-full font-semibold hover:bg-[#1AEB7E] transition-colors flex items-center justify-center gap-2 whitespace-nowrap md:w-auto w-full shadow-xl shadow-black/20">
+             <a href="mailto:sales@knod.ai" className="bg-white text-brand-black px-10 py-5 rounded-full font-semibold hover:bg-[#1AEB7E] transition-colors flex items-center justify-center gap-2 whitespace-nowrap md:w-auto w-full shadow-xl shadow-black/20">
                Contact Sales <ArrowRight className="w-4 h-4" />
-             </button>
+             </a>
            </div>
         </div>
       </section>

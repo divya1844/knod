@@ -1,11 +1,12 @@
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 import { ArrowRight, GraduationCap, Users, Calendar, Award } from "lucide-react";
 import { useSEO } from "../hooks/useSEO";
 
 export function UniversitiesPage() {
   useSEO({
     title: "Connection Infrastructure for Universities | Knod",
-    description: "Orientation, international students, career fairs, alumni events. Help students find their people and build connections that matter.",
+    description: "Orientation, new students, career fairs, alumni events. Help students find their people and build connections that matter.",
   });
 
   return (
@@ -23,17 +24,9 @@ export function UniversitiesPage() {
               Build <span className="underline decoration-brand-blue/30 underline-offset-4">belonging</span> from day one.
             </h1>
             <p className="text-lg text-brand-black/70 max-w-md mb-10 leading-relaxed font-light">
-              Orientation, international students, career fairs, alumni events. Help students find their people and build connections that matter.
+              Orientation, career fairs, alumni events. Help new students find their people and build connections that matter.
             </p>
             
-            <div className="flex flex-wrap gap-4">
-               <button className="bg-brand-black text-white px-8 py-4 rounded-full font-semibold hover:bg-black/80 transition-colors flex items-center justify-center gap-2">
-                 Get Started <ArrowRight className="w-4 h-4" />
-               </button>
-               <button className="bg-white text-brand-black px-8 py-4 rounded-full font-semibold hover:bg-[#f5f5f7] border border-brand-black/5 transition-colors">
-                 See How It Works
-               </button>
-            </div>
           </div>
 
           {/* Right Block */}
@@ -72,7 +65,7 @@ export function UniversitiesPage() {
                 <span className="w-10 h-10 rounded-full bg-brand-black text-white flex items-center justify-center font-bold shrink-0">1</span>
                 <div>
                    <p className="text-brand-black/80 leading-relaxed font-medium text-lg">
-                     Orientation staff use Knod to help new and international students find people with shared interests and backgrounds
+                     Orientation staff use Knod to help new students find people with shared interests and backgrounds
                    </p>
                 </div>
               </div>
@@ -118,9 +111,9 @@ export function UniversitiesPage() {
            </div>
            
            <div className="bg-[#f5f5f7] border border-black/5 rounded-[2rem] p-10">
-             <h3 className="text-2xl font-semibold mb-4 text-brand-black">International Students</h3>
+             <h3 className="text-2xl font-semibold mb-4 text-brand-black">New Students</h3>
              <p className="text-brand-black/70 font-light leading-relaxed">
-               Connect international students with peers who share their background or interests
+               Connect new students with peers who share their interests and background
              </p>
            </div>
 
@@ -204,9 +197,9 @@ export function UniversitiesPage() {
            </div>
            
            <div className="relative z-10 w-full md:w-auto">
-             <button className="bg-white text-brand-black px-10 py-5 rounded-full font-semibold hover:bg-[#1AEB7E] transition-colors flex items-center justify-center gap-2 whitespace-nowrap md:w-auto w-full shadow-xl shadow-black/20">
-               Get Started <ArrowRight className="w-4 h-4" />
-             </button>
+             <Link to="/pricing" className="bg-white text-brand-black px-10 py-5 rounded-full font-semibold hover:bg-[#1AEB7E] transition-colors flex items-center justify-center gap-2 whitespace-nowrap md:w-auto w-full shadow-xl shadow-black/20">
+               Request a Quote <ArrowRight className="w-4 h-4" />
+             </Link>
            </div>
         </div>
       </section>
