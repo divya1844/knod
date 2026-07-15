@@ -162,7 +162,7 @@ export function UniversitiesPage() {
                         </li>
                         <li className="flex items-start gap-4">
                           <div className="w-2 h-2 rounded-full bg-brand-blue mt-2 shrink-0" />
-                          <p className="text-brand-black leading-relaxed font-medium">Data on what students are looking for—internships, co-founders, research, creative projects—which can feed programming</p>
+                          <p className="text-brand-black leading-relaxed font-medium">Data on what students are looking for, internships, co-founders, research, creative projects, which can feed programming</p>
                         </li>
                      </ul>
                    </div>

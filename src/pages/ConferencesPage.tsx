@@ -158,7 +158,7 @@ export function ConferencesPage() {
                         </li>
                         <li className="flex items-start gap-4">
                           <div className="w-2 h-2 rounded-full bg-brand-blue mt-2 shrink-0" />
-                          <p className="text-brand-black leading-relaxed font-medium">Stronger sponsor experiences—sponsors can host their own Knod spaces for office hours or founder matching</p>
+                          <p className="text-brand-black leading-relaxed font-medium">Stronger sponsor experiences, sponsors can host their own Knod spaces for office hours or founder matching</p>
                         </li>
                         <li className="flex items-start gap-4">
                           <div className="w-2 h-2 rounded-full bg-brand-blue mt-2 shrink-0" />

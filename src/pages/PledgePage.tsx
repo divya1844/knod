@@ -4,7 +4,7 @@ import { useSEO } from "../hooks/useSEO";
 export function PledgePage() {
   useSEO({
     title: "Community Partners | Knod",
-    description: "Interested in partnering with Knod? We're redesigning this page — reach out to hello@knod.ai to connect with our team.",
+    description: "Interested in partnering with Knod? We're redesigning this page, reach out to hello@knod.ai to connect with our team.",
   });
 
   return (
@@ -22,7 +22,7 @@ export function PledgePage() {
             Community Partners
           </h1>
           <p className="text-lg text-brand-black/60 leading-relaxed">
-            We're redesigning this page — check back soon. In the meantime, if you're interested in
+            We're redesigning this page, check back soon. In the meantime, if you're interested in
             partnering with Knod, reach out to us at{" "}
             <a href="mailto:hello@knod.ai" className="text-brand-blue hover:underline">
               hello@knod.ai

@@ -100,7 +100,7 @@ export function BlogDetailPage() {
           </p>
           
           <p className="mb-6">
-            On the other side, we are spending huge amounts of money to get people into the same physical spaces. Events, conferences, member programs, campuses, brand experiences—all together sit in the hundreds of billions of dollars globally every year.
+            On the other side, we are spending huge amounts of money to get people into the same physical spaces. Events, conferences, member programs, campuses, brand experiences, all together sit in the hundreds of billions of dollars globally every year.
           </p>
 
           <h2 className="text-2xl md:text-3xl font-medium tracking-tight text-brand-black mt-12 mb-6">The Paradox</h2>

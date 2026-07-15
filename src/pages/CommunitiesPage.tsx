@@ -80,7 +80,7 @@ export function CommunitiesPage() {
                  <ul className="space-y-4">
                     <li className="flex items-start gap-4">
                       <div className="w-1.5 h-1.5 rounded-full bg-brand-blue mt-2.5 shrink-0" />
-                      <p className="text-brand-black/70 leading-relaxed font-light">Property team sets up a Knod space for the building or for recurring events—for example, "Resident Social", "Dog Owners in Building A"</p>
+                      <p className="text-brand-black/70 leading-relaxed font-light">Property team sets up a Knod space for the building or for recurring events, for example, "Resident Social", "Dog Owners in Building A"</p>
                     </li>
                     <li className="flex items-start gap-4">
                       <div className="w-1.5 h-1.5 rounded-full bg-brand-blue mt-2.5 shrink-0" />
@@ -88,7 +88,7 @@ export function CommunitiesPage() {
                     </li>
                     <li className="flex items-start gap-4">
                       <div className="w-1.5 h-1.5 rounded-full bg-brand-blue mt-2.5 shrink-0" />
-                      <p className="text-brand-black/70 leading-relaxed font-light">Residents tap a link, choose what they're looking for—gym partner, dog walk buddies, language exchange, game night—and see a short list of neighbors to connect with</p>
+                      <p className="text-brand-black/70 leading-relaxed font-light">Residents tap a link, choose what they're looking for, gym partner, dog walk buddies, language exchange, game night, and see a short list of neighbors to connect with</p>
                     </li>
                     <li className="flex items-start gap-4">
                       <div className="w-1.5 h-1.5 rounded-full bg-brand-blue mt-2.5 shrink-0" />
@@ -119,7 +119,7 @@ export function CommunitiesPage() {
                       </li>
                       <li className="flex items-start gap-4">
                         <div className="w-2 h-2 rounded-full bg-[#1AEB7E] mt-2 shrink-0" />
-                        <p className="text-brand-black leading-relaxed font-medium">Reduces churn risk—residents with real connections are harder to lose</p>
+                        <p className="text-brand-black leading-relaxed font-medium">Reduces churn risk, residents with real connections are harder to lose</p>
                       </li>
                    </ul>
                  </div>
@@ -134,7 +134,7 @@ export function CommunitiesPage() {
                  <div className="border border-brand-black/10 rounded-[2rem] p-8 md:p-10 relative overflow-hidden group">
                    <div className="absolute top-0 right-0 w-32 h-32 bg-[#ebfaef] rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500" />
                    <p className="text-brand-black/80 leading-relaxed font-light text-lg">
-                     A 300-unit building runs "Wednesday Knod Night" twice a month. Over time they see clusters form—remote workers who co-work in the lounge, dog owners who do group walks, new residents who report meeting at least two neighbors in their first month. The property team uses these insights to design better events and can show ownership that community is a real asset, not just a tagline.
+                     A 300-unit building runs "Wednesday Knod Night" twice a month. Over time they see clusters form, remote workers who co-work in the lounge, dog owners who do group walks, new residents who report meeting at least two neighbors in their first month. The property team uses these insights to design better events and can show ownership that community is a real asset, not just a tagline.
                    </p>
                  </div>
               </div>
@@ -171,11 +171,11 @@ export function CommunitiesPage() {
                     </li>
                     <li className="flex items-start gap-4">
                       <div className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2.5 shrink-0" />
-                      <p className="text-brand-black/70 leading-relaxed font-light">Guests open Knod in the browser, say what they're open to—"Meet another solo traveler", "Find a co-founder", "Talk about films", "Meet a gym buddy"</p>
+                      <p className="text-brand-black/70 leading-relaxed font-light">Guests open Knod in the browser, say what they're open to, "Meet another solo traveler", "Find a co-founder", "Talk about films", "Meet a gym buddy"</p>
                     </li>
                     <li className="flex items-start gap-4">
                       <div className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2.5 shrink-0" />
-                      <p className="text-brand-black/70 leading-relaxed font-light">Knod quietly matches people in the same space—they can exchange a couple of messages then decide to talk in person</p>
+                      <p className="text-brand-black/70 leading-relaxed font-light">Knod quietly matches people in the same space, they can exchange a couple of messages then decide to talk in person</p>
                     </li>
                  </ul>
               </div>
@@ -202,7 +202,7 @@ export function CommunitiesPage() {
                       </li>
                       <li className="flex items-start gap-4">
                         <div className="w-2 h-2 rounded-full bg-amber-500 mt-2 shrink-0" />
-                        <p className="text-brand-black leading-relaxed font-medium">Venues get simple insights—what people are coming for, which themes drive repeat visits</p>
+                        <p className="text-brand-black leading-relaxed font-medium">Venues get simple insights, what people are coming for, which themes drive repeat visits</p>
                       </li>
                    </ul>
                  </div>
@@ -217,7 +217,7 @@ export function CommunitiesPage() {
                  <div className="border border-brand-black/10 rounded-[2rem] p-8 md:p-10 relative overflow-hidden group">
                    <div className="absolute top-0 right-0 w-32 h-32 bg-[#fff6e5] rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500" />
                    <p className="text-brand-black/80 leading-relaxed font-light text-lg">
-                     A neighborhood bar introduces "Offscreen Thursdays". Guests scan a QR, add what they're into today—"First week in the city", "Startup person", "Here after work, open to chat". Instead of everyone staring at phones, small groups form at the bar. The bar gets a reputation as the place where you can walk in alone and still leave with a couple of new contacts.
+                     A neighborhood bar introduces "Offscreen Thursdays". Guests scan a QR, add what they're into today, "First week in the city", "Startup person", "Here after work, open to chat". Instead of everyone staring at phones, small groups form at the bar. The bar gets a reputation as the place where you can walk in alone and still leave with a couple of new contacts.
                    </p>
                  </div>
               </div>

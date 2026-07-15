@@ -22,7 +22,7 @@ export function TermsPage() {
             Terms of Service
           </h1>
           <p className="text-lg text-brand-black/60 leading-relaxed">
-            We're finalizing our terms of service — check back soon. In the meantime, if you have
+            We're finalizing our terms of service, check back soon. In the meantime, if you have
             questions, reach out to us at{" "}
             <a href="mailto:hello@knod.ai" className="text-brand-blue hover:underline">
               hello@knod.ai

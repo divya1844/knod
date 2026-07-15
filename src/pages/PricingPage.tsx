@@ -35,7 +35,7 @@ const LAUNCH_PLANS = [
       "Priority support + onboarding",
       "Co-marketing opportunities"
     ],
-    ctaText: "Pay Now — $5,000",
+    ctaText: "Pay Now, $5,000",
     popular: true,
     color: "bg-brand-blue text-white",
     btnColor: "bg-white text-brand-blue hover:bg-white/90"
@@ -54,7 +54,7 @@ const LAUNCH_PLANS = [
       "Shape the Knod roadmap",
       "White-label option"
     ],
-    ctaText: "Pay Now — $10,000",
+    ctaText: "Pay Now, $10,000",
     popular: false,
     color: "bg-[#f5f5f7] text-brand-black",
     btnColor: "bg-brand-black text-white hover:bg-[#222]"
@@ -112,7 +112,7 @@ const STANDARD_PLANS = [
 export function PricingPage() {
   useSEO({
     title: "Pricing | Knod",
-    description: "Explore Knod's launch partner pricing tiers — Starter, Growth, and Strategic Founding plans for events, communities, and organizations.",
+    description: "Explore Knod's launch partner pricing tiers, Starter, Growth, and Strategic Founding plans for events, communities, and organizations.",
   });
 
   return (

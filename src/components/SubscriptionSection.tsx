@@ -43,7 +43,7 @@ const TIERS = [
       "Priority support + onboarding",
       "Co-marketing opportunities"
     ],
-    buttonText: "Pay Now — $5,000",
+    buttonText: "Pay Now, $5,000",
     decorColor: "#ffaa00",
   },
   {
@@ -61,7 +61,7 @@ const TIERS = [
       "Shape the Knod roadmap",
       "White-label option"
     ],
-    buttonText: "Pay Now — $10,000",
+    buttonText: "Pay Now, $10,000",
     decorColor: "#FF0055",
   }
 ];
@@ -108,7 +108,7 @@ export function SubscriptionSection() {
                 Become a Knod<br />Launch Partner.
               </h3>
               <p className="text-brand-black/70 text-lg sm:text-xl font-medium leading-relaxed max-w-md mb-8">
-                Lock in founding pricing. Help shape connection infrastructure for physical spaces. 3 tiers available — pay directly on this page.
+                Lock in founding pricing. Help shape connection infrastructure for physical spaces. 3 tiers available, pay directly on this page.
               </p>
               <a href="#learn-more" className="inline-flex items-center gap-2 text-brand-blue font-semibold hover:text-blue-700 transition-colors">
                 Learn what launch partners get <ChevronRight className="w-4 h-4" />

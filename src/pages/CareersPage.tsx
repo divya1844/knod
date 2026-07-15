@@ -11,7 +11,7 @@ const VALUES = [
   {
     icon: "🤝",
     title: "Founder access",
-    desc: "You work directly with the founding team — no layers."
+    desc: "You work directly with the founding team, no layers."
   },
   {
     icon: "🌆",
@@ -112,7 +112,7 @@ export function CareersPage() {
               Open Roles
             </h2>
             <p className="text-lg text-brand-black/60 font-medium tracking-wide uppercase">
-              Internships — Summer / Fall 2026
+              Internships, Summer / Fall 2026
             </p>
          </div>
 

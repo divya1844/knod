@@ -11,7 +11,7 @@ const STEPS = [
   },
   {
     title: "AI Finds Their Best Matches",
-    desc: 'Our AI analyzes interests, goals, and context to find people who should meet. Real-time notifications: "You matched with Sarah—she\'s also interested in AI and fundraising."',
+    desc: 'Our AI analyzes interests, goals, and context to find people who should meet. Real-time notifications: "You matched with Sarah, she\'s also interested in AI and fundraising."',
     icon: <Zap className="w-6 h-6 text-brand-black" />,
     label: "MATCH",
   },
@@ -31,7 +31,7 @@ const STEPS = [
 
 const COUNT = STEPS.length;
 
-/** Haptic tap — fails silently on unsupported devices */
+/** Haptic tap, fails silently on unsupported devices */
 function haptic() {
   try {
     if (typeof window !== "undefined" && navigator?.vibrate) {
@@ -244,7 +244,7 @@ export function HorizontalScrollSection() {
 
             {/* ─── Desktop Deck (xl+) ─── */}
             <div className="hidden xl:flex flex-col">
-              {/* Deck container — overflow visible so stacked edges show */}
+              {/* Deck container, overflow visible so stacked edges show */}
               <div
                 className="relative w-full"
                 style={{ height: "540px" }}
@@ -278,7 +278,7 @@ export function HorizontalScrollSection() {
 
             {/* ─── Mobile/Tablet Deck (<xl) ─── */}
             <div className="xl:hidden flex flex-col">
-              {/* Stacked deck — simplified for mobile */}
+              {/* Stacked deck, simplified for mobile */}
               <div
                 className="relative w-full"
                 style={{ height: "500px" }}

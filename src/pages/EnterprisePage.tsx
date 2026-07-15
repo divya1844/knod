@@ -5,7 +5,7 @@ import { useSEO } from "../hooks/useSEO";
 export function EnterprisePage() {
   useSEO({
     title: "Connection Infrastructure for Enterprise | Knod",
-    description: "Custom connection infrastructure for corporations, accelerators, and member networks — solutions that scale from pilot to global rollout.",
+    description: "Custom connection infrastructure for corporations, accelerators, and member networks, solutions that scale from pilot to global rollout.",
   });
 
   return (
@@ -180,7 +180,7 @@ export function EnterprisePage() {
                    <div className="border border-brand-black/10 rounded-[2rem] p-8 md:p-10 relative overflow-hidden group h-full">
                      <div className="absolute top-0 right-0 w-32 h-32 bg-[#fff6e5] rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500" />
                      <p className="text-brand-black/80 leading-relaxed font-light text-lg relative z-10">
-                       A global company pilots Knod at a leadership offsite. Each day has a new theme—"Meet someone from a different region", "Find a partner for a customer experiment", "Connect across ERGs". After the offsite, the program lead extends Knod to a few key hubs so people can keep discovering colleagues with similar goals when they're in the office.
+                       A global company pilots Knod at a leadership offsite. Each day has a new theme, "Meet someone from a different region", "Find a partner for a customer experiment", "Connect across ERGs". After the offsite, the program lead extends Knod to a few key hubs so people can keep discovering colleagues with similar goals when they're in the office.
                      </p>
                    </div>
                 </div>

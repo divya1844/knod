@@ -36,7 +36,7 @@ const LAUNCH_PLANS = [
       "Priority support + onboarding",
       "Co-marketing opportunities"
     ],
-    ctaText: "Pay Now — $5,000",
+    ctaText: "Pay Now, $5,000",
     popular: true,
     color: "bg-brand-blue text-white",
     btnColor: "bg-white text-brand-blue hover:bg-white/90"
@@ -55,7 +55,7 @@ const LAUNCH_PLANS = [
       "Shape the Knod roadmap",
       "White-label option"
     ],
-    ctaText: "Pay Now — $10,000",
+    ctaText: "Pay Now, $10,000",
     popular: false,
     color: "bg-[#f5f5f7] text-brand-black",
     btnColor: "bg-[#ff4444] text-white hover:bg-[#ee3333]"
@@ -69,7 +69,7 @@ const FAQS = [
   },
   {
     q: "What happens after 2 years?",
-    a: "You'll be offered a renewal at preferential pricing — founders honor their early supporters. You'll never be auto-charged."
+    a: "You'll be offered a renewal at preferential pricing, founders honor their early supporters. You'll never be auto-charged."
   },
   {
     q: "Can I upgrade my tier later?",
@@ -132,9 +132,9 @@ export function LaunchPartnerPage() {
              </p>
              <ul className="space-y-6">
                {[
-                 "Founding price locked for 2 full years — never pay more as we scale",
+                 "Founding price locked for 2 full years, never pay more as we scale",
                  "Early access to every new feature before public rollout",
-                 "Direct line to the Knod founding team — your feedback shapes the roadmap",
+                 "Direct line to the Knod founding team, your feedback shapes the roadmap",
                  "Co-marketing and case study feature on Knod.ai and our social channels",
                  "Priority support and white-glove onboarding for your first event",
                  "Launch partner badge displayed on your event page"
@@ -161,7 +161,7 @@ export function LaunchPartnerPage() {
               </p>
               
               <div className="text-white/60 font-medium tracking-wide uppercase text-xs sm:text-sm">
-                — Event organizer, Chicago Innovation
+, Event organizer, Chicago Innovation
               </div>
            </div>
         </div>

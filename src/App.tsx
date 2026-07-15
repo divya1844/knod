@@ -14,6 +14,7 @@ import { Footer } from "./components/Footer";
 import { HowItWorksPage } from "./pages/HowItWorksPage";
 import { AboutPage } from "./pages/AboutPage";
 import { CaseStudiesPage } from "./pages/CaseStudiesPage";
+import { CaseStudyDetailPage } from "./pages/CaseStudyDetailPage";
 import { PricingPage } from "./pages/PricingPage";
 import { BlogPage } from "./pages/BlogPage";
 import { BlogDetailPage } from "./pages/BlogDetailPage";
@@ -58,7 +59,8 @@ function HomePage() {
       <HorizontalScrollSection />
       <TargetAudienceSection />
       <TestimonialsAndResearchSection />
-      <SubscriptionSection />
+      {/* Launch-partner pricing hidden on home page (still available at /pricing and /launch-partner) */}
+      {/* <SubscriptionSection /> */}
       <KnodInActionSection />
     </>
   );
@@ -82,6 +84,7 @@ export default function App() {
           <Route path="/how-it-works" element={<HowItWorksPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/case-studies" element={<CaseStudiesPage />} />
+          <Route path="/case-studies/:slug" element={<CaseStudyDetailPage />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/why-the-future-of-networking-is-b2b2c" element={<BlogDetailPage />} />

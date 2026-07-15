@@ -8,7 +8,7 @@ import { useSEO } from "../hooks/useSEO";
 export function AboutPage() {
   useSEO({
     title: "About Us | Knod",
-    description: "Knod believes human connection is infrastructure. Learn about our mission to build the connection layer for physical spaces — events, campuses, and communities.",
+    description: "Knod believes human connection is infrastructure. Learn about our mission to build the connection layer for physical spaces, events, campuses, and communities.",
   });
 
   return (

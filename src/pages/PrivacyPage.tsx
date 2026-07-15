@@ -22,7 +22,7 @@ export function PrivacyPage() {
             Privacy Policy
           </h1>
           <p className="text-lg text-brand-black/60 leading-relaxed">
-            We're finalizing our privacy policy — check back soon. In the meantime, if you have
+            We're finalizing our privacy policy, check back soon. In the meantime, if you have
             questions about how we handle your data, reach out to us at{" "}
             <a href="mailto:hello@knod.ai" className="text-brand-blue hover:underline">
               hello@knod.ai

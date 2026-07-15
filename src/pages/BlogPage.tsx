@@ -10,7 +10,7 @@ const BLOG_POSTS = [
   {
     id: 1,
     title: "Why the Future of Networking Is B2B2C, Not Another App",
-    excerpt: "We are paying to put people in rooms while they feel more disconnected inside those rooms. The solution is not another social network—it's an infrastructure layer.",
+    excerpt: "We are paying to put people in rooms while they feel more disconnected inside those rooms. The solution is not another social network, it's an infrastructure layer.",
     author: "Knod AI",
     date: "December 2025",
     readTime: "5 min read",

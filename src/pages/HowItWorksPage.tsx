@@ -52,7 +52,7 @@ export function HowItWorksPage() {
             </div>
             <h3 className="text-xl font-medium mb-4">Attendees Arrive at Your Event</h3>
             <p className="text-brand-black/70 mb-6 leading-relaxed">
-              Place QR code posters at the entrance or registration area. Attendees scan with their phone camera—no download required, no app to install.
+              Place QR code posters at the entrance or registration area. Attendees scan with their phone camera, no download required, no app to install.
             </p>
             <div className="mt-auto bg-[#f5f5f7] rounded-xl p-5 text-sm space-y-3 font-medium opacity-80 border border-brand-black/5 group-hover:border-brand-blue/20 transition-colors">
               <p className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-blue flex-shrink-0" />Why are you here today?</p>
@@ -105,7 +105,7 @@ export function HowItWorksPage() {
             </div>
             <h3 className="text-xl font-medium mb-4">They Meet in Person at the Event</h3>
             <p className="text-brand-black/70 mb-6 leading-relaxed">
-              This is the critical part: Knod facilitates the introduction, then steps back. Chat is limited to 3 messages each—by design.
+              This is the critical part: Knod facilitates the introduction, then steps back. Chat is limited to 3 messages each, by design.
             </p>
             <div className="mt-auto bg-[#f5f5f7] rounded-xl p-5 text-sm space-y-3 font-medium opacity-80 border border-brand-black/5 group-hover:border-brand-blue/20 transition-colors">
               <p className="flex items-start gap-2"><MessageCircle className="w-4 h-4 text-brand-blue mt-0.5 shrink-0" /><span>Why you were matched (shared interests, complementary goals)</span></p>
@@ -242,7 +242,7 @@ export function HowItWorksPage() {
                   <h3 className="text-2xl font-medium">Complementary Matching</h3>
                 </div>
                 <p className="text-brand-black/70 leading-relaxed text-lg">
-                  We look for complementary goals, not just similar interests. If you're hiring engineers, we match you with engineers looking for jobs—not other hiring managers. If you're fundraising, we connect you with investors—not other founders fundraising.
+                  We look for complementary goals, not just similar interests. If you're hiring engineers, we match you with engineers looking for jobs, not other hiring managers. If you're fundraising, we connect you with investors, not other founders fundraising.
                 </p>
               </motion.div>
             </div>

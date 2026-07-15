@@ -122,7 +122,7 @@ export function CommunityPartnersPage() {
                 <HandHeart className="w-5 h-5 text-green-600" />
               </div>
               <p className="text-xs font-semibold leading-snug text-brand-black">
-                Knod for Good — supporting the communities that bring people together.
+                Knod for Good, supporting the communities that bring people together.
               </p>
             </div>
           </motion.div>
@@ -146,9 +146,9 @@ export function CommunityPartnersPage() {
           <p className="text-lg text-brand-black/60 leading-relaxed font-light">
             Whether you're running a nonprofit, leading a student organization, organizing local
             meetups, supporting entrepreneurs, or bringing neighbors together, meaningful
-            connections are often your greatest resource — and your biggest challenge. That's why we
+            connections are often your greatest resource, and your biggest challenge. That's why we
             created the Knod Community Partner Program. If your organization exists to bring people
-            together, we'll provide Knod at no cost — so you can spend less time hoping connections
+            together, we'll provide Knod at no cost, so you can spend less time hoping connections
             happen, and more time helping them happen.
           </p>
         </motion.div>

@@ -20,10 +20,10 @@ export function Navbar() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 pt-4 opacity-0 pointer-events-none group-hover/solutions:opacity-100 group-hover/solutions:top-full group-hover/solutions:pointer-events-auto transition-all duration-300 z-50">
             <div className="w-64 bg-[#0a0f16] border border-white/5 text-white/90 rounded-2xl p-2 shadow-2xl flex flex-col">
               <Link
-                to="/communities"
+                to="/conferences"
                 className="px-4 py-3 hover:bg-white/5 rounded-xl transition-colors"
               >
-                Communities & Third Spaces
+                Conferences & Live Events
               </Link>
               <Link
                 to="/universities"
@@ -32,10 +32,10 @@ export function Navbar() {
                 Universities & Campuses
               </Link>
               <Link
-                to="/conferences"
+                to="/communities"
                 className="px-4 py-3 hover:bg-white/5 rounded-xl transition-colors"
               >
-                Conferences & Live Events
+                Communities & Third Spaces
               </Link>
               <Link
                 to="/enterprise"
@@ -89,14 +89,14 @@ export function Navbar() {
             <div className="p-6 flex flex-col gap-6 text-lg font-medium">
               <div className="flex flex-col gap-2">
                 <span className="text-brand-black/50 text-sm font-semibold tracking-wider uppercase px-2">Solutions</span>
-                <Link to="/communities" className="hover:text-brand-blue transition-colors text-base py-3 px-2 flex items-center min-h-[44px]" onClick={() => setIsMobileMenuOpen(false)}>
-                  Communities & Third Spaces
+                <Link to="/conferences" className="hover:text-brand-blue transition-colors text-base py-3 px-2 flex items-center min-h-[44px]" onClick={() => setIsMobileMenuOpen(false)}>
+                  Conferences & Live Events
                 </Link>
                 <Link to="/universities" className="hover:text-brand-blue transition-colors text-base py-3 px-2 flex items-center min-h-[44px]" onClick={() => setIsMobileMenuOpen(false)}>
                   Universities & Campuses
                 </Link>
-                <Link to="/conferences" className="hover:text-brand-blue transition-colors text-base py-3 px-2 flex items-center min-h-[44px]" onClick={() => setIsMobileMenuOpen(false)}>
-                  Conferences & Live Events
+                <Link to="/communities" className="hover:text-brand-blue transition-colors text-base py-3 px-2 flex items-center min-h-[44px]" onClick={() => setIsMobileMenuOpen(false)}>
+                  Communities & Third Spaces
                 </Link>
                 <Link to="/enterprise" className="hover:text-brand-blue transition-colors text-base py-3 px-2 flex items-center min-h-[44px]" onClick={() => setIsMobileMenuOpen(false)}>
                   Enterprise & Custom
