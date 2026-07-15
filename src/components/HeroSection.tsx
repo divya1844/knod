@@ -125,9 +125,30 @@ export function HeroSection() {
                 </span>
               </div>
               
-              <p className="text-sm sm:text-base md:text-lg text-brand-black/90 leading-relaxed font-semibold font-sans">
-                Paste your event link from Luma, Eventbrite, and more, and <span className="text-brand-blue">Knod</span> adds a QR code for your guests. Share what people are looking for, and <span className="text-brand-blue">Knod</span> instantly recommends the most relevant person around each attendee.
-              </p>
+              <div className="grid grid-cols-2 gap-4 sm:gap-6 divide-x divide-brand-black/5">
+                <div>
+                  <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-brand-blue mb-2.5">For Hosts</p>
+                  <ol className="space-y-2">
+                    {["Paste your event link", "Customize your spots", "Share the link"].map((step, i) => (
+                      <li key={i} className="flex items-center gap-2 text-sm sm:text-[15px] font-semibold text-brand-black">
+                        <span className="w-5 h-5 shrink-0 rounded-full bg-brand-blue/10 text-brand-blue text-[11px] font-bold flex items-center justify-center">{i + 1}</span>
+                        {step}
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+                <div className="pl-4 sm:pl-6">
+                  <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-brand-blue mb-2.5">For Attendees</p>
+                  <ol className="space-y-2">
+                    {["Share your intent", "Scan at the venue", "Meet in person"].map((step, i) => (
+                      <li key={i} className="flex items-center gap-2 text-sm sm:text-[15px] font-semibold text-brand-black">
+                        <span className="w-5 h-5 shrink-0 rounded-full bg-brand-blue/10 text-brand-blue text-[11px] font-bold flex items-center justify-center">{i + 1}</span>
+                        {step}
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              </div>
             </motion.div>
           </div>
 
