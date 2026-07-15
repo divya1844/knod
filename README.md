@@ -68,6 +68,7 @@ const { openDemo } = useDemoModal();
 - Headline signature: `font-medium` heading with an `italic font-light text-brand-blue` accent word.
 - Cards/panels use `rounded-[2rem]`; buttons and pills use `rounded-full`.
 - See [`docs/brand-guidelines.md`](docs/brand-guidelines.md) for voice, color, and typography.
+- See [`docs/notes.md`](docs/notes.md) for known issues and deferred work.
 
 ## Deploying
 
