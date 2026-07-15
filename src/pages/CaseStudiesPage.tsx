@@ -1,8 +1,7 @@
-import { useState } from "react";
 import { motion } from "motion/react";
 import { ArrowRight, GraduationCap, Building2, Code2, FileText, MapPin } from "lucide-react";
 import { useSEO } from "../hooks/useSEO";
-import { BookDemoModal } from "../components/BookDemoModal";
+import { useDemoModal } from "../contexts/DemoModalContext";
 
 const AGGREGATE = [
   { value: "1,700+", label: "Attendees across live events" },
@@ -139,7 +138,7 @@ const sectionLabel =
   "text-xs font-semibold tracking-wider uppercase text-brand-blue mb-3 flex items-center gap-2";
 
 export function CaseStudiesPage() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const { openDemo } = useDemoModal();
 
   useSEO({
     title: "Case Studies & Results | Knod",
@@ -477,7 +476,7 @@ export function CaseStudiesPage() {
 
           <div className="relative z-10 w-full md:w-auto shrink-0 flex justify-center md:justify-end">
             <button
-              onClick={() => setIsModalOpen(true)}
+              onClick={openDemo}
               className="bg-[#1AEB7E] text-brand-black px-8 py-4 sm:px-10 sm:py-5 rounded-full text-sm sm:text-base font-semibold hover:bg-[#1AEB7E]/90 transition-colors flex items-center justify-center gap-2 group w-full sm:w-auto shadow-lg shadow-[#1AEB7E]/20 cursor-pointer"
             >
               Book a Demo{" "}
@@ -486,8 +485,6 @@ export function CaseStudiesPage() {
           </div>
         </div>
       </section>
-
-      <BookDemoModal open={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </main>
   );
 }

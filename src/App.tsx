@@ -32,6 +32,7 @@ import { PledgePage } from "./pages/PledgePage";
 import { CommunityPartnersPage } from "./pages/CommunityPartnersPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { useSEO } from "./hooks/useSEO";
+import { DemoModalProvider } from "./contexts/DemoModalContext";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -68,6 +69,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <DemoModalProvider>
       <div className="min-h-screen bg-[#f5f5f7] font-sans text-brand-black flex flex-col relative selection:bg-brand-blue selection:text-white">
         {/* Background Orbs for Liquid Glass Effect */}
         <div className="absolute top-0 right-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
@@ -100,6 +102,7 @@ export default function App() {
         </Routes>
         <Footer />
       </div>
+      </DemoModalProvider>
     </BrowserRouter>
   );
 }

@@ -1,8 +1,7 @@
-import { useState } from "react";
 import { motion } from "motion/react";
 import { ArrowRight, QrCode, Users, Star, Zap, DollarSign, MessageSquare } from "lucide-react";
 import { Link } from "react-router-dom";
-import { BookDemoModal } from "./BookDemoModal";
+import { useDemoModal } from "../contexts/DemoModalContext";
 
 const NETWORK_NODES = [
   { id: 1, top: '15%', left: '20%', img: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150', delay: 1.5 },
@@ -19,7 +18,7 @@ const NETWORK_LINES: [number, number][] = [
 ];
 
 export function HeroSection() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const { openDemo } = useDemoModal();
 
   return (
     <>
@@ -79,7 +78,7 @@ export function HeroSection() {
               id="hero-cta-buttons"
             >
               <button
-                onClick={() => setIsModalOpen(true)}
+                onClick={openDemo}
                 className="group relative cursor-pointer inline-flex items-center justify-center gap-2.5 bg-brand-black text-white px-7 py-3.5 rounded-full text-base font-semibold overflow-hidden transition-all duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.15)] hover:-translate-y-0.5 active:scale-98"
                 id="cta-book-demo"
               >
@@ -285,9 +284,6 @@ export function HeroSection() {
           </div>
         </div>
       </main>
-
-      {/* Book a Demo - Apple HIG Liquid Glass Modal */}
-      <BookDemoModal open={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 }
