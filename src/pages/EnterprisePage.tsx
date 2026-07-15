@@ -35,7 +35,7 @@ export function EnterprisePage() {
 
           {/* Right Block */}
           <div className="bg-white rounded-[2rem] relative h-[400px] lg:h-full overflow-hidden">
-             <img src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=1200" className="w-full h-full object-cover" alt="Enterprise Solutions" />
+             <img src="https://images.pexels.com/photos/7648047/pexels-photo-7648047.jpeg?auto=compress&cs=tinysrgb&w=1200" className="w-full h-full object-cover" alt="Executives networking at a formal professional event" />
              
              {/* Floating elements */}
              <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-md rounded-xl p-2 flex items-center gap-3 shadow-lg max-w-[220px]">
