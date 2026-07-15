@@ -19,6 +19,7 @@ export interface QuoteRequest {
   event_type?: string;
   event_duration?: string;
   attendee_count?: string;
+  plan?: string;
   source?: string;
 }
 
