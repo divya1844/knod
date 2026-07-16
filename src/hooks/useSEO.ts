@@ -64,7 +64,7 @@ export function useSEO({ title, description, path, image = DEFAULT_OG_IMAGE, typ
 
     upsertMeta('meta[name="twitter:card"]', () => document.createElement("meta"), {
       name: "twitter:card",
-      content: "summary",
+      content: "summary_large_image",
     });
     upsertMeta('meta[name="twitter:title"]', () => document.createElement("meta"), {
       name: "twitter:title",

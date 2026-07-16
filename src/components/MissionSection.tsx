@@ -50,7 +50,7 @@ export function MissionSection() {
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-blue/5 rounded-full blur-[100px] pointer-events-none -z-10 translate-x-1/3 -translate-y-1/3" />
 
       <div className="max-w-[1400px] mx-auto">
-        <div className="text-brand-blue font-semibold tracking-[0.2em] text-xs  mb-16">
+        <div className="text-brand-blue font-semibold tracking-[0.2em] text-xs mb-6 md:mb-8">
           Our Mission
         </div>
 

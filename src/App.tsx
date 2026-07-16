@@ -55,9 +55,9 @@ function HomePage() {
       <HeroSection />
       <TrustedPartnersSection />
       <WhatKnodDeliversSection />
-      <MissionSection />
-      <HorizontalScrollSection />
       <ResearchStatsSection />
+      <HorizontalScrollSection />
+      <MissionSection />
       <TargetAudienceSection />
       <TestimonialsSection />
       {/* Launch-partner pricing hidden on home page (still available at /pricing and /launch-partner) */}

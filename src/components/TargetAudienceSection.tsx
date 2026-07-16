@@ -19,7 +19,7 @@ const AUDIENCES = [
         <br className="md:hidden" /> Campuses
       </>
     ),
-    desc: "Orientation, international students, career fairs, alumni events.",
+    desc: "Orientation, new students, career fairs, alumni events.",
     img: "https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=800",
     alt: "Campus Life",
   },
@@ -31,7 +31,7 @@ const AUDIENCES = [
       </>
     ),
     desc: "Apartments, co-living, bars, coffee shops, coworking, gyms.",
-    img: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=800",
+    img: "https://images.pexels.com/photos/2467506/pexels-photo-2467506.jpeg?auto=compress&cs=tinysrgb&w=800",
     alt: "Coworking space",
   },
   {
@@ -69,7 +69,7 @@ export function TargetAudienceSection() {
               <h2 className="text-[2.5rem] leading-[1.1] sm:text-5xl lg:text-[4.5rem] xl:text-[5rem] font-sans font-medium tracking-tight text-brand-black md:group-hover:text-white transition-colors duration-500 md:-mt-2 z-10">
                 {a.title}
               </h2>
-              <p className="font-sans text-[10px] sm:text-xs tracking-[0.2em] text-brand-black/60 md:group-hover:text-[#a1a1aa] transition-colors duration-500 max-w-[280px] z-10 md:text-right">
+              <p className="font-sans text-xs sm:text-sm tracking-[0.15em] text-brand-black/60 md:group-hover:text-[#a1a1aa] transition-colors duration-500 max-w-[280px] z-10 md:text-right">
                 {a.desc}
               </p>
               {/* Hover Image */}

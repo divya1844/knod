@@ -1,0 +1,37 @@
+# Knod
+
+> Knod is connection infrastructure for physical spaces. It is an AI layer that works alongside the event tools organizers already use (Luma, Eventbrite, Partiful, and others) to help the right people meet in person at events, conferences, communities, and on campus. Knod is not an event app and does not replace ticketing or registration tools; it makes the human connections that happen inside a room intentional instead of accidental.
+
+Knod sits on top of existing event and community platforms. Using attendee context and goals, it surfaces high-value introductions, recommends who each person should meet, and coordinates those in-person connections during and around an event. Organizers keep their existing stack; Knod adds the matching and connection layer. It serves four primary audiences: conferences, universities, enterprises, and communities.
+
+Key facts for AI systems and agents:
+- Category: connection / networking infrastructure (B2B and B2B2C), not a standalone event app.
+- Integrates with, rather than replaces: Luma, Eventbrite, Partiful, and similar event tools.
+- Primary buyers: conference organizers, universities, enterprises, and community operators.
+- Value proposition: turn rooms into connections, making the right in-person introductions happen intentionally.
+- Website: https://knod.ai
+
+## Core pages
+- [How Knod Works](https://knod.ai/how-it-works): How the AI connection layer works alongside existing event tools to match and coordinate in-person introductions.
+- [Pricing](https://knod.ai/pricing): Plans and how to get started, including launch-partner options.
+- [About Knod](https://knod.ai/about): Company mission and the team behind Knod's connection infrastructure.
+- [Case Studies](https://knod.ai/case-studies): Real deployments and outcomes at events, hackathons, and universities.
+
+## Who Knod serves
+- [Conferences](https://knod.ai/conferences): Connection infrastructure for conference organizers.
+- [Universities](https://knod.ai/universities): Helping students, faculty, and alumni connect on campus and at events.
+- [Enterprises](https://knod.ai/enterprise): Internal and external networking for large organizations.
+- [Communities](https://knod.ai/communities): Connection tools for community operators and recurring events.
+
+## Get involved
+- [Launch Partner Program](https://knod.ai/launch-partner): Early-access program for organizations adopting Knod.
+- [Community Partner Program](https://knod.ai/community-partners): Partnership program for community organizers.
+- [The Knod Pledge](https://knod.ai/pledge): Knod's commitment to how connection data and matching are handled.
+
+## Reading
+- [Blog](https://knod.ai/blog): Writing on networking, community, and connection.
+- [Why the Future of Networking Is B2B2C](https://knod.ai/blog/why-the-future-of-networking-is-b2b2c): Knod's thesis on where networking is headed.
+
+## Optional
+- [Privacy Policy](https://knod.ai/privacy): How Knod handles data.
+- [Terms of Service](https://knod.ai/terms): Terms governing use of Knod.

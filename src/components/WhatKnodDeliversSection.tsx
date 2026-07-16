@@ -51,10 +51,10 @@ export function WhatKnodDeliversSection() {
             </div>
 
             <div className="relative z-10 mt-auto">
-              <h3 className="text-[2rem] sm:text-[2.5rem] lg:text-[2.15rem] xl:text-[2.5rem] font-sans font-medium tracking-tight text-white mb-3 leading-[1.1]">
+              <h3 className="text-[2rem] sm:text-[2.35rem] lg:text-[2.35rem] xl:text-[2.5rem] font-sans font-medium tracking-tight text-white mb-3 leading-[1.1]">
                 Hosts & Spaces
               </h3>
-              <p className="text-base sm:text-lg lg:text-base xl:text-lg text-white/90 font-normal leading-relaxed pr-2 line-clamp-4 min-h-[6.5em]">
+              <p className="text-base sm:text-lg lg:text-base xl:text-lg text-white/90 font-normal leading-relaxed pr-2 line-clamp-4 min-h-[3.5em]">
                 Increase engagement, strengthen attendee experiences, and measure meaningful connections.
               </p>
             </div>
@@ -178,10 +178,10 @@ export function WhatKnodDeliversSection() {
             </div>
 
             <div className="relative z-10 mt-auto">
-              <h3 className="text-[2rem] sm:text-[2.5rem] lg:text-[2.15rem] xl:text-[2.5rem] font-sans font-medium tracking-tight text-white mb-3 leading-[1.1]">
+              <h3 className="text-[2rem] sm:text-[2.35rem] lg:text-[2.35rem] xl:text-[2.5rem] font-sans font-medium tracking-tight text-white mb-3 leading-[1.1]">
                 Attendees
               </h3>
-              <p className="text-base sm:text-lg lg:text-base xl:text-lg text-white/80 font-normal leading-relaxed pr-2 line-clamp-4 min-h-[6.5em]">
+              <p className="text-base sm:text-lg lg:text-base xl:text-lg text-white/80 font-normal leading-relaxed pr-2 line-clamp-4 min-h-[3.5em]">
                 Meet the right people faster and make every interaction more valuable.
               </p>
             </div>
@@ -230,10 +230,10 @@ export function WhatKnodDeliversSection() {
             </div>
 
             <div className="relative z-10 mt-auto">
-              <h3 className="text-[2rem] sm:text-[2.5rem] lg:text-[2.15rem] xl:text-[2.5rem] font-sans font-medium tracking-tight text-white mb-3 leading-[1.1]">
+              <h3 className="text-[2rem] sm:text-[2.35rem] lg:text-[2.35rem] xl:text-[2.5rem] font-sans font-medium tracking-tight text-white mb-3 leading-[1.1]">
                 Communities
               </h3>
-              <p className="text-base sm:text-lg lg:text-base xl:text-lg text-white/90 font-normal leading-relaxed pr-2 line-clamp-4 min-h-[6.5em]">
+              <p className="text-base sm:text-lg lg:text-base xl:text-lg text-white/90 font-normal leading-relaxed pr-2 line-clamp-4 min-h-[3.5em]">
                 Turn introductions into relationships and shared spaces into thriving communities
               </p>
             </div>

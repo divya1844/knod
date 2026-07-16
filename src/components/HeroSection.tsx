@@ -24,9 +24,9 @@ export function HeroSection() {
   return (
     <>
       <main className="max-w-[1400px] mx-auto px-6 pb-4 pt-20 sm:pt-22 lg:pt-22 min-h-[50vh] lg:min-h-[540px] flex items-center relative">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 sm:gap-16 lg:gap-8 w-full items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 sm:gap-16 lg:gap-8 w-full items-center min-w-0">
           {/* Left Column: Typography */}
-          <div className="lg:col-span-7 flex flex-col gap-5 sm:gap-6 z-10 w-full mt-8 sm:mt-0">
+          <div className="lg:col-span-7 flex flex-col gap-5 sm:gap-6 z-10 w-full min-w-0 mt-8 sm:mt-0">
             
 
 
@@ -35,7 +35,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.05, ease: [0.16, 1, 0.3, 1] }}
-              className="text-[clamp(3.2rem,7.5vw,5rem)] sm:text-6xl lg:text-7xl xl:text-[5.5rem] leading-[1.05] sm:leading-[1.05] font-sans font-medium tracking-tight text-brand-black"
+              className="text-[clamp(2.6rem,7.5vw,5rem)] sm:text-6xl lg:text-7xl xl:text-[5.5rem] leading-[1.05] sm:leading-[1.05] font-sans font-medium tracking-tight text-brand-black"
               id="hero-main-heading"
             >
               Turn rooms into <br className="hidden sm:block" />
@@ -53,20 +53,20 @@ export function HeroSection() {
                 delay: 0.1,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="text-base sm:text-lg text-brand-black/80 leading-relaxed font-normal max-w-xl"
+              className="text-lg sm:text-xl text-brand-black/70 leading-relaxed font-normal max-w-xl"
               id="hero-subtext-para"
             >
-              Every room is full of opportunities.
-              <br />
-              <span className="text-base sm:text-lg block my-1 text-brand-black/80">
-                A future client. A mentor. A cofounder. A new hire. An investor.
-              </span>
-              <span className="block mt-2 font-medium text-brand-black/80">
-                Knod helps people find the conversations that move them forward.
+              Every room is full of{" "}
+              <span className="italic font-medium text-brand-blue">possibilities</span>:{" "}
+              <span className="text-brand-black font-medium">a future client, a mentor, a cofounder, a new hire, an investor, a friend.</span>{" "}
+              Yet the connections that could change everything are still{" "}
+              <span className="italic text-brand-black/55">left to chance.</span>
+              <span className="block mt-4 text-2xl sm:text-3xl font-semibold text-brand-black tracking-tight">
+                We're <span className="italic font-medium text-brand-blue">changing that.</span>
               </span>
             </motion.p>
 
-            {/* CTAs */}
+            {/* CTA */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -75,12 +75,12 @@ export function HeroSection() {
                 delay: 0.15,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="flex flex-col sm:flex-row gap-3.5 items-stretch sm:items-center mt-1"
+              className="flex justify-center mt-2"
               id="hero-cta-buttons"
             >
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="group relative cursor-pointer inline-flex items-center justify-center gap-2.5 bg-brand-black text-white px-7 py-3.5 rounded-full text-base font-semibold overflow-hidden transition-all duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.15)] hover:-translate-y-0.5 active:scale-98"
+                className="group relative cursor-pointer inline-flex items-center justify-center gap-2.5 bg-brand-black text-white px-8 py-4 rounded-full text-base font-semibold overflow-hidden transition-all duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.15)] hover:-translate-y-0.5 active:scale-98"
                 id="cta-book-demo"
               >
                 <span className="absolute inset-0 w-full h-full bg-brand-blue transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100" />
@@ -89,67 +89,8 @@ export function HeroSection() {
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </span>
               </button>
-
-              <Link
-                to="/how-it-works"
-                className="group inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-base font-semibold border border-black/10 bg-white/40 backdrop-blur-md shadow-[0_2px_12px_rgba(0,0,0,0.03),inset_0_1px_0_rgba(255,255,255,0.6)] text-brand-black transition-all duration-300 hover:bg-white/60 hover:border-black/20 hover:-translate-y-0.5 active:scale-98"
-                id="cta-see-how-it-works"
-              >
-                See How It Works
-              </Link>
             </motion.div>
 
-            {/* Frictionless Experience Highlight */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.2,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="mt-5 p-5 sm:p-6 rounded-3xl border-2 border-brand-blue/20 bg-white shadow-[0_15px_40px_rgba(0,113,227,0.08)] max-w-full lg:max-w-[95%] xl:max-w-2xl flex flex-col gap-4 relative overflow-hidden group"
-              id="hero-frictionless-experience"
-            >
-              {/* Subtle top brand glow accent */}
-              <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-brand-blue to-brand-accent-blue" />
-              
-              <div className="flex flex-wrap gap-3 items-center justify-between">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 text-[10px] sm:text-xs font-bold uppercase tracking-wider text-brand-blue bg-brand-blue/8 rounded-full">
-                  <span className="w-1.5 h-1.5 rounded-full bg-brand-blue animate-pulse" />
-                  Scan. Match. Meet.
-                </span>
-                <span className="px-2.5 py-1 text-[10px] sm:text-xs font-semibold text-emerald-600 bg-emerald-50 rounded-full flex items-center gap-1.5 border border-emerald-100">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping" />
-                  No download required
-                </span>
-              </div>
-              
-              <div className="grid grid-cols-2 gap-4 sm:gap-6 divide-x divide-brand-black/5">
-                <div>
-                  <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-brand-blue mb-2.5">For Hosts</p>
-                  <ol className="space-y-2">
-                    {["Paste your event link", "Customize your spots", "Share the link"].map((step, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm sm:text-[15px] font-semibold text-brand-black">
-                        <span className="w-5 h-5 shrink-0 rounded-full bg-brand-blue/10 text-brand-blue text-[11px] font-bold flex items-center justify-center">{i + 1}</span>
-                        {step}
-                      </li>
-                    ))}
-                  </ol>
-                </div>
-                <div className="pl-4 sm:pl-6">
-                  <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-brand-blue mb-2.5">For Attendees</p>
-                  <ol className="space-y-2">
-                    {["Share your intent", "Scan at the venue", "Meet in person"].map((step, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm sm:text-[15px] font-semibold text-brand-black">
-                        <span className="w-5 h-5 shrink-0 rounded-full bg-brand-blue/10 text-brand-blue text-[11px] font-bold flex items-center justify-center">{i + 1}</span>
-                        {step}
-                      </li>
-                    ))}
-                  </ol>
-                </div>
-              </div>
-            </motion.div>
           </div>
 
           {/* Right Column: Liquid Glass Visual Container */}
@@ -168,16 +109,6 @@ export function HeroSection() {
 
               <div className="relative w-full h-full p-5 sm:p-6 flex flex-col justify-between">
                 
-                {/* Top Glass Badge */}
-                <div className="self-start">
-                  <div className="px-4 py-2 rounded-full flex items-center gap-2 border border-white/55 bg-white/40 backdrop-blur-md shadow-[0_4px_24px_-4px_rgba(0,0,0,0.06),inset_0_1px_0_rgba(255,255,255,0.4)]">
-                    <div className="w-2.5 h-2.5 rounded-full bg-brand-black animate-pulse shadow-[0_0_8px_rgba(0,0,0,0.3)]" />
-                    <span className="text-xs sm:text-sm font-semibold tracking-wide text-brand-black">
-                      AI Room Orchestrator
-                    </span>
-                  </div>
-                </div>
-
                 {/* Center Content / abstracted UI with rotating resonance */}
                 <div className="flex-1 w-full flex items-center justify-center relative my-4 sm:my-6">
                   {/* SVG Network Lines */}

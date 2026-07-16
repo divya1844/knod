@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { QrCode, Share2, Send, Users, ClipboardList, SlidersHorizontal, Target, Map, Puzzle, Sparkles } from "lucide-react";
+import { QrCode, Share2, Send, Users, ClipboardList, SlidersHorizontal, Target, Map, Zap, BarChart3, Eye } from "lucide-react";
 import { useSEO } from "../hooks/useSEO";
 
 const HOST_STEPS = [
@@ -36,12 +36,16 @@ export function HowItWorksPage() {
           transition={{ duration: 0.8 }}
           className="max-w-[900px]"
         >
-          <span className="bg-brand-black/5 px-4 py-2 rounded-full text-sm font-semibold tracking-wide text-brand-black/80 mb-6 inline-block">
+          <span className="text-sm font-semibold tracking-wide text-brand-black/60 mb-6 flex items-center gap-2 uppercase">
+            <span className="w-2 h-2 rounded-full bg-brand-blue" />
             How Knod Works
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-medium tracking-tight leading-[1.1] mb-8 flex flex-col md:block">
-            Three steps for hosts. <span className="inline-flex items-center justify-start md:justify-center gap-3"><Sparkles className="w-8 h-8 md:w-12 md:h-12 text-brand-blue" /> Three for your guests.</span>
+          <h1 className="text-4xl md:text-5xl lg:text-[4.5rem] font-medium tracking-tight leading-[1.05] mb-6">
+            Three steps for hosts. <span className="italic font-light text-brand-blue">Three for your guests.</span>
           </h1>
+          <p className="text-lg md:text-xl text-brand-black/70 max-w-2xl leading-relaxed">
+            Knod works with the tools you already use. Hosts set up in seconds, guests join with a scan, and the right people find each other in the room.
+          </p>
         </motion.div>
       </section>
 
@@ -130,9 +134,13 @@ export function HowItWorksPage() {
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight mb-6">
                   The Intelligence Behind It
                 </h2>
-                <p className="text-xl text-brand-black/70 leading-relaxed mb-8">
-                  Our three-layer system is what makes Knod different from generic "networking apps."
+                <p className="text-xl text-brand-black/70 leading-relaxed mb-6">
+                  Knod combines behavioral math, AI, and low-friction design to read intent and quietly connect the right people, without turning networking into work.
                 </p>
+                <span className="inline-flex items-center gap-2 rounded-full bg-brand-blue/10 px-4 py-2 text-sm font-semibold text-brand-blue mb-8">
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-blue" />
+                  Patent-pending technology
+                </span>
                 <div className="text-brand-black/50 font-medium italic p-6 bg-[#f5f5f7] rounded-2xl border border-brand-black/5">
                   "This is why users say AI makes networking more meaningful, not less."
                 </div>
@@ -196,13 +204,46 @@ export function HowItWorksPage() {
               >
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-12 h-12 rounded-full bg-brand-blue/10 flex items-center justify-center text-brand-blue">
-                    <Puzzle className="w-6 h-6" strokeWidth={1.5} />
+                    <Zap className="w-6 h-6" strokeWidth={1.5} />
                   </div>
-                  <h3 className="text-2xl font-medium">Complementary Matching</h3>
+                  <h3 className="text-2xl font-medium">Smart Coordination</h3>
                 </div>
                 <p className="text-brand-black/70 leading-relaxed text-lg">
-                  We look for complementary goals, not just similar interests. If you're hiring engineers, we match you with engineers looking for jobs, not other hiring managers. If you're fundraising, we connect you with investors, not other founders fundraising.
+                  Finding the right person is only half of it. Knod handles the introduction, suggests a place to meet, and reduces the friction that usually kills a connection before it happens, so you actually meet in person instead of trading profiles.
                 </p>
+              </motion.div>
+
+              {/* Host analytics card (dark, distinct) */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="bg-brand-black text-white rounded-[2rem] p-8 md:p-12 relative overflow-hidden"
+              >
+                <div className="absolute top-0 right-0 w-56 h-56 bg-brand-blue/20 rounded-full blur-[60px] pointer-events-none -translate-y-1/3 translate-x-1/4" />
+                <div className="flex items-center gap-4 mb-6 relative z-10">
+                  <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-brand-accent-blue">
+                    <BarChart3 className="w-6 h-6" strokeWidth={1.5} />
+                  </div>
+                  <h3 className="text-2xl font-medium">See Your Room in Real Time</h3>
+                </div>
+                <p className="text-white/70 leading-relaxed text-lg mb-6 relative z-10">
+                  Hosts get a live view of what is happening in the room: who is looking for what, which connections are forming, and what people came for. You leave the event knowing it delivered, with insights to make the next one better.
+                </p>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 relative z-10">
+                  {[
+                    { icon: Users, label: "Matches made" },
+                    { icon: Target, label: "What people want" },
+                    { icon: Eye, label: "Live engagement" },
+                    { icon: BarChart3, label: "Post-event recap" },
+                  ].map((item) => (
+                    <div key={item.label} className="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col gap-2">
+                      <item.icon className="w-5 h-5 text-brand-accent-blue" strokeWidth={1.75} />
+                      <span className="text-xs font-medium text-white/80 leading-tight">{item.label}</span>
+                    </div>
+                  ))}
+                </div>
               </motion.div>
             </div>
           </div>

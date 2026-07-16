@@ -15,7 +15,7 @@ export function UniversitiesPage() {
       <section className="px-4 lg:px-8 max-w-[1400px] mx-auto mb-20 md:mb-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 h-auto lg:h-[600px]">
           {/* Left Block */}
-          <div className="bg-[#f5f5f7] rounded-[2rem] p-10 lg:p-16 flex flex-col justify-center h-full relative overflow-hidden">
+          <div className="bg-[#f5f5f7] rounded-[2rem] p-6 sm:p-8 md:p-10 lg:p-16 flex flex-col justify-center h-full relative overflow-hidden">
             <span className="text-sm font-semibold tracking-wide text-brand-black/60 mb-6 flex items-center gap-2 uppercase">
               <span className="w-2 h-2 rounded-full bg-brand-blue" />
               For Universities & Campuses
@@ -103,28 +103,28 @@ export function UniversitiesPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-           <div className="bg-[#f5f5f7] border border-black/5 rounded-[2rem] p-10">
+           <div className="bg-[#f5f5f7] border border-brand-black/5 rounded-[2rem] p-6 sm:p-8 md:p-10">
              <h3 className="text-2xl font-semibold mb-4 text-brand-black">Orientation</h3>
              <p className="text-brand-black/70 font-light leading-relaxed">
                Help new students find their tribe before classes even start
              </p>
            </div>
            
-           <div className="bg-[#f5f5f7] border border-black/5 rounded-[2rem] p-10">
+           <div className="bg-[#f5f5f7] border border-brand-black/5 rounded-[2rem] p-6 sm:p-8 md:p-10">
              <h3 className="text-2xl font-semibold mb-4 text-brand-black">New Students</h3>
              <p className="text-brand-black/70 font-light leading-relaxed">
                Connect new students with peers who share their interests and background
              </p>
            </div>
 
-           <div className="bg-[#f5f5f7] border border-black/5 rounded-[2rem] p-10">
+           <div className="bg-[#f5f5f7] border border-brand-black/5 rounded-[2rem] p-6 sm:p-8 md:p-10">
              <h3 className="text-2xl font-semibold mb-4 text-brand-black">Career Fairs</h3>
              <p className="text-brand-black/70 font-light leading-relaxed">
                Pre-match students with relevant employers and peers focused on similar industries
              </p>
            </div>
 
-           <div className="bg-[#f5f5f7] border border-black/5 rounded-[2rem] p-10">
+           <div className="bg-[#f5f5f7] border border-brand-black/5 rounded-[2rem] p-6 sm:p-8 md:p-10">
              <h3 className="text-2xl font-semibold mb-4 text-brand-black">Alumni Events</h3>
              <p className="text-brand-black/70 font-light leading-relaxed">
                Create meaningful reunions with smart attendee matching
@@ -180,7 +180,7 @@ export function UniversitiesPage() {
 
       {/* CTA Footer Block */}
       <section className="px-4 lg:px-8 max-w-[1400px] mx-auto mb-16">
-        <div className="bg-brand-black rounded-[2rem] p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left relative overflow-hidden">
+        <div className="bg-brand-black rounded-[2rem] p-6 sm:p-8 md:p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left relative overflow-hidden">
            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-blue/20 rounded-full blur-[80px] pointer-events-none translate-x-1/2 -translate-y-1/2" />
            <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#1AEB7E]/10 rounded-full blur-[80px] pointer-events-none -translate-x-1/2 translate-y-1/2" />
            

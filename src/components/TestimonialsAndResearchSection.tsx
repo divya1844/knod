@@ -163,54 +163,68 @@ export function TestimonialsSection() {
 export function ResearchStatsSection() {
   return (
     <section className="bg-white py-16 lg:py-24 relative z-10 w-full overflow-hidden">
-      <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 w-full">
-          {/* Research Header Card */}
-          <div className="bg-[#ff4d00] border border-brand-black/5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-[2rem] p-8 sm:p-10 flex flex-col justify-center hover:-translate-y-2 transition-transform duration-500">
-            <h3 className="font-sans text-[2rem] sm:text-[2.5rem] text-white mb-5 tracking-tight leading-tight">
-              Validated by Research
-            </h3>
-            <a
-              href="https://link.springer.com/chapter/10.1007/978-3-032-30826-9_27"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white text-sm font-semibold inline-flex items-center gap-2 hover:opacity-80 transition-opacity w-fit"
-            >
-              Peer-reviewed · HCI International 2026
-              <ExternalLink className="w-4 h-4" />
-            </a>
-            <span className="mt-5 inline-flex items-center gap-2 w-fit rounded-full bg-white/15 px-3 py-1.5 text-white text-[11px] font-semibold uppercase tracking-[0.12em]">
+      <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 relative z-10">
+        {/* Header: validated by research + patent pending */}
+        <div className="flex flex-col items-center text-center mb-12 sm:mb-16">
+          <span className="inline-flex items-center gap-2 rounded-full bg-brand-blue/10 px-4 py-1.5 text-sm font-semibold text-brand-blue mb-5">
+            <span className="w-1.5 h-1.5 rounded-full bg-brand-blue" />
+            Patent-pending technology
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-brand-black leading-[1.1] mb-4">
+            Validated by Research
+          </h2>
+          <a
+            href="https://link.springer.com/chapter/10.1007/978-3-032-30826-9_27"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-brand-blue text-sm font-semibold inline-flex items-center gap-2 hover:opacity-80 transition-opacity"
+          >
+            Peer-reviewed · HCI International 2026
+            <ExternalLink className="w-4 h-4" />
+          </a>
+        </div>
+
+        {/* Traditional vs Knod comparison */}
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 md:gap-5 items-stretch">
+          {/* Traditional */}
+          <div className="bg-[#fff6e9] border border-[#ff9d3d]/25 rounded-[2rem] p-8 sm:p-10 flex flex-col justify-center">
+            <span className="text-xs font-bold tracking-[0.15em] uppercase text-[#e07d1f] mb-5">
+              Traditional Networking
+            </span>
+            <div className="flex items-baseline gap-2 mb-3">
+              <span className="text-6xl sm:text-7xl font-semibold tracking-tight text-[#e07d1f] leading-none">1</span>
+              <span className="text-xl text-[#b56a20]/70 font-light">match</span>
+            </div>
+            <span className="text-sm text-[#b56a20] font-semibold">4.9% success rate</span>
+          </div>
+
+          {/* VS badge */}
+          <div className="flex items-center justify-center py-2 md:py-0">
+            <div className="w-14 h-14 rounded-full bg-white border border-brand-black/10 shadow-md flex items-center justify-center font-bold text-sm uppercase tracking-[0.15em] text-brand-black/50 shrink-0">
+              vs
+            </div>
+          </div>
+
+          {/* With Knod */}
+          <div className="bg-gradient-to-br from-brand-accent-blue to-[#1B93E8] rounded-[2rem] p-8 sm:p-10 flex flex-col justify-center relative overflow-hidden shadow-xl shadow-brand-blue/20">
+            <div className="absolute top-0 right-0 w-48 h-48 bg-white/20 rounded-full blur-[50px] pointer-events-none" />
+            <span className="text-xs font-bold tracking-[0.15em] uppercase text-white/90 mb-5 relative z-10">
+              With Knod
+            </span>
+            <div className="flex items-baseline gap-2 mb-3 relative z-10">
+              <span className="text-6xl sm:text-7xl font-semibold tracking-tight text-white leading-none">12</span>
+              <span className="text-xl text-white/80 font-light">matches</span>
+            </div>
+            <span className="text-sm text-white font-semibold relative z-10 inline-flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-white" />
-              Patent Pending
+              58.5% success rate
             </span>
-          </div>
-
-          {/* Stat 1 */}
-          <div className="bg-[#0033ff] border border-brand-black/5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-[2rem] p-8 sm:p-12 flex flex-col items-center justify-center text-center hover:-translate-y-2 transition-transform duration-500">
-            <span className="text-[5rem] sm:text-[6rem] font-medium leading-none tracking-tight text-white mb-4">
-              12<span className="text-[3.5rem] sm:text-[4.5rem]">x</span>
-            </span>
-            <p className="font-sans text-sm tracking-[0.15em] font-semibold text-white mb-4 leading-relaxed">
-              More Connections
-            </p>
-            <p className="text-white/80 text-[13px] font-light leading-relaxed max-w-[260px]">
-              with Knod than manual networking (12 meaningful matches in 3 minutes vs. 1 match in 3 minutes)
-            </p>
-          </div>
-
-          {/* Stat 2 */}
-          <div className="bg-[#FD3482] border border-brand-black/5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-[2rem] p-8 sm:p-12 flex flex-col items-center justify-center text-center hover:-translate-y-2 transition-transform duration-500">
-            <span className="text-[4rem] sm:text-[5rem] font-medium leading-none tracking-tight text-white mb-4 flex items-start justify-center text-center w-full">
-              <span>65.2</span>
-              <span className="text-[2.5rem] sm:text-[3.5rem] mt-1 ml-1">
-                %
-              </span>
-            </span>
-            <p className="font-sans text-xs sm:text-sm tracking-[0.15em] font-semibold text-white leading-relaxed">
-              Of users say AI makes networking MORE meaningful, not less
-            </p>
           </div>
         </div>
+
+        <p className="text-center text-brand-black/50 font-light mt-8 text-[15px]">
+          A <span className="font-semibold text-brand-blue">12x</span> improvement in the same room, in the same three minutes.
+        </p>
       </div>
     </section>
   );

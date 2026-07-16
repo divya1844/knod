@@ -1,4 +1,4 @@
-import { Twitter, Linkedin, Instagram, Facebook } from "lucide-react";
+import { Twitter, Linkedin, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export function Footer() {
@@ -6,21 +6,19 @@ export function Footer() {
     <footer className="bg-[#18181b] text-white pt-24 pb-4 px-6 lg:px-12 relative overflow-hidden font-sans flex flex-col">
       <div className="max-w-[1400px] w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 z-10 relative">
         <div className="lg:col-span-4 flex flex-col gap-8">
-          <Link to="/" className="font-bold text-2xl tracking-tighter flex items-center gap-2">
-            <div className="w-6 h-6 rounded-full bg-brand-blue" />
-            Knod
+          <Link to="/" className="font-bold text-2xl tracking-tighter text-white">
+            Knod<sup className="text-xs font-medium align-super">™</sup>
           </Link>
           <p className="text-[1.35rem] sm:text-2xl font-light leading-snug max-w-md">
             Connection infrastructure for physical spaces. Making meaningful connections happen by design, not by chance.
           </p>
           <div className="flex items-center text-white/50 -ml-3 mt-2">
-             <a href="#" className="p-3 hover:text-white transition-colors" aria-label="Twitter"><Twitter className="w-5 h-5" /></a>
-             <a href="#" className="p-3 hover:text-white transition-colors" aria-label="LinkedIn"><Linkedin className="w-5 h-5" /></a>
-             <a href="#" className="p-3 hover:text-white transition-colors" aria-label="Instagram"><Instagram className="w-5 h-5" /></a>
-             <a href="#" className="p-3 hover:text-white transition-colors" aria-label="Facebook"><Facebook className="w-5 h-5" /></a>
+             <a href="https://x.com/Knod_ai" target="_blank" rel="noopener noreferrer" className="p-3 hover:text-white transition-colors" aria-label="X (Twitter)"><Twitter className="w-5 h-5" /></a>
+             <a href="https://www.linkedin.com/company/108753084/" target="_blank" rel="noopener noreferrer" className="p-3 hover:text-white transition-colors" aria-label="LinkedIn"><Linkedin className="w-5 h-5" /></a>
+             <a href="https://www.instagram.com/knod.ai/" target="_blank" rel="noopener noreferrer" className="p-3 hover:text-white transition-colors" aria-label="Instagram"><Instagram className="w-5 h-5" /></a>
           </div>
           <p className="text-white/40 text-sm mt-4">
-            © {new Date().getFullYear()} Knod. All rights reserved.
+            © {new Date().getFullYear()} Knod, Inc. All rights reserved. Knod™ is a trademark of Knod, Inc.
           </p>
         </div>
 

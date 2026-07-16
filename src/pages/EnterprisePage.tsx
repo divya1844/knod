@@ -14,7 +14,7 @@ export function EnterprisePage() {
       <section className="px-4 lg:px-8 max-w-[1400px] mx-auto mb-20 md:mb-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 h-auto lg:h-[600px]">
           {/* Left Block */}
-          <div className="bg-[#f5f5f7] rounded-[2rem] p-10 lg:p-16 flex flex-col justify-center h-full relative overflow-hidden">
+          <div className="bg-[#f5f5f7] rounded-[2rem] p-6 sm:p-8 md:p-10 lg:p-16 flex flex-col justify-center h-full relative overflow-hidden">
             <span className="text-sm font-semibold tracking-wide text-brand-black/60 mb-6 flex items-center gap-2 uppercase">
               <span className="w-2 h-2 rounded-full bg-brand-blue" />
               Enterprise & Custom
@@ -107,28 +107,28 @@ export function EnterprisePage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-           <div className="bg-[#f5f5f7] border border-black/5 rounded-[2rem] p-10">
+           <div className="bg-[#f5f5f7] border border-brand-black/5 rounded-[2rem] p-6 sm:p-8 md:p-10">
              <h3 className="text-2xl font-semibold mb-4 text-brand-black flex items-center gap-2"><Building2 className="w-6 h-6 text-brand-black/50" /> Corporations</h3>
              <p className="text-brand-black/70 font-light leading-relaxed">
                Break down silos and build cross-team relationships at scale
              </p>
            </div>
            
-           <div className="bg-[#f5f5f7] border border-black/5 rounded-[2rem] p-10">
+           <div className="bg-[#f5f5f7] border border-brand-black/5 rounded-[2rem] p-6 sm:p-8 md:p-10">
              <h3 className="text-2xl font-semibold mb-4 text-brand-black flex items-center gap-2"><Lightbulb className="w-6 h-6 text-brand-black/50" /> Innovation Programs</h3>
              <p className="text-brand-black/70 font-light leading-relaxed">
                Connect innovators, intrapreneurs, and change-makers across the organization
              </p>
            </div>
 
-           <div className="bg-[#f5f5f7] border border-black/5 rounded-[2rem] p-10">
+           <div className="bg-[#f5f5f7] border border-brand-black/5 rounded-[2rem] p-6 sm:p-8 md:p-10">
              <h3 className="text-2xl font-semibold mb-4 text-brand-black flex items-center gap-2"><Rocket className="w-6 h-6 text-brand-black/50" /> Accelerators</h3>
              <p className="text-brand-black/70 font-light leading-relaxed">
                Help cohort members find collaborators, mentors, and co-founders
              </p>
            </div>
 
-           <div className="bg-[#f5f5f7] border border-black/5 rounded-[2rem] p-10">
+           <div className="bg-[#f5f5f7] border border-brand-black/5 rounded-[2rem] p-6 sm:p-8 md:p-10">
              <h3 className="text-2xl font-semibold mb-4 text-brand-black flex items-center gap-2"><Network className="w-6 h-6 text-brand-black/50" /> Member Networks</h3>
              <p className="text-brand-black/70 font-light leading-relaxed">
                White-label solutions for associations and member organizations
@@ -188,7 +188,7 @@ export function EnterprisePage() {
 
       {/* CTA Footer Block */}
       <section className="px-4 lg:px-8 max-w-[1400px] mx-auto mb-16">
-        <div className="bg-brand-black rounded-[2rem] p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left relative overflow-hidden">
+        <div className="bg-brand-black rounded-[2rem] p-6 sm:p-8 md:p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left relative overflow-hidden">
            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-blue/20 rounded-full blur-[80px] pointer-events-none translate-x-1/2 -translate-y-1/2" />
            <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-[#1AEB7E]/10 rounded-full blur-[80px] pointer-events-none -translate-x-1/2 translate-y-1/2" />
            
