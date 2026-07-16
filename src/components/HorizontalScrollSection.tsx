@@ -22,12 +22,12 @@ function Track({
   steps: { icon: typeof Send; title: string; desc: string }[];
 }) {
   return (
-    <div className="flex-1">
-      <div className="flex items-center gap-3 mb-4 md:mb-6">
+    <div>
+      <div className="flex items-center justify-center gap-3 mb-5 md:mb-8">
         <span className="w-2 h-2 rounded-full bg-brand-blue" />
         <span className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-brand-black/60">{label}</span>
       </div>
-      <div className="flex flex-col gap-3 md:gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-6">
         {steps.map((step, i) => (
           <motion.div
             key={step.title}
@@ -35,10 +35,10 @@ function Track({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.08 * i }}
-            className="bg-white rounded-[1.25rem] md:rounded-[1.5rem] p-4 sm:p-6 border border-brand-black/5 shadow-sm flex flex-col sm:flex-row items-start gap-3 sm:gap-4 group hover:border-brand-blue/30 transition-colors h-full"
+            className="bg-white rounded-[1.25rem] md:rounded-[1.5rem] p-4 sm:p-6 border border-brand-black/5 shadow-sm flex flex-row sm:flex-col items-start gap-3 sm:gap-5 group hover:border-brand-blue/30 hover:shadow-md hover:-translate-y-1 transition-all duration-300 h-full"
           >
-            <div className="w-10 h-10 sm:w-12 sm:h-12 shrink-0 rounded-xl sm:rounded-2xl bg-brand-blue/10 text-brand-blue flex items-center justify-center group-hover:bg-brand-blue group-hover:text-white transition-colors">
-              <step.icon className="w-5 h-5 sm:w-6 sm:h-6" strokeWidth={1.75} />
+            <div className="w-10 h-10 sm:w-14 sm:h-14 shrink-0 rounded-xl sm:rounded-2xl bg-brand-blue/10 text-brand-blue flex items-center justify-center group-hover:bg-brand-blue group-hover:text-white transition-colors">
+              <step.icon className="w-5 h-5 sm:w-7 sm:h-7" strokeWidth={1.75} />
             </div>
             <div>
               <h3 className="text-base sm:text-lg font-semibold tracking-tight text-brand-black mb-1 leading-tight">{step.title}</h3>
@@ -56,8 +56,8 @@ export function HorizontalScrollSection() {
     <section className="relative bg-[#f5f5f7] border-t border-brand-black/5 py-16 lg:py-24 px-4 sm:px-6 lg:px-12">
       <div className="max-w-[1300px] mx-auto">
         {/* Header */}
-        <div className="max-w-2xl mb-10 lg:mb-20">
-          <div className="flex items-center gap-4 text-brand-blue font-semibold tracking-[0.2em] text-xs mb-6">
+        <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-16">
+          <div className="flex items-center justify-center gap-4 text-brand-blue font-semibold tracking-[0.2em] text-xs mb-6">
             <span>03</span>
             <div className="w-12 h-px bg-brand-blue/30" />
             <span>How Knod Works</span>
@@ -70,15 +70,14 @@ export function HorizontalScrollSection() {
           </p>
         </div>
 
-        {/* Two tracks */}
-        <div className="grid grid-cols-2 gap-3 lg:flex lg:flex-row lg:gap-16">
+        {/* Two tracks stacked: Hosts (3 across), then Attendees (3 across) */}
+        <div className="flex flex-col gap-12 md:gap-16">
           <Track label="For Hosts" steps={HOST_STEPS} />
-          <div className="hidden lg:block w-px bg-brand-black/10 self-stretch" />
           <Track label="For Attendees" steps={ATTENDEE_STEPS} />
         </div>
 
         {/* CTA */}
-        <div className="mt-14 lg:mt-20">
+        <div className="mt-12 lg:mt-16 flex justify-center">
           <Link
             to="/how-it-works"
             className="inline-flex items-center gap-2 text-brand-black font-semibold hover:text-brand-blue transition-colors group"

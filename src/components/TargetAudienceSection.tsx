@@ -1,4 +1,6 @@
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
+import { ArrowUpRight } from "lucide-react";
 
 const AUDIENCES = [
   {
@@ -12,6 +14,7 @@ const AUDIENCES = [
     desc: "Summits, trade shows, corporate events, festivals.",
     img: "https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=800",
     alt: "Conference",
+    href: "/conferences",
   },
   {
     title: (
@@ -24,6 +27,7 @@ const AUDIENCES = [
     desc: "Orientation, new students, career fairs, alumni events.",
     img: "https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=800",
     alt: "Campus Life",
+    href: "/universities",
   },
   {
     title: (
@@ -36,6 +40,7 @@ const AUDIENCES = [
     desc: "Apartments, co-living, bars, coffee shops, coworking, gyms.",
     img: "https://images.pexels.com/photos/2467506/pexels-photo-2467506.jpeg?auto=compress&cs=tinysrgb&w=800",
     alt: "Coworking space",
+    href: "/communities",
   },
   {
     title: (
@@ -48,6 +53,7 @@ const AUDIENCES = [
     desc: "Corporate offsites, ERGs, multi-building campuses, white-label.",
     img: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
     alt: "Corporate",
+    href: "/enterprise",
   },
 ];
 
@@ -68,23 +74,33 @@ export function TargetAudienceSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="group relative bg-[#f4f4f5] md:hover:bg-[#18181b] transition-colors duration-500 rounded-[1.25rem] md:rounded-[2rem] p-5 md:px-16 md:py-14 flex flex-col md:flex-row items-start md:items-center justify-between gap-2 md:gap-16 w-full h-full"
+              className="h-full"
             >
-              <h2 className="text-[1.6rem] leading-[1.05] sm:text-3xl md:text-5xl lg:text-[4.5rem] xl:text-[5rem] font-sans font-medium tracking-tight text-brand-black md:group-hover:text-white transition-colors duration-500 md:-mt-2 z-10">
-                {a.title}
-              </h2>
-              <p className="font-sans text-[11px] leading-snug sm:text-sm md:tracking-[0.15em] text-brand-black/55 md:group-hover:text-[#a1a1aa] transition-colors duration-500 md:max-w-[280px] z-10 md:text-right">
-                {a.desc}
-              </p>
-              {/* Hover Image */}
-              <div className="hidden md:block absolute right-[5%] md:right-[15%] top-1/2 -translate-y-1/2 w-[240px] h-[320px] rounded-2xl overflow-hidden pointer-events-none opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-20 shadow-2xl origin-center">
-                <img
-                  src={a.img}
-                  alt={a.alt}
-                  loading="lazy"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <Link
+                to={a.href}
+                aria-label={a.alt}
+                className="group relative block bg-[#f4f4f5] md:hover:bg-[#18181b] transition-all duration-500 rounded-[1.25rem] md:rounded-[2rem] p-5 md:px-16 md:py-14 md:hover:-translate-y-1 md:hover:shadow-2xl flex flex-col md:flex-row items-start md:items-center justify-between gap-2 md:gap-16 w-full h-full cursor-pointer"
+              >
+                <h2 className="text-[1.6rem] leading-[1.05] sm:text-3xl md:text-5xl lg:text-[4.5rem] xl:text-[5rem] font-sans font-medium tracking-tight text-brand-black md:group-hover:text-white transition-colors duration-500 md:-mt-2 z-10 pr-6 md:pr-0">
+                  {a.title}
+                </h2>
+                <p className="font-sans text-[11px] leading-snug sm:text-sm md:tracking-[0.15em] text-brand-black/55 md:group-hover:text-[#a1a1aa] transition-colors duration-500 md:max-w-[280px] z-10 md:text-right">
+                  {a.desc}
+                </p>
+                {/* Click affordance arrow */}
+                <span className="absolute top-4 right-4 md:top-8 md:right-8 text-brand-black/30 md:text-white md:opacity-0 md:group-hover:opacity-100 md:-translate-x-1 md:group-hover:translate-x-0 transition-all duration-500 z-30">
+                  <ArrowUpRight className="w-5 h-5 md:w-7 md:h-7" />
+                </span>
+                {/* Hover Image */}
+                <div className="hidden md:block absolute right-[5%] md:right-[18%] top-1/2 -translate-y-1/2 w-[240px] h-[320px] rounded-2xl overflow-hidden pointer-events-none opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-20 shadow-2xl origin-center">
+                  <img
+                    src={a.img}
+                    alt={a.alt}
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </Link>
             </motion.div>
           ))}
         </div>
