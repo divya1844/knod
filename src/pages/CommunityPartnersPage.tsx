@@ -12,6 +12,7 @@ import {
   Sparkles,
   Landmark,
   Store,
+  User,
   AlertCircle,
 } from "lucide-react";
 import { submitPartnerRequest } from "../lib/supabase";
@@ -26,6 +27,7 @@ const ORG_TYPES = [
   { label: "Incubators & accelerators", icon: Sparkles },
   { label: "Local chambers of commerce", icon: Landmark },
   { label: "Small-business networking groups", icon: Store },
+  { label: "Individual organizers", icon: User },
 ];
 
 const RECEIVE = [
@@ -77,6 +79,11 @@ export function CommunityPartnersPage() {
       return;
     }
     setIsSuccess(true);
+    // The success panel is shorter than the form, so the page would otherwise
+    // settle somewhere else. Keep the confirmation in view.
+    requestAnimationFrame(() =>
+      document.getElementById("apply")?.scrollIntoView({ behavior: "smooth", block: "center" })
+    );
   };
 
   return (
