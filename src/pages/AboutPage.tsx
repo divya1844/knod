@@ -20,10 +20,10 @@ export function AboutPage() {
   return (
     <main className="flex-1 w-full pt-32 pb-12 relative bg-white">
       {/* 1. Full-width logo banner */}
-      <section className="px-4 lg:px-8 max-w-[1400px] mx-auto mb-14 md:mb-20">
-        <div className="rounded-[2rem] h-[220px] md:h-[320px] flex items-center justify-center overflow-hidden relative bg-gradient-to-br from-[#1B93E8] via-brand-accent-blue to-[#1B93E8]">
+      <section className="px-4 lg:px-8 max-w-[1400px] mx-auto mb-10 md:mb-20">
+        <div className="rounded-[1.5rem] md:rounded-[2rem] h-[150px] md:h-[320px] flex items-center justify-center overflow-hidden relative bg-gradient-to-br from-[#1B93E8] via-brand-accent-blue to-[#1B93E8]">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0.15),_transparent_65%)] pointer-events-none" />
-          <img src={knodLogoWhite} alt="Knod" className="h-24 md:h-44 w-auto relative z-10 drop-shadow-[0_2px_12px_rgba(0,0,0,0.15)]" />
+          <img src={knodLogoWhite} alt="Knod" className="h-20 md:h-44 w-auto relative z-10 drop-shadow-[0_2px_12px_rgba(0,0,0,0.15)]" />
         </div>
       </section>
 

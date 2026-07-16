@@ -16,7 +16,7 @@ export function WhatKnodDeliversSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="relative h-[520px] sm:h-[560px] lg:h-[560px] xl:h-[620px]"
+            className="relative h-[440px] sm:h-[560px] lg:h-[560px] xl:h-[620px]"
           >
             <div className="w-full h-full rounded-[2rem] overflow-hidden flex flex-col justify-end p-8 sm:p-10 lg:p-10 xl:p-12 bg-[#FF4D00] shadow-xl group isolate relative [transform:translate3d(0,0,0)] [backface-visibility:hidden] will-change-transform [mask-image:radial-gradient(white,black)] [-webkit-mask-image:-webkit-radial-gradient(white,black)]">
             {/* Fluid Background Layer */}
@@ -67,7 +67,7 @@ export function WhatKnodDeliversSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="relative h-[520px] sm:h-[560px] lg:h-[560px] xl:h-[620px]"
+            className="relative h-[440px] sm:h-[560px] lg:h-[560px] xl:h-[620px]"
           >
             <div className="w-full h-full rounded-[2rem] overflow-hidden flex flex-col justify-end p-8 sm:p-10 lg:p-10 xl:p-12 bg-[#0033FF] shadow-xl group isolate relative [transform:translate3d(0,0,0)] [backface-visibility:hidden] will-change-transform [mask-image:radial-gradient(white,black)] [-webkit-mask-image:-webkit-radial-gradient(white,black)]">
             {/* Fluid Background Layer */}
@@ -194,7 +194,7 @@ export function WhatKnodDeliversSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative h-[520px] sm:h-[560px] lg:h-[560px] xl:h-[620px]"
+            className="relative h-[440px] sm:h-[560px] lg:h-[560px] xl:h-[620px]"
           >
             <div className="w-full h-full rounded-[2rem] overflow-hidden flex flex-col justify-end p-8 sm:p-10 lg:p-10 xl:p-12 bg-[#FD3482] shadow-xl group isolate relative [transform:translate3d(0,0,0)] [backface-visibility:hidden] will-change-transform [mask-image:radial-gradient(white,black)] [-webkit-mask-image:-webkit-radial-gradient(white,black)]">
             {/* Fluid Background Layer */}

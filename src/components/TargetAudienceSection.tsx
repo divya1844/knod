@@ -4,7 +4,8 @@ const AUDIENCES = [
   {
     title: (
       <>
-        Conferences <span className="hidden md:inline"> &amp; </span>
+        Conferences <span className="md:hidden">&amp;</span>
+        <span className="hidden md:inline"> &amp; </span>
         <br className="md:hidden" /> Live Events
       </>
     ),
@@ -15,7 +16,8 @@ const AUDIENCES = [
   {
     title: (
       <>
-        Universities <span className="hidden md:inline"> &amp; </span>
+        Universities <span className="md:hidden">&amp;</span>
+        <span className="hidden md:inline"> &amp; </span>
         <br className="md:hidden" /> Campuses
       </>
     ),
@@ -26,7 +28,8 @@ const AUDIENCES = [
   {
     title: (
       <>
-        Communities <span className="hidden md:inline"> &amp; </span>
+        Communities <span className="md:hidden">&amp;</span>
+        <span className="hidden md:inline"> &amp; </span>
         <br className="md:hidden" /> Third Spaces
       </>
     ),
@@ -37,7 +40,8 @@ const AUDIENCES = [
   {
     title: (
       <>
-        Enterprise <span className="hidden md:inline"> &amp; </span>
+        Enterprise <span className="md:hidden">&amp;</span>
+        <span className="hidden md:inline"> &amp; </span>
         <br className="md:hidden" /> Custom
       </>
     ),
@@ -51,25 +55,25 @@ export function TargetAudienceSection() {
   return (
     <section className="bg-white py-16 lg:py-24 overflow-hidden relative font-sans">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6">
-        <div className="mb-16 flex items-center gap-4 text-brand-blue font-semibold tracking-[0.2em] text-xs">
+        <div className="mb-8 md:mb-16 flex items-center gap-4 text-brand-blue font-semibold tracking-[0.2em] text-xs">
           <span>04</span>
           <div className="w-12 h-px bg-brand-blue/30" />
           <span>Who Knod Is For</span>
         </div>
 
-        <div className="flex flex-col gap-4 relative">
+        <div className="grid grid-cols-2 gap-3 md:flex md:flex-col md:gap-4 relative">
           {AUDIENCES.map((a) => (
             <motion.div
               key={a.alt}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="group relative bg-[#f4f4f5] md:hover:bg-[#18181b] transition-colors duration-500 rounded-[2rem] p-8 sm:p-10 md:px-16 md:py-14 flex flex-col md:flex-row items-start md:items-center justify-between gap-8 md:gap-16 w-full"
+              className="group relative bg-[#f4f4f5] md:hover:bg-[#18181b] transition-colors duration-500 rounded-[1.25rem] md:rounded-[2rem] p-5 md:px-16 md:py-14 flex flex-col md:flex-row items-start md:items-center justify-between gap-2 md:gap-16 w-full h-full"
             >
-              <h2 className="text-[2.5rem] leading-[1.1] sm:text-5xl lg:text-[4.5rem] xl:text-[5rem] font-sans font-medium tracking-tight text-brand-black md:group-hover:text-white transition-colors duration-500 md:-mt-2 z-10">
+              <h2 className="text-[1.6rem] leading-[1.05] sm:text-3xl md:text-5xl lg:text-[4.5rem] xl:text-[5rem] font-sans font-medium tracking-tight text-brand-black md:group-hover:text-white transition-colors duration-500 md:-mt-2 z-10">
                 {a.title}
               </h2>
-              <p className="font-sans text-xs sm:text-sm tracking-[0.15em] text-brand-black/60 md:group-hover:text-[#a1a1aa] transition-colors duration-500 max-w-[280px] z-10 md:text-right">
+              <p className="font-sans text-[11px] leading-snug sm:text-sm md:tracking-[0.15em] text-brand-black/55 md:group-hover:text-[#a1a1aa] transition-colors duration-500 md:max-w-[280px] z-10 md:text-right">
                 {a.desc}
               </p>
               {/* Hover Image */}

@@ -184,40 +184,40 @@ export function ResearchStatsSection() {
           </a>
         </div>
 
-        {/* Traditional vs Knod comparison */}
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 md:gap-5 items-stretch">
+        {/* Traditional vs Knod comparison (side-by-side on all breakpoints) */}
+        <div className="grid grid-cols-[1fr_auto_1fr] gap-2 sm:gap-4 md:gap-5 items-stretch">
           {/* Traditional */}
-          <div className="bg-[#fff6e9] border border-[#ff9d3d]/25 rounded-[2rem] p-8 sm:p-10 flex flex-col justify-center">
-            <span className="text-xs font-bold tracking-[0.15em] uppercase text-[#e07d1f] mb-5">
+          <div className="bg-[#fff6e9] border border-[#ff9d3d]/25 rounded-[1.5rem] sm:rounded-[2rem] p-4 sm:p-8 md:p-10 flex flex-col justify-center">
+            <span className="text-[10px] sm:text-xs font-bold tracking-[0.12em] sm:tracking-[0.15em] uppercase text-[#e07d1f] mb-3 sm:mb-5 leading-tight">
               Traditional Networking
             </span>
-            <div className="flex items-baseline gap-2 mb-3">
-              <span className="text-6xl sm:text-7xl font-semibold tracking-tight text-[#e07d1f] leading-none">1</span>
-              <span className="text-xl text-[#b56a20]/70 font-light">match</span>
+            <div className="flex items-baseline gap-1.5 sm:gap-2 mb-2 sm:mb-3">
+              <span className="text-5xl sm:text-6xl md:text-7xl font-semibold tracking-tight text-[#e07d1f] leading-none">1</span>
+              <span className="text-base sm:text-xl text-[#b56a20]/70 font-light">match</span>
             </div>
-            <span className="text-sm text-[#b56a20] font-semibold">4.9% success rate</span>
+            <span className="text-xs sm:text-sm text-[#b56a20] font-semibold">4.9% success</span>
           </div>
 
           {/* VS badge */}
-          <div className="flex items-center justify-center py-2 md:py-0">
-            <div className="w-14 h-14 rounded-full bg-white border border-brand-black/10 shadow-md flex items-center justify-center font-bold text-sm uppercase tracking-[0.15em] text-brand-black/50 shrink-0">
+          <div className="flex items-center justify-center">
+            <div className="w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white border border-brand-black/10 shadow-md flex items-center justify-center font-bold text-xs sm:text-sm uppercase tracking-[0.12em] text-brand-black/50 shrink-0">
               vs
             </div>
           </div>
 
           {/* With Knod */}
-          <div className="bg-gradient-to-br from-brand-accent-blue to-[#1B93E8] rounded-[2rem] p-8 sm:p-10 flex flex-col justify-center relative overflow-hidden shadow-xl shadow-brand-blue/20">
+          <div className="bg-gradient-to-br from-brand-accent-blue to-[#1B93E8] rounded-[1.5rem] sm:rounded-[2rem] p-4 sm:p-8 md:p-10 flex flex-col justify-center relative overflow-hidden shadow-xl shadow-brand-blue/20">
             <div className="absolute top-0 right-0 w-48 h-48 bg-white/20 rounded-full blur-[50px] pointer-events-none" />
-            <span className="text-xs font-bold tracking-[0.15em] uppercase text-white/90 mb-5 relative z-10">
+            <span className="text-[10px] sm:text-xs font-bold tracking-[0.12em] sm:tracking-[0.15em] uppercase text-white/90 mb-3 sm:mb-5 relative z-10 leading-tight">
               With Knod
             </span>
-            <div className="flex items-baseline gap-2 mb-3 relative z-10">
-              <span className="text-6xl sm:text-7xl font-semibold tracking-tight text-white leading-none">12</span>
-              <span className="text-xl text-white/80 font-light">matches</span>
+            <div className="flex items-baseline gap-1.5 sm:gap-2 mb-2 sm:mb-3 relative z-10">
+              <span className="text-5xl sm:text-6xl md:text-7xl font-semibold tracking-tight text-white leading-none">12</span>
+              <span className="text-base sm:text-xl text-white/80 font-light">matches</span>
             </div>
-            <span className="text-sm text-white font-semibold relative z-10 inline-flex items-center gap-1.5">
+            <span className="text-xs sm:text-sm text-white font-semibold relative z-10 inline-flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-white" />
-              58.5% success rate
+              58.5% success
             </span>
           </div>
         </div>

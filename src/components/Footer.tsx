@@ -52,10 +52,10 @@ export function Footer() {
       </div>
 
       <div className="w-full mt-16 sm:mt-24 pointer-events-none select-none max-w-[1400px] mx-auto relative px-4 sm:px-0">
-        <span className="text-[34vw] md:text-[28vw] lg:text-[24vw] leading-[0.75] font-sans font-medium tracking-tighter text-white inline-block -ml-[1.5vw] md:-ml-[1vw]">
+        <span className="text-[26vw] md:text-[28vw] lg:text-[24vw] leading-[0.75] font-sans font-medium tracking-tighter text-white inline-block -ml-[1.5vw] md:-ml-[1vw]">
           Knod
         </span>
-        <div className="absolute bottom-0 right-4 sm:right-8 lg:right-16 w-[140px] sm:w-[180px] md:w-[240px] lg:w-[350px] pointer-events-none z-20">
+        <div className="absolute bottom-0 right-3 sm:right-8 lg:right-16 w-[88px] sm:w-[150px] md:w-[240px] lg:w-[350px] pointer-events-none z-20">
           <img src="/knod_mascot.png" alt="Knod Mascot" className="w-full h-auto object-contain drop-shadow-2xl" />
         </div>
       </div>
