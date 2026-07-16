@@ -50,7 +50,7 @@ const AUDIENCES = [
         <br className="md:hidden" /> Custom
       </>
     ),
-    desc: "Corporate offsites, ERGs, multi-building campuses, white-label.",
+    desc: "White-label, API, multi-building campuses, corporate offsites, ERGs.",
     img: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
     alt: "Corporate",
     href: "/enterprise",
@@ -61,10 +61,9 @@ export function TargetAudienceSection() {
   return (
     <section className="bg-white py-16 lg:py-24 overflow-hidden relative font-sans">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6">
-        <div className="mb-8 md:mb-16 flex items-center gap-4 text-brand-blue font-semibold tracking-[0.2em] text-xs">
-          <span>04</span>
-          <div className="w-12 h-px bg-brand-blue/30" />
+        <div className="mb-8 md:mb-16 flex items-center gap-3 text-brand-blue font-semibold tracking-[0.2em] text-xs">
           <span>Who Knod Is For</span>
+          <span className="w-12 h-px bg-brand-blue/30" />
         </div>
 
         <div className="grid grid-cols-2 gap-3 md:flex md:flex-col md:gap-4 relative">

@@ -23,7 +23,7 @@ export function EnterprisePage() {
               Connection infrastructure at <span className="underline decoration-brand-blue/30 underline-offset-4">enterprise</span> scale.
             </h1>
             <p className="text-lg text-brand-black/70 max-w-md mb-10 leading-relaxed font-light">
-              Corporations, innovation programs, accelerators, member networks, white label. Custom solutions that scale from pilot to global rollout.
+              White-label and API access for corporations, innovation programs, accelerators, and member networks. Custom solutions that scale from pilot to global rollout.
             </p>
             
             <div className="flex flex-wrap gap-4">

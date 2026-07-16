@@ -12,7 +12,9 @@ import {
   Sparkles,
   Landmark,
   Store,
+  AlertCircle,
 } from "lucide-react";
+import { submitPartnerRequest } from "../lib/supabase";
 
 const ORG_TYPES = [
   { label: "Nonprofit organizations", icon: Heart },
@@ -45,19 +47,36 @@ export function CommunityPartnersPage() {
     email: "",
     orgType: "",
     city: "",
+    website: "",
+    socials: "",
     about: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
 
-  const handleApply = (e: React.FormEvent) => {
+  const handleApply = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.organization || !formData.name || !formData.email) return;
+    setErrorMsg("");
     setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSuccess(true);
-    }, 1200);
+    const error = await submitPartnerRequest({
+      organization: formData.organization,
+      name: formData.name,
+      email: formData.email,
+      org_type: formData.orgType || undefined,
+      city: formData.city || undefined,
+      website: formData.website || undefined,
+      socials: formData.socials || undefined,
+      about: formData.about || undefined,
+      source: "community_partner_apply",
+    });
+    setIsSubmitting(false);
+    if (error) {
+      setErrorMsg(error);
+      return;
+    }
+    setIsSuccess(true);
   };
 
   return (
@@ -326,6 +345,29 @@ export function CommunityPartnersPage() {
                 </div>
 
                 <div>
+                  <label className={labelClass}>Website</label>
+                  <input
+                    type="text"
+                    autoComplete="url"
+                    value={formData.website}
+                    onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+                    placeholder="https://yourcommunity.org"
+                    className={inputClass}
+                  />
+                </div>
+
+                <div>
+                  <label className={labelClass}>Social links</label>
+                  <input
+                    type="text"
+                    value={formData.socials}
+                    onChange={(e) => setFormData({ ...formData, socials: e.target.value })}
+                    placeholder="Instagram, LinkedIn, X, etc."
+                    className={inputClass}
+                  />
+                </div>
+
+                <div>
                   <label className={labelClass}>Tell us about your community</label>
                   <textarea
                     rows={3}
@@ -335,6 +377,13 @@ export function CommunityPartnersPage() {
                     className={`${inputClass} resize-none`}
                   />
                 </div>
+
+                {errorMsg && (
+                  <div className="flex items-start gap-2 text-sm text-red-600 bg-red-50/80 border border-red-200 rounded-2xl px-4 py-3">
+                    <AlertCircle className="w-4 h-4 mt-0.5 shrink-0" />
+                    <span>{errorMsg}</span>
+                  </div>
+                )}
 
                 <button
                   type="submit"

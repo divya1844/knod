@@ -55,3 +55,27 @@ export async function submitDemoRequest(payload: DemoRequest): Promise<string | 
   }
   return null;
 }
+
+export interface PartnerRequest {
+  organization: string;
+  name: string;
+  email: string;
+  org_type?: string;
+  city?: string;
+  website?: string;
+  socials?: string;
+  about?: string;
+  source?: string;
+}
+
+// Inserts a Community Partner application. Returns an error message string on failure, or null on success.
+export async function submitPartnerRequest(payload: PartnerRequest): Promise<string | null> {
+  if (!supabase) {
+    return "Our application form is temporarily unavailable. Please email hello@knod.ai.";
+  }
+  const { error } = await supabase.from("partner_requests").insert(payload);
+  if (error) {
+    return "Something went wrong submitting your application. Please try again or email hello@knod.ai.";
+  }
+  return null;
+}

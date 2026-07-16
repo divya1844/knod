@@ -35,11 +35,21 @@ import { NotFoundPage } from "./pages/NotFoundPage";
 import { useSEO } from "./hooks/useSEO";
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
+    // If the URL has a hash (e.g. /community-partners#apply), scroll to that
+    // element instead of the top, so shared links and QR codes land on the section.
+    if (hash) {
+      const el = document.getElementById(hash.slice(1));
+      if (el) {
+        // Defer to the next frame so the target has rendered (and hydrated).
+        requestAnimationFrame(() => el.scrollIntoView({ behavior: "smooth" }));
+        return;
+      }
+    }
     window.scrollTo(0, 0);
-  }, [pathname]);
+  }, [pathname, hash]);
 
   return null;
 }

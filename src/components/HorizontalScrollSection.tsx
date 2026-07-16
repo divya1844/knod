@@ -27,7 +27,7 @@ function Track({
         <span className="w-2 h-2 rounded-full bg-brand-blue" />
         <span className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-brand-black/60">{label}</span>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-6">
+      <div className="grid grid-cols-3 gap-2.5 md:gap-6">
         {steps.map((step, i) => (
           <motion.div
             key={step.title}
@@ -35,14 +35,14 @@ function Track({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.08 * i }}
-            className="bg-white rounded-[1.25rem] md:rounded-[1.5rem] p-4 sm:p-6 border border-brand-black/5 shadow-sm flex flex-row sm:flex-col items-start gap-3 sm:gap-5 group hover:border-brand-blue/30 hover:shadow-md hover:-translate-y-1 transition-all duration-300 h-full"
+            className="bg-white rounded-[1.25rem] md:rounded-[1.5rem] p-3 sm:p-6 border border-brand-black/5 shadow-sm flex flex-col items-start gap-2.5 sm:gap-5 group hover:border-brand-blue/30 hover:shadow-md hover:-translate-y-1 transition-all duration-300 h-full"
           >
-            <div className="w-10 h-10 sm:w-14 sm:h-14 shrink-0 rounded-xl sm:rounded-2xl bg-brand-blue/10 text-brand-blue flex items-center justify-center group-hover:bg-brand-blue group-hover:text-white transition-colors">
-              <step.icon className="w-5 h-5 sm:w-7 sm:h-7" strokeWidth={1.75} />
+            <div className="w-9 h-9 sm:w-14 sm:h-14 shrink-0 rounded-lg sm:rounded-2xl bg-brand-blue/10 text-brand-blue flex items-center justify-center group-hover:bg-brand-blue group-hover:text-white transition-colors">
+              <step.icon className="w-4 h-4 sm:w-7 sm:h-7" strokeWidth={1.75} />
             </div>
             <div>
-              <h3 className="text-base sm:text-lg font-semibold tracking-tight text-brand-black mb-1 leading-tight">{step.title}</h3>
-              <p className="text-brand-black/60 text-[13px] sm:text-[15px] leading-relaxed font-light">{step.desc}</p>
+              <h3 className="text-[13px] sm:text-lg font-semibold tracking-tight text-brand-black mb-1 leading-tight">{step.title}</h3>
+              <p className="text-brand-black/60 text-[11px] sm:text-[15px] leading-snug sm:leading-relaxed font-light">{step.desc}</p>
             </div>
           </motion.div>
         ))}
@@ -57,10 +57,10 @@ export function HorizontalScrollSection() {
       <div className="max-w-[1300px] mx-auto">
         {/* Header */}
         <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-16">
-          <div className="flex items-center justify-center gap-4 text-brand-blue font-semibold tracking-[0.2em] text-xs mb-6">
-            <span>03</span>
-            <div className="w-12 h-px bg-brand-blue/30" />
+          <div className="flex items-center justify-center gap-3 text-brand-blue font-semibold tracking-[0.2em] text-xs mb-6">
+            <span className="w-8 h-px bg-brand-blue/30" />
             <span>How Knod Works</span>
+            <span className="w-8 h-px bg-brand-blue/30" />
           </div>
           <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] leading-[1.05] font-medium tracking-tight text-brand-black mb-6">
             Simple for hosts. <span className="italic font-light text-brand-blue">Effortless for guests.</span>

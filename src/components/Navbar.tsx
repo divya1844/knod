@@ -10,7 +10,7 @@ export function Navbar() {
   return (
     <div className="absolute w-full top-0 left-0 print:hidden z-50">
       <nav className="w-full py-4 px-6 lg:px-12 flex justify-between items-center z-50">
-        <Link to="/" className="font-bold text-xl tracking-tighter text-brand-black">
+        <Link to="/" className="font-bold text-xl tracking-tighter text-brand-accent-blue">
           Knod
         </Link>
       <div className="hidden md:flex items-center gap-8 text-[15px] font-medium text-[#414a56]">

@@ -33,7 +33,7 @@ export function AboutPage() {
           Connection infrastructure for <span className="italic font-light text-brand-accent-blue">physical spaces.</span>
         </motion.h1>
         <motion.p {...reveal} className="text-lg md:text-xl text-brand-black/70 max-w-2xl mx-auto leading-relaxed">
-          Knod is not an event app. It is the connection layer that works alongside the tools you already use, so the right people actually find each other in the room.
+          The people who could change your path are already in the room, at your events, on your campus, across your community. Knod makes sure the right ones actually find each other, in person.
         </motion.p>
       </section>
 
@@ -54,6 +54,9 @@ export function AboutPage() {
 
           <p>
             That is why Knod works effortlessly through a simple event link or QR code, becoming active only for the duration of an event. In seconds, attendees can discover the people they are most likely to learn from, collaborate with, hire, mentor, or do business with, while organizers create experiences remembered not just for what happened on stage, but for the relationships that continued long after the event ended.
+          </p>
+          <p>
+            We build inside a strange paradox. We are more connected by technology than any generation before us, and yet more divided and distracted by it. The same phones and platforms designed to bring us together often keep us apart, heads down, scrolling past the people standing right in front of us. Knod exists to turn that on its head. We take the tools you already carry, your phone, AI, and intelligent, low-friction design, and use them not to pull you deeper into a screen, but to point you back to the person across the room.
           </p>
         </motion.div>
       </section>
@@ -77,14 +80,28 @@ export function AboutPage() {
             Knod is only successful when you put your phone down and talk to the person in front of you.
           </p>
           <p className="text-lg text-brand-black/50 font-light mt-8">
-            The AI stays in the background. People stay in the foreground. Because human connection should never be a premium experience.
+            The AI stays in the background. People stay in the foreground.
           </p>
         </motion.blockquote>
       </section>
 
+      {/* 5b. Highlighted thesis */}
+      <section className="px-4 lg:px-8 max-w-[1400px] mx-auto mb-20 md:mb-28">
+        <motion.div
+          {...reveal}
+          className="rounded-[2rem] bg-gradient-to-br from-[#1B93E8] via-brand-accent-blue to-[#1B93E8] px-8 py-16 md:py-24 text-center relative overflow-hidden"
+        >
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.18),_transparent_65%)] pointer-events-none" />
+          <p className="relative z-10 text-3xl md:text-5xl lg:text-6xl font-medium tracking-tight text-white leading-[1.1] max-w-4xl mx-auto">
+            Human connection should never be a <span className="italic font-light">premium experience.</span>
+          </p>
+        </motion.div>
+      </section>
+
       {/* 6. Closing bookend */}
-      <section className="px-4 lg:px-8 max-w-[1400px] mx-auto mb-16">
-        <div className="bg-[#f5f5f7] rounded-[2rem] px-8 py-16 md:py-24 flex flex-col items-center text-center">
+      <section className="px-4 lg:px-8 max-w-[1400px] mx-auto mb-16 py-8 md:py-16">
+        <div className="flex flex-col items-center text-center">
+          <span className="font-bold text-3xl md:text-4xl tracking-tighter text-brand-accent-blue mb-6 md:mb-8">Knod</span>
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-medium tracking-tight text-brand-black leading-[1.1] max-w-3xl">
             Connecting people in <span className="italic font-light text-brand-accent-blue">shared spaces.</span>
           </h2>
