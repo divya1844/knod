@@ -25,9 +25,9 @@ export function Footer() {
         <div className="lg:col-span-8 lg:pl-16 grid grid-cols-2 md:grid-cols-4 gap-12 lg:gap-4 text-[15px] mt-4 lg:mt-0 font-light">
           <div className="flex flex-col gap-4">
             <h4 className="text-white/40 font-semibold tracking-widest text-[10px] uppercase mb-2">Solutions</h4>
-            <Link to="/conferences" className="hover:text-brand-blue transition-colors text-white/90">Conference Organizers</Link>
+            <Link to="/conferences" className="hover:text-brand-blue transition-colors text-white/90">Conferences & Live Events</Link>
             <Link to="/universities" className="hover:text-brand-blue transition-colors text-white/90">Universities & Campuses</Link>
-            <Link to="/communities" className="hover:text-brand-blue transition-colors text-white/90">Community Organizers</Link>
+            <Link to="/communities" className="hover:text-brand-blue transition-colors text-white/90">Communities & Third Spaces</Link>
             <Link to="/enterprise" className="hover:text-brand-blue transition-colors text-white/90">Enterprise & Custom</Link>
           </div>
 

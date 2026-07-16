@@ -81,15 +81,15 @@ export function TargetAudienceSection() {
                 aria-label={a.alt}
                 className="group relative block bg-[#f4f4f5] md:hover:bg-[#18181b] transition-all duration-500 rounded-[1.25rem] md:rounded-[2rem] p-5 md:px-16 md:py-14 md:hover:-translate-y-1 md:hover:shadow-2xl flex flex-col md:flex-row items-start md:items-center justify-between gap-2 md:gap-16 w-full h-full cursor-pointer"
               >
-                <h2 className="text-[1.6rem] leading-[1.05] sm:text-3xl md:text-5xl lg:text-[4.5rem] xl:text-[5rem] font-sans font-medium tracking-tight text-brand-black md:group-hover:text-white transition-colors duration-500 md:-mt-2 z-10 pr-6 md:pr-0">
+                <h2 className="text-[1.6rem] leading-[1.05] sm:text-3xl md:text-5xl lg:text-[4.5rem] xl:text-[5rem] font-sans font-medium tracking-tight text-brand-black md:group-hover:text-white transition-colors duration-500 md:-mt-2 z-10">
                   {a.title}
                 </h2>
-                <p className="font-sans text-[11px] leading-snug sm:text-sm md:tracking-[0.15em] text-brand-black/55 md:group-hover:text-[#a1a1aa] transition-colors duration-500 md:max-w-[280px] z-10 md:text-right">
+                <p className="font-sans text-[11px] leading-snug sm:text-sm md:tracking-[0.15em] text-brand-black/55 md:group-hover:text-[#a1a1aa] transition-colors duration-500 md:max-w-[280px] z-10 md:text-right pr-6 md:pr-0">
                   {a.desc}
                 </p>
-                {/* Click affordance arrow */}
-                <span className="absolute top-4 right-4 md:top-8 md:right-8 text-brand-black/30 md:text-white md:opacity-0 md:group-hover:opacity-100 md:-translate-x-1 md:group-hover:translate-x-0 transition-all duration-500 z-30">
-                  <ArrowUpRight className="w-5 h-5 md:w-7 md:h-7" />
+                {/* Click affordance arrow: bottom-right on mobile, top-right hover reveal on desktop */}
+                <span className="absolute bottom-4 right-4 md:bottom-auto md:top-8 md:right-8 text-brand-black/25 md:text-white md:opacity-0 md:group-hover:opacity-100 md:-translate-x-1 md:group-hover:translate-x-0 transition-all duration-500 z-30">
+                  <ArrowUpRight className="w-4 h-4 md:w-7 md:h-7" />
                 </span>
                 {/* Hover Image */}
                 <div className="hidden md:block absolute right-[5%] md:right-[18%] top-1/2 -translate-y-1/2 w-[240px] h-[320px] rounded-2xl overflow-hidden pointer-events-none opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 z-20 shadow-2xl origin-center">
