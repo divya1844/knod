@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, type ReactNode } from "react";
 import { Navbar } from "./components/Navbar";
 import { HeroSection } from "./components/HeroSection";
 import { TrustedPartnersSection } from "./components/TrustedPartnersSection";
@@ -32,6 +32,7 @@ import { TermsPage } from "./pages/TermsPage";
 import { PledgePage } from "./pages/PledgePage";
 import { CommunityPartnersPage } from "./pages/CommunityPartnersPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
+import { AdminPage } from "./pages/AdminPage";
 import { useSEO } from "./hooks/useSEO";
 
 function ScrollToTop() {
@@ -77,19 +78,33 @@ function HomePage() {
   );
 }
 
+/** Internal routes render bare, without the marketing nav, footer, or background. */
+function Chrome({ children }: { children: ReactNode }) {
+  const { pathname } = useLocation();
+  const isInternal = pathname.startsWith("/admin");
+
+  if (isInternal) return <>{children}</>;
+
+  return (
+    <div className="min-h-screen bg-[#f5f5f7] font-sans text-brand-black flex flex-col relative selection:bg-brand-blue selection:text-white">
+      {/* Background Orbs for Liquid Glass Effect */}
+      <div className="absolute top-0 right-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+        <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] md:w-[800px] md:h-[800px] rounded-full bg-brand-blue/20 blur-[100px] md:blur-[140px] mix-blend-multiply" />
+        <div className="absolute top-[20%] right-[10%] w-[400px] h-[400px] md:w-[600px] md:h-[600px] rounded-full bg-blue-300/30 blur-[80px] md:blur-[120px] mix-blend-multiply" />
+        <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] rounded-full bg-brand-blue/10 blur-[100px] mix-blend-multiply" />
+      </div>
+      <Navbar />
+      {children}
+      <Footer />
+    </div>
+  );
+}
+
 export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="min-h-screen bg-[#f5f5f7] font-sans text-brand-black flex flex-col relative selection:bg-brand-blue selection:text-white">
-        {/* Background Orbs for Liquid Glass Effect */}
-        <div className="absolute top-0 right-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
-          <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] md:w-[800px] md:h-[800px] rounded-full bg-brand-blue/20 blur-[100px] md:blur-[140px] mix-blend-multiply" />
-          <div className="absolute top-[20%] right-[10%] w-[400px] h-[400px] md:w-[600px] md:h-[600px] rounded-full bg-blue-300/30 blur-[80px] md:blur-[120px] mix-blend-multiply" />
-          <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] rounded-full bg-brand-blue/10 blur-[100px] mix-blend-multiply" />
-        </div>
-
-        <Navbar />
+      <Chrome>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/how-it-works" element={<HowItWorksPage />} />
@@ -110,10 +125,10 @@ export default function App() {
           <Route path="/community-partners" element={<CommunityPartnersPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
+          <Route path="/admin" element={<AdminPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
-        <Footer />
-      </div>
+      </Chrome>
     </BrowserRouter>
   );
 }

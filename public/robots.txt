@@ -4,6 +4,7 @@
 User-agent: *
 Allow: /
 Disallow: /style-guide
+Disallow: /admin
 
 # --- Search engines ---
 User-agent: Googlebot
