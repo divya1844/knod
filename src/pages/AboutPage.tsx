@@ -68,6 +68,9 @@ export function AboutPage() {
             That is why Knod works effortlessly through a simple event link or QR code, becoming active only for the duration of an event. In seconds, attendees can discover the people they are most likely to learn from, collaborate with, hire, mentor, or do business with, while organizers create experiences remembered not just for what happened on stage, but for the relationships that continued long after the event ended.
           </p>
           <p>
+            Connection does not happen on its own. In a world designed to keep us scrolling, it has to be built for on purpose. That is what Knod is.
+          </p>
+          <p>
             We build inside a strange paradox. We are more connected by technology than any generation before us, and yet more divided and distracted by it. The same phones and platforms designed to bring us together often keep us apart, heads down, scrolling past the people standing right in front of us. Knod exists to turn that on its head. We take the tools you already carry, your phone, AI, and intelligent, low-friction design, and use them not to pull you deeper into a screen, but to point you back to the person across the room.
           </p>
         </motion.div>
