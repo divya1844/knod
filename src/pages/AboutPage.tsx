@@ -37,7 +37,19 @@ export function AboutPage() {
         </motion.p>
       </section>
 
-      {/* 3. Origin story */}
+      {/* 3. The flyer that started it */}
+      <section className="px-4 lg:px-8 max-w-[1100px] mx-auto mb-20 md:mb-28">
+        <motion.figure {...reveal} className="flex flex-col items-center">
+          <div className="w-full rounded-[2rem] overflow-hidden shadow-xl border border-brand-black/5">
+            <img src={knodFlyer} alt="Knod flyer: Human Connection, No App Required. Talk to someone today." className="w-full h-auto" />
+          </div>
+          <figcaption className="text-sm text-brand-black/50 font-light mt-5 text-center max-w-md">
+            The flyer that started it all. First posted on a college campus, this simple reminder sparked conversations that spread across Chicago.
+          </figcaption>
+        </motion.figure>
+      </section>
+
+      {/* 4. Origin story */}
       <section className="px-4 lg:px-8 max-w-[1400px] mx-auto mb-20 md:mb-28">
         <motion.h2 {...reveal} className="text-3xl md:text-5xl font-medium tracking-tight text-center max-w-3xl mx-auto mb-12 md:mb-16 leading-[1.15]">
           Every Great Connection <span className="italic font-light text-brand-accent-blue">Starts Somewhere.</span>
@@ -59,18 +71,6 @@ export function AboutPage() {
             We build inside a strange paradox. We are more connected by technology than any generation before us, and yet more divided and distracted by it. The same phones and platforms designed to bring us together often keep us apart, heads down, scrolling past the people standing right in front of us. Knod exists to turn that on its head. We take the tools you already carry, your phone, AI, and intelligent, low-friction design, and use them not to pull you deeper into a screen, but to point you back to the person across the room.
           </p>
         </motion.div>
-      </section>
-
-      {/* 4. The flyer that started it */}
-      <section className="px-4 lg:px-8 max-w-[1100px] mx-auto mb-20 md:mb-28">
-        <motion.figure {...reveal} className="flex flex-col items-center">
-          <div className="w-full rounded-[2rem] overflow-hidden shadow-xl border border-brand-black/5">
-            <img src={knodFlyer} alt="Knod flyer: Human Connection, No App Required. Talk to someone today." className="w-full h-auto" />
-          </div>
-          <figcaption className="text-sm text-brand-black/50 font-light mt-5 text-center max-w-md">
-            The flyer that started it all. First posted on a college campus, this simple reminder sparked conversations that spread across Chicago.
-          </figcaption>
-        </motion.figure>
       </section>
 
       {/* 5. The belief */}

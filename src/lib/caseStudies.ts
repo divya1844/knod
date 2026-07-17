@@ -61,7 +61,6 @@ export const RESEARCH = {
   authors:
     "Co-authored by Nana Kofi Minta Addadzi-Koom (Founder, Knod, Inc.) and Dr. Alvin Chin (Professor, University of Illinois Chicago)",
   bookTitle: "HCI International 2026 Posters",
-  bookSub: "(HCII 2026)",
   pages: "pp. 265-274",
   url: "https://link.springer.com/chapter/10.1007/978-3-032-30826-9_27",
   cover: {

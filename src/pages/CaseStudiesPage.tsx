@@ -91,31 +91,57 @@ export function CaseStudiesPage() {
           transition={{ duration: 0.6 }}
           className="bg-white rounded-[1.5rem] sm:rounded-[2rem] border border-brand-black/5 shadow-sm overflow-hidden"
         >
-          <div className="p-6 sm:p-10 lg:p-12 grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 md:gap-12 items-start">
+          <div className="p-6 sm:p-10 lg:p-12 grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 md:gap-12 items-start">
             <div>
-              <span className="font-semibold text-brand-blue tracking-widest uppercase text-xs mb-4 block">
+              <span className="font-semibold text-brand-blue tracking-widest uppercase text-xs mb-3 block">
                 {RESEARCH.eyebrow}
               </span>
-              <h2 className="text-2xl sm:text-3xl lg:text-[2.5rem] font-medium tracking-tight text-brand-black leading-[1.12] mb-5">
+              <h2 className="text-2xl sm:text-3xl lg:text-[2.5rem] font-medium tracking-tight text-brand-black leading-[1.12] mb-3">
                 {RESEARCH.title}
               </h2>
-              <p className="text-sm font-medium text-brand-black leading-relaxed">{RESEARCH.authors}</p>
+              <p className="text-xs sm:text-sm text-brand-black/55 leading-relaxed font-light">{RESEARCH.authors}</p>
+
+              {/* Mobile: cover beside the book info so the space is used. Desktop keeps the cover in its own column. */}
               <a
                 href={RESEARCH.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-7 inline-flex items-center justify-center gap-2 bg-brand-black text-white px-6 py-3.5 rounded-full text-sm font-semibold hover:bg-brand-black/90 transition-colors group"
+                className="group mt-6 flex md:hidden items-center gap-4"
+                aria-label="View the proceedings on Springer"
+              >
+                <div className="w-[104px] shrink-0 rounded-lg overflow-hidden border border-brand-black/10 shadow-sm bg-white">
+                  <CaseImage
+                    src={RESEARCH.cover.src}
+                    alt={RESEARCH.cover.alt}
+                    client="HCI International 2026 Posters"
+                    className="w-full h-auto"
+                  />
+                </div>
+                <div>
+                  <p className="font-semibold text-brand-black text-sm leading-snug group-hover:text-brand-blue transition-colors">
+                    {RESEARCH.bookTitle}
+                  </p>
+                  <p className="text-brand-black/50 text-xs mt-1">{RESEARCH.pages}</p>
+                </div>
+              </a>
+
+              <a
+                href={RESEARCH.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 md:mt-7 inline-flex items-center justify-center gap-2 bg-brand-black text-white px-6 py-3.5 rounded-full text-sm font-semibold hover:bg-brand-black/90 transition-colors group w-full sm:w-auto"
               >
                 Read the paper on Springer
                 <ExternalLink className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
               </a>
             </div>
 
+            {/* Desktop cover column */}
             <a
               href={RESEARCH.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group shrink-0 w-[150px] sm:w-[190px] mx-auto md:mx-0"
+              className="group shrink-0 w-[190px] hidden md:block"
               aria-label="View the proceedings on Springer"
             >
               <div className="rounded-xl overflow-hidden border border-brand-black/10 shadow-sm bg-white group-hover:shadow-md transition-shadow">
@@ -129,7 +155,6 @@ export function CaseStudiesPage() {
               <p className="mt-3 font-semibold text-brand-black text-sm leading-snug group-hover:text-brand-blue transition-colors">
                 {RESEARCH.bookTitle}
               </p>
-              <p className="text-brand-black/50 text-xs mt-0.5">{RESEARCH.bookSub}</p>
               <p className="text-brand-black/50 text-xs mt-0.5">{RESEARCH.pages}</p>
             </a>
           </div>

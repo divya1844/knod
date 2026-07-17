@@ -33,6 +33,7 @@ import { PledgePage } from "./pages/PledgePage";
 import { CommunityPartnersPage } from "./pages/CommunityPartnersPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { AdminPage } from "./pages/AdminPage";
+import { TechWeekPromo } from "./components/TechWeekPromo";
 import { useSEO } from "./hooks/useSEO";
 
 function ScrollToTop() {
@@ -64,10 +65,11 @@ function HomePage() {
   return (
     <>
       <HeroSection />
+      <TechWeekPromo />
       <TrustedPartnersSection />
+      <HorizontalScrollSection />
       <WhatKnodDeliversSection />
       <ResearchStatsSection />
-      <HorizontalScrollSection />
       <MissionSection />
       <TargetAudienceSection />
       <TestimonialsSection />
