@@ -268,6 +268,39 @@ export function CaseStudyDetailPage() {
         </section>
       )}
 
+      {/* Totals roll-up (e.g. across a partner's events) */}
+      {study.totals && (
+        <section className="px-4 lg:px-8 max-w-[1000px] mx-auto mb-14">
+          <div className="bg-brand-black text-white rounded-[1.5rem] p-6 sm:p-9">
+            <p className="text-xs font-semibold tracking-wider uppercase text-white/50 mb-5 flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-brand-blue" />
+              {study.totals.label}
+            </p>
+            <div
+              className={`grid grid-cols-3 gap-3 sm:gap-4 ${
+                study.totals.stats.length === 3 ? "" : "sm:grid-cols-4"
+              }`}
+            >
+              {study.totals.stats.map((s) => (
+                <div key={s.label} className="flex flex-col">
+                  <span className="text-3xl sm:text-4xl font-medium tracking-tight text-white mb-1.5">
+                    {s.value}
+                  </span>
+                  <span className="text-white/55 font-medium text-xs sm:text-sm leading-snug">
+                    {s.label}
+                  </span>
+                </div>
+              ))}
+            </div>
+            {study.totals.note && (
+              <p className="text-sm text-white/45 font-light mt-6 leading-relaxed">
+                {study.totals.note}
+              </p>
+            )}
+          </div>
+        </section>
+      )}
+
       {/* Closer */}
       <section className="px-6 max-w-[800px] mx-auto mb-14">
         <p className="text-xl sm:text-2xl font-light text-brand-black/80 leading-relaxed border-l-2 border-brand-blue/30 pl-6">
