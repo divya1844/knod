@@ -1,11 +1,10 @@
-import { useState } from "react";
 import { motion } from "motion/react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { ArrowLeft, ArrowRight, MapPin, QrCode, Award } from "lucide-react";
 import { useSEO } from "../hooks/useSEO";
-import { BookDemoModal } from "../components/BookDemoModal";
 import { CaseImage } from "../components/CaseImage";
 import { getCaseStudy, type Stat } from "../lib/caseStudies";
+import { HOST_SIGNUP_URL, HOST_CTA_LABEL } from "../lib/cta";
 
 const sectionLabel =
   "text-xs font-semibold tracking-wider uppercase text-brand-blue mb-3 flex items-center gap-2";
@@ -35,7 +34,6 @@ function initialsOf(name: string) {
 export function CaseStudyDetailPage() {
   const { slug } = useParams();
   const study = getCaseStudy(slug);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Hooks must run before any early return; SEO falls back gracefully for unknown slugs.
   useSEO({
@@ -323,18 +321,16 @@ export function CaseStudyDetailPage() {
             </p>
           </div>
           <div className="relative z-10 w-full md:w-auto shrink-0 flex justify-center md:justify-end">
-            <button
-              onClick={() => setIsModalOpen(true)}
+            <a
+              href={HOST_SIGNUP_URL}
               className="bg-[#1AEB7E] text-brand-black px-8 py-4 sm:px-10 sm:py-5 rounded-full text-sm sm:text-base font-semibold hover:bg-[#1AEB7E]/90 transition-colors flex items-center justify-center gap-2 group w-full sm:w-auto shadow-lg shadow-[#1AEB7E]/20 cursor-pointer"
             >
-              Book a Demo{" "}
+              {HOST_CTA_LABEL}{" "}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
           </div>
         </div>
       </section>
-
-      <BookDemoModal open={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </main>
   );
 }

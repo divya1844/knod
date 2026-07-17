@@ -3,9 +3,9 @@ import { motion, useInView } from "motion/react";
 import { Link } from "react-router-dom";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { useSEO } from "../hooks/useSEO";
-import { BookDemoModal } from "../components/BookDemoModal";
 import { CaseImage } from "../components/CaseImage";
 import { AGGREGATE, RESEARCH, CASE_STUDIES } from "../lib/caseStudies";
+import { HOST_SIGNUP_URL, HOST_CTA_LABEL } from "../lib/cta";
 
 /** Animates a number from 0 to its value once scrolled into view. */
 function CountUp({ to, decimals = 0, suffix = "" }: { to: number; decimals?: number; suffix?: string }) {
@@ -39,8 +39,6 @@ function CountUp({ to, decimals = 0, suffix = "" }: { to: number; decimals?: num
 }
 
 export function CaseStudiesPage() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   useSEO({
     title: "Case Studies & Results | Knod",
     description:
@@ -232,18 +230,16 @@ export function CaseStudiesPage() {
           </div>
 
           <div className="relative z-10 w-full md:w-auto shrink-0 flex justify-center md:justify-end">
-            <button
-              onClick={() => setIsModalOpen(true)}
+            <a
+              href={HOST_SIGNUP_URL}
               className="bg-[#1AEB7E] text-brand-black px-8 py-4 sm:px-10 sm:py-5 rounded-full text-sm sm:text-base font-semibold hover:bg-[#1AEB7E]/90 transition-colors flex items-center justify-center gap-2 group w-full sm:w-auto shadow-lg shadow-[#1AEB7E]/20 cursor-pointer"
             >
-              Book a Demo{" "}
+              {HOST_CTA_LABEL}{" "}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
           </div>
         </div>
       </section>
-
-      <BookDemoModal open={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </main>
   );
 }

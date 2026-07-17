@@ -1,8 +1,7 @@
-import { useState } from "react";
 import { motion } from "motion/react";
 import { ArrowRight, QrCode, Users, Star, Zap, DollarSign, MessageSquare } from "lucide-react";
 import { Link } from "react-router-dom";
-import { DemoModal } from "./DemoModal";
+import { HOST_SIGNUP_URL, HOST_CTA_LABEL } from "../lib/cta";
 
 const NETWORK_NODES = [
   { id: 1, top: '15%', left: '20%', img: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150', delay: 1.5 },
@@ -19,8 +18,6 @@ const NETWORK_LINES: [number, number][] = [
 ];
 
 export function HeroSection() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   return (
     <>
       <main className="max-w-[1400px] mx-auto px-6 pb-4 pt-20 sm:pt-22 lg:pt-22 min-h-[50vh] lg:min-h-[540px] flex items-center relative">
@@ -78,17 +75,17 @@ export function HeroSection() {
               className="flex justify-center mt-2"
               id="hero-cta-buttons"
             >
-              <button
-                onClick={() => setIsModalOpen(true)}
+              <a
+                href={HOST_SIGNUP_URL}
                 className="group relative cursor-pointer inline-flex items-center justify-center gap-2.5 bg-brand-black text-white px-8 py-4 rounded-full text-base font-semibold overflow-hidden transition-all duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.15)] hover:-translate-y-0.5 active:scale-98"
-                id="cta-book-demo"
+                id="cta-host-signup"
               >
                 <span className="absolute inset-0 w-full h-full bg-brand-blue transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100" />
                 <span className="relative flex items-center gap-2">
-                  Book a Demo
+                  {HOST_CTA_LABEL}
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </span>
-              </button>
+              </a>
             </motion.div>
 
           </div>
@@ -237,9 +234,6 @@ export function HeroSection() {
           </div>
         </div>
       </main>
-
-      {/* Book a Demo Modal */}
-      <DemoModal open={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 }

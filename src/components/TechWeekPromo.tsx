@@ -1,12 +1,10 @@
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
+import { HOST_SIGNUP_URL, HOST_CTA_LABEL } from "../lib/cta";
 
 // TechChicago Week 2026 promo, co-branded with In Good Company.
 // Copy mirrors the approved IGC x Knod partnership graphic. Framing note:
 // Knod is the connection layer hosts add to their events, not an event platform.
-
-// Update once the promo code exists in the Knod app (auto-redeems free access after sign-in).
-const CTA_URL = "https://app.knod.ai/admin/signup?code=KNOD-INGOODCO";
 
 export function TechWeekPromo() {
   return (
@@ -66,10 +64,10 @@ export function TechWeekPromo() {
 
             <div className="flex justify-center lg:justify-start">
               <a
-                href={CTA_URL}
+                href={HOST_SIGNUP_URL}
                 className="inline-flex items-center justify-center gap-2 bg-[#B5654B] text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-[#9d543c] transition-colors shadow-lg group"
               >
-                Free for TechChicago Week hosts
+                {HOST_CTA_LABEL}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>

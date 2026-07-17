@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import { HOST_SIGNUP_URL, HOST_CTA_LABEL, HOST_CTA_LABEL_SHORT } from "../lib/cta";
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -60,12 +61,12 @@ export function Navbar() {
           Community Partners
         </Link>
         <a
-          href="https://app.knod.ai/admin/signup?code=KNOD-INGOODCO"
+          href={HOST_SIGNUP_URL}
           className="bg-[#B5654B] text-white px-3.5 py-2 md:px-5 md:py-2.5 rounded-full text-[13px] md:text-[15px] font-medium hover:bg-[#9d543c] transition-colors duration-300 cursor-pointer whitespace-nowrap"
         >
           {/* Compact on mobile so it fits beside the hamburger, full text on desktop */}
-          <span className="md:hidden">Free · Tech Week</span>
-          <span className="hidden md:inline">Free for TechChicago Week hosts</span>
+          <span className="md:hidden">{HOST_CTA_LABEL_SHORT}</span>
+          <span className="hidden md:inline">{HOST_CTA_LABEL}</span>
         </a>
         <button
           className="md:hidden p-3 -mr-3 text-brand-black outline-none focus-visible:ring-2 focus-visible:ring-brand-blue rounded-full"
@@ -120,11 +121,11 @@ export function Navbar() {
                 Community Partners
               </Link>
               <a
-                href="https://app.knod.ai/admin/signup?code=KNOD-INGOODCO"
+                href={HOST_SIGNUP_URL}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="bg-[#B5654B] text-white px-6 py-3.5 rounded-xl text-center font-semibold hover:bg-[#9d543c] transition-colors w-full shadow-lg shadow-black/5 block"
               >
-                Free for TechChicago Week hosts
+                {HOST_CTA_LABEL}
               </a>
             </div>
           </motion.div>
