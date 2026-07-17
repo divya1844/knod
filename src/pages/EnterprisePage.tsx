@@ -1,11 +1,11 @@
 import { motion } from "motion/react";
-import { ArrowRight, Briefcase, Building2, Lightbulb, Rocket, Network } from "lucide-react";
+import { ArrowRight, Briefcase, Building2, Lightbulb, Rocket, Network, CalendarCheck, Handshake, FileSpreadsheet, BarChart3 } from "lucide-react";
 import { useSEO } from "../hooks/useSEO";
 
 export function EnterprisePage() {
   useSEO({
-    title: "Connection Infrastructure for Enterprise | Knod",
-    description: "Custom connection infrastructure for corporations, accelerators, and member networks, solutions that scale from pilot to global rollout.",
+    title: "Connection Infrastructure for Enterprise & Event Management | Knod",
+    description: "Connection infrastructure for event management companies, corporations, expos, accelerators, and member networks. White-label and API, sponsor tie-ins, and exportable data, from a 30 person room to a 30,000 person expo.",
   });
 
   return (
@@ -134,6 +134,64 @@ export function EnterprisePage() {
                White-label solutions for associations and member organizations
              </p>
            </div>
+
+           <div className="bg-[#f5f5f7] border border-brand-black/5 rounded-[2rem] p-6 sm:p-8 md:p-10">
+             <h3 className="text-2xl font-semibold mb-4 text-brand-black flex items-center gap-2"><CalendarCheck className="w-6 h-6 text-brand-black/50" /> Event Management Companies</h3>
+             <p className="text-brand-black/70 font-light leading-relaxed">
+               You run registration, exhibits, and operations. Knod adds the connection layer on top, so your attendees leave having met the right people
+             </p>
+           </div>
+
+           <div className="bg-[#f5f5f7] border border-brand-black/5 rounded-[2rem] p-6 sm:p-8 md:p-10">
+             <h3 className="text-2xl font-semibold mb-4 text-brand-black flex items-center gap-2"><Handshake className="w-6 h-6 text-brand-black/50" /> Expos & Trade Shows</h3>
+             <p className="text-brand-black/70 font-light leading-relaxed">
+               Point the right visitors to the right exhibitors and sponsors, matched by intent rather than badge scans
+             </p>
+           </div>
+        </div>
+      </section>
+
+      {/* Built for scale, and for the tools you already run */}
+      <section className="px-4 lg:px-8 max-w-[1200px] mx-auto mb-20 md:mb-28">
+        <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-4xl font-medium tracking-tight text-brand-black mb-6">
+            From a 30 person room to a 30,000 person expo
+          </h2>
+          <p className="text-lg text-brand-black/60 font-light">
+            Knod is infrastructure, not an app. It sits alongside your registration, ticketing, and event stack, and scales with the room.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          <div className="bg-white border border-brand-black/5 rounded-[2rem] p-6 sm:p-8 shadow-sm">
+            <div className="w-12 h-12 rounded-2xl bg-brand-blue/10 text-brand-blue flex items-center justify-center mb-5">
+              <Handshake className="w-6 h-6" strokeWidth={1.75} />
+            </div>
+            <h3 className="text-xl font-semibold tracking-tight mb-3">Sponsor and exhibitor tie-ins</h3>
+            <p className="text-brand-black/65 font-light leading-relaxed">
+              Put your sponsors in the conversation. Route attendees to the booths, rooms, and office hours that match what they came for, and show sponsors who they actually met.
+            </p>
+          </div>
+
+          <div className="bg-white border border-brand-black/5 rounded-[2rem] p-6 sm:p-8 shadow-sm">
+            <div className="w-12 h-12 rounded-2xl bg-brand-blue/10 text-brand-blue flex items-center justify-center mb-5">
+              <FileSpreadsheet className="w-6 h-6" strokeWidth={1.75} />
+            </div>
+            <h3 className="text-xl font-semibold tracking-tight mb-3">Your data, exportable</h3>
+            <p className="text-brand-black/65 font-light leading-relaxed">
+              Matches, intent, and engagement, exported for your CRM and your post-event reporting. It is your event and your data.
+            </p>
+          </div>
+
+          <div className="bg-white border border-brand-black/5 rounded-[2rem] p-6 sm:p-8 shadow-sm">
+            <div className="w-12 h-12 rounded-2xl bg-brand-blue/10 text-brand-blue flex items-center justify-center mb-5">
+              <BarChart3 className="w-6 h-6" strokeWidth={1.75} />
+            </div>
+            <h3 className="text-xl font-semibold tracking-tight mb-3">Proof the room worked</h3>
+            <p className="text-brand-black/65 font-light leading-relaxed">
+              See what people came for, which connections formed, and what to program next. Prove your event delivered more than a badge and a tote bag.
+            </p>
+          </div>
         </div>
       </section>
 
