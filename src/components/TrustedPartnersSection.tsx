@@ -1,11 +1,10 @@
 const PARTNERS = [
   { name: "In Good Company", logo: "/trusted_partner_logos/in-good-company.png" },
-  { name: "Chicago Innovation", logo: "/trusted_partner_logos/chicago-innovation.png" },
+  { name: "Chicago Innovation", logo: "/trusted_partner_logos/chicago-innovation-v2.png" },
   { name: "UIC Business" }, // No logo available
   { name: "Stuart School of Business", logo: "/trusted_partner_logos/stuart-school-of-business.png" },
   { name: "Forever 22", logo: "/trusted_partner_logos/forever-22.png" },
   { name: "2389 Research, Inc.", logo: "/trusted_partner_logos/2389.png" },
-  { name: "JAMA" }, // No logo available
   { name: "Elevate" }, // No logo available
   { name: "WAGU", logo: "/trusted_partner_logos/wagu.png", darkCard: true },
   { name: "KNUST Law Faculty", logo: "/trusted_partner_logos/knust.png" }
