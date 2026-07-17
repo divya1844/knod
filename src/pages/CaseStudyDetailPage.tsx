@@ -157,11 +157,20 @@ export function CaseStudyDetailPage() {
             <span className="w-1.5 h-1.5 rounded-full bg-brand-blue" />
             The result
           </p>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+          <div
+            className={`grid grid-cols-2 gap-3 sm:gap-4 ${
+              study.stats.length === 3 ? "sm:grid-cols-3" : "lg:grid-cols-4"
+            }`}
+          >
             {study.stats.map((s) => (
               <StatCard key={s.label} value={s.value} label={s.label} />
             ))}
           </div>
+          {study.statsNote && (
+            <p className="text-sm text-brand-black/50 font-light mt-4 px-2 leading-relaxed">
+              {study.statsNote}
+            </p>
+          )}
         </section>
       )}
 

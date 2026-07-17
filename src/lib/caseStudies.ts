@@ -46,6 +46,8 @@ export type CaseStudy = {
   sections: { label: string; text: string }[];
   /** Headline result stats. */
   stats?: Stat[];
+  /** Optional context line shown under the stats grid. */
+  statsNote?: string;
   checkin?: CheckIn;
   partner?: Partner;
   quotes: Quote[];
@@ -124,11 +126,12 @@ export const CASE_STUDIES: CaseStudy[] = [
       },
     },
     stats: [
-      { value: "60", label: "Attendees on Knod" },
-      { value: "68", label: "Nods exchanged" },
-      { value: "30", label: "Mutual connections" },
-      { value: "44%", label: "Match rate" },
+      { value: "3", label: "Events" },
+      { value: "172", label: "Attendees on Knod" },
+      { value: "119", label: "Knods sent" },
     ],
+    statsNote:
+      "Across three Chicago Innovation events, as a major contributing sponsor for their 25th anniversary year.",
     quotes: [
       {
         text: "At Chicago Innovation, we are always trying to spark meaningful connections at our monthly events. Knod offers a unique, tech-forward way for our innovation-minded attendees to network that's fun, frictionless, and outcomes-focused.",
