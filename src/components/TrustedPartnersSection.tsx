@@ -1,6 +1,6 @@
 const PARTNERS = [
   { name: "In Good Company", logo: "/trusted_partner_logos/in-good-company.png" },
-  { name: "Chicago Innovation", logo: "/trusted_partner_logos/chicago-innovation.png", darkCard: true },
+  { name: "Chicago Innovation", logo: "/trusted_partner_logos/chicago-innovation.png" },
   { name: "UIC Business" }, // No logo available
   { name: "Stuart School of Business", logo: "/trusted_partner_logos/stuart-school-of-business.png" },
   { name: "Forever 22", logo: "/trusted_partner_logos/forever-22.png" },
