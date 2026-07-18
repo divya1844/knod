@@ -77,13 +77,13 @@ export function HeroSection() {
             >
               <a
                 href={HOST_SIGNUP_URL}
-                className="group relative cursor-pointer inline-flex items-center justify-center gap-2.5 bg-brand-black text-white px-8 py-4 rounded-full text-base font-semibold overflow-hidden transition-all duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.15)] hover:-translate-y-0.5 active:scale-98"
+                className="group relative cursor-pointer inline-flex items-center justify-center bg-brand-black text-white px-8 py-4 rounded-full text-base font-semibold overflow-hidden transition-all duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.15)] hover:-translate-y-0.5 active:scale-98"
                 id="cta-host-signup"
               >
                 <span className="absolute inset-0 w-full h-full bg-brand-blue transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100" />
-                <span className="relative flex items-center gap-2">
+                <span className="relative text-center leading-snug">
                   {HOST_CTA_LABEL}
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="inline-block align-middle w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </span>
               </a>
             </motion.div>
